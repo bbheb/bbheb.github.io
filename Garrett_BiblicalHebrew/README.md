@@ -26,9 +26,9 @@ The Wayyiqtol paradigms may be memorized in comparison to the Yiqtol paradigms.
 [Hebrew Studies Resources](http://hebrewgrammar.sbts.edu/index.html) (no longer maintained, but has many good resources)
 
 This website contains:
-1. Hebrew lecture videos.
-2. Vocabulary falshcards.
-3. Vocabulary audios.
+1. Hebrew lecture videos
+2. Vocabulary in txt forms
+3. Vocabulary audios
 
 # Flashcards for all Vocabulary on Quizlet.com
 [Flashcards for all Vocabulary on Quizlet.com](https://quizlet.com/SBTSOnline/folders/elementary-hebrew-20400-garrett)
