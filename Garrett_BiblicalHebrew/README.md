@@ -6,7 +6,7 @@
 * 10_Qal Yiqtol Strong and III-Hey verb Paradigms Practice Sheet
 * 11_Qal Wayyiqtol Strong and III-Hey verb Paradigms Practice Sheet
 * 21_Principle Parts Practice Sheet (p.149 Table 21.4) Practice Sheet
-* 23, 21_Principle Parts Practice Sheet (pp. 149&164 Table 21.4, 23.6)
+* 23, 21_Principle Parts (pp. 149&164 Table 21.4, 23.6) Practice Sheet
 
 
 # Verb Paraidgms:
