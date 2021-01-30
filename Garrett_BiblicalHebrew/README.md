@@ -1,11 +1,12 @@
 # Files:
 
-01_Hebrew Alphabet Song
-01_Hebrew Consonants Practice Sheet
-09-10_Qal Qatal Strong & III-Hey
-09-11_Qal Qatal&Yiqtol&Wayyiqtol Strong&III Hey
-21_Principle Parts Practice Sheet (p.149 Table 21.4)
-21, 23_Principle Parts Practice Sheet (pp. 149&164 Table 21.4, 23.6)
+* 01_Hebrew Alphabet Song
+* 01_Hebrew Consonants Practice Sheet
+* 09-10_Qal Qatal Strong & III-Hey
+* 09-11_Qal Qatal&Yiqtol&Wayyiqtol Strong&III Hey
+* 21_Principle Parts Practice Sheet (p.149 Table 21.4)
+* 21, 23_Principle Parts Practice Sheet (pp. 149&164 Table 21.4, 23.6)
+
 
 # Verb Paraidgms:
 
