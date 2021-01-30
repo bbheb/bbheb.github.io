@@ -19,3 +19,16 @@ The Wayyiqtol paradigms may be memorized in comparison to the Yiqtol paradigms.
 1. You add Waw, Pathach, and dagesh forte in the beginning.
 2. But, Aleph (only Qal Wayyiqtol 1cs) rejects the dagesh forte and causes lengthening of Pathach to Qamets.
 3. Also, be aware of the apocopated forms of בנה (only 3ms, 3fs, and 2ms), which also results in vowel change and accent shift.
+
+
+
+# Hebrew website
+[Hebrew Studies Resources](http://hebrewgrammar.sbts.edu/index.html) (no longer maintained, but has many good resources)
+
+This website contains:
+1. Hebrew lecture videos.
+2. Vocabulary falshcards.
+3. Vocabulary audios.
+
+# Flashcards for all Vocabulary on Quizlet.com
+[Flashcards for all Vocabulary on Quizlet.com](https://quizlet.com/SBTSOnline/folders/elementary-hebrew-20400-garrett)
