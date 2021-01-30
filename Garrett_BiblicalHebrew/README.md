@@ -2,10 +2,11 @@
 
 * 01_Hebrew Alphabet Song
 * 01_Hebrew Consonants Practice Sheet
-* 09-10_Qal Qatal Strong & III-Hey
-* 09-11_Qal Qatal&Yiqtol&Wayyiqtol Strong&III Hey
-* 21_Principle Parts Practice Sheet (p.149 Table 21.4)
-* 21, 23_Principle Parts Practice Sheet (pp. 149&164 Table 21.4, 23.6)
+* 09_Qal Qatal Strong and III-Hey verb Paradigms Practice Sheet
+* 10_Qal Yiqtol Strong and III-Hey verb Paradigms Practice Sheet
+* 11_Qal Wayyiqtol Strong and III-Hey verb Paradigms Practice Sheet
+* 21_Principle Parts Practice Sheet (p.149 Table 21.4) Practice Sheet
+* 23, 21_Principle Parts Practice Sheet (pp. 149&164 Table 21.4, 23.6)
 
 
 # Verb Paraidgms:
@@ -18,7 +19,7 @@
 The Wayyiqtol paradigms may be memorized in comparison to the Yiqtol paradigms.
 1. You add Waw, Pathach, and dagesh forte in the beginning.
 2. But, Aleph (only Qal Wayyiqtol 1cs) rejects the dagesh forte and causes lengthening of Pathach to Qamets.
-3. Also, be aware of the apocopated forms of בנה (only 3ms, 3fs, and 2ms), which also results in vowel change and accent shift.
+3. Also, be aware of the apocopated forms of בנה (only 3ms, 3fs, and 2ms), which also results in vowel changes and accent shift.
 
 
 
