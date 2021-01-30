@@ -9,7 +9,7 @@
 
 
 # Verb Paraidgms:
-
+(a simple way to reproduce the verbal paradigms)
 1. [Qal Qatal Strong Verb Paradigm](https://www.youtube.com/watch?v=P9xVYJ-sJ2k)
 2. [Qal Qatal III-Hey Verb Paradigm](https://www.youtube.com/watch?v=sIEL2xp1ogo)
 3. [Qal Yiqtol Strong Verb Paradigm](https://www.youtube.com/watch?v=9cuka5tgK94)
