@@ -12,13 +12,13 @@ Note: this keyboard has been submitted to Keyman. Once implemented by Keyman, us
 
 2. Then click the following link.
 
-   - [Install the SIL Hebrew Keyboard](https://github.com/martinmts/BiblicalHebrew/blob/main/Garrett_BiblicalHebrew/Hebrew%20keyboard/sil_hebrew.kmp) (Latest release date: 02/01/2021, 12:29 PM ET)
+  - [Install the SIL Hebrew Keyboard](https://github.com/martinmts/BiblicalHebrew/blob/main/Garrett_BiblicalHebrew/Hebrew%20keyboard/sil_hebrew.kmp) (Latest release date: 02/01/2021, 12:29 PM ET)
    - Note: I have difficulty in installing the keyboard on an iPad. The only working way is to install it via [Telegram messenger](https://telegram.org/).:
-    1. Send the link of this page to my [Telegram messenger](https://telegram.org/).
-    2. In Telegram, click the link to view the page in Telegram.
-    3. Click the link in Step 2.
-    4. Click the "Download" button.
-    5. Click "Open in Keyman" to start installation.
+      1. Send the link of this page to my [Telegram messenger](https://telegram.org/).
+      2. In Telegram, click the link to view the page in Telegram.
+      3. Click the link in Step 2.
+      4. Click the "Download" button.
+      5. Click "Open in Keyman" to start installation.
 
    - Note: on iPad/iPhone, if you want to install a new version of the keyboard, you need first to close Keyman: Double press the Home key on your iPad/iPhone and then wipe up Keyman to close it. Then follow the steps described above to install the keyboard. Otherwise, the new version of the keyboard will not be installed. The old version will come back.
 
