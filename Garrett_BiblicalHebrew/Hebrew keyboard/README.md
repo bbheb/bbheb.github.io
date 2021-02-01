@@ -46,7 +46,7 @@ Rows 2-4 follows the SIL Hebrew keyboard closely in most cases. The regular Hole
 
 ## The "Normal", "Shift", "ALTGR/Opt", and "ALTGR/Opt + Shift" Layers
 
-- Note: on Win, the "right Alt" key is the "ALTGR" key or "left Ctrl+ left Alt".
+- Note: on Win, the "ALTGR" key is the "right Alt" key or "left Ctrl+ left Alt".
 
 These layers follow the Hebrew (SIL) keyboard mapping. It is for more complicated Hebrew typing.
 
