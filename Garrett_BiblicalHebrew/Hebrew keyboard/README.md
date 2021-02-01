@@ -4,18 +4,21 @@ This keyboard is for [Keyman](https://keyman.com/) app on iOS and android. If yo
 - [install the Hebrew (SIL) keyboard on Win](https://youtu.be/vCKhVxT0oTY)
 - [install the Hebrew (SIL) keyboard on Mac](https://youtu.be/LN7S15-Un7s)
 
-## Steps to install the keyboard
+## Steps to install the keyboard for iOS and android devices
+
+- Note: this keyboard has been submitted to Keyman. Once implemented by Keyman, users will be able to install the keyboard within the Keyman app. Before then, you may follow the steps below for installation.
+
 1. You need to install Keyman on a mobile device, such as an [iOS device](https://keyman.com/iphone-and-ipad/) or an [android device](https://keyman.com/android/). Keyman is a free app.
 
 2. Then click the following link.
 
 - [Install the SIL Hebrew Keyboard](https://github.com/martinmts/BiblicalHebrew/blob/main/Garrett_BiblicalHebrew/Hebrew%20keyboard/sil_hebrew.kmp) (Latest release date: 02/01/2021, 11:26 AM ET)
 - Note: I have difficulty in installing the keyboard on an iPad. The only working way is to install it via [Telegram messenger](https://telegram.org/).:
-  - 1. Send the link of this page to my [Telegram messenger](https://telegram.org/).
-  - 2. In Telegram, click the link to view the page in Telegram.
-  - 3. Click the link in Step 2.
-  - 4. Click the "Download" button.
-  - 5. Click "Open in Keyman" to start installation.
+  1. Send the link of this page to my [Telegram messenger](https://telegram.org/).
+  2. In Telegram, click the link to view the page in Telegram.
+  3. Click the link in Step 2.
+  4. Click the "Download" button.
+  5. Click "Open in Keyman" to start installation.
 
 - Note: on iPad/iPhone, if you want to install a new version of the keyboard, you need first to close Keyman: Double press the Home key on your iPad/iPhone and then wipe up Keyman to close it. Then follow the steps described above to install the keyboard. Otherwise, the new version of the keyboard will not be installed. The old version will come back.
 
