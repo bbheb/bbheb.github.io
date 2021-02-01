@@ -12,7 +12,7 @@ This keyboard is for [Keyman](https://keyman.com/) app on iOS and android. If yo
 
 2. Then click the following link.
 
-- [Install the SIL Hebrew Keyboard](https://github.com/martinmts/BiblicalHebrew/blob/main/Garrett_BiblicalHebrew/Hebrew%20keyboard/sil_hebrew.kmp) (Latest release date: 02/01/2021, 11:26 AM ET)
+- [Install the SIL Hebrew Keyboard](https://github.com/martinmts/BiblicalHebrew/blob/main/Garrett_BiblicalHebrew/Hebrew%20keyboard/sil_hebrew.kmp) (Latest release date: 02/01/2021, 12:29 PM ET)
 - Note: I have difficulty in installing the keyboard on an iPad. The only working way is to install it via [Telegram messenger](https://telegram.org/).:
   1. Send the link of this page to my [Telegram messenger](https://telegram.org/).
   2. In Telegram, click the link to view the page in Telegram.
