@@ -40,7 +40,7 @@ It has both Qamets and Qamets Hatuph. The 1st vowel in the 1st row is Qamets. Th
 
 Rows 2-4 follows the SIL Hebrew keyboard closely in most cases. The regular Holem is in the 2nd row, left to Peh. Type the regular Holem after Waw for "Holem Waw". The last vowel in the 2nd row is "Holem for Waw". It is only used when a Holem follows the consonantal Waw. For all other consonants, use the regular Holem.
 
-![Ctrl and Ctrl-Shift layers](https://i.imgur.com/k1SWnSC.jpg)
+![Ctrl and Ctrl-Shift layers](https://i.imgur.com/0q8WpWg.jpg)
 
 
 
