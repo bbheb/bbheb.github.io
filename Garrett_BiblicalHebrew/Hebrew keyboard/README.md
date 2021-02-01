@@ -26,9 +26,9 @@ Note: this keyboard has been submitted to Keyman. Once implemented by Keyman, us
 
 4. You need to add "Keyman" keyboard to your active keyboard list.
 
-   - On andoid, go to "System" → Languages & input → On-screen keyboard → Manage on-screen keyboards. Then activate "Keyman".
+  - On andoid, go to "System" → Languages & input → On-screen keyboard → Manage on-screen keyboards. Then activate "Keyman".
 
-   - On iOS, go to "Settings" → "General" → "Keyboard" → "Keyboards" → "Add New Keyboard..." to add "Keyman" to your active keyboard list.
+  - On iOS, go to "Settings" → "General" → "Keyboard" → "Keyboards" → "Add New Keyboard..." to add "Keyman" to your active keyboard list.
 
 Done! You may start using it now!
 
