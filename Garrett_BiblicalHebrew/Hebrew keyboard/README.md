@@ -1,6 +1,6 @@
 # Instructions
 
-Note: This keyboard is for [Keyman](https://keyman.com/) app on iOS and android. If you need to type on Mac or Win, please follow the instruction:
+Note: This keyboard is for [Keyman](https://keyman.com/) app on iOS and android. If you need to type on Mac or Win, please follow the instructions:
 - [install the Hebrew (SIL) keyboard on Win](https://youtu.be/vCKhVxT0oTY)
 - [install the Hebrew (SIL) keyboard on Mac](https://youtu.be/LN7S15-Un7s)
 
@@ -14,7 +14,8 @@ Note: this keyboard has been submitted to Keyman. Once implemented by Keyman, us
 
   - [Install the SIL Hebrew Keyboard](https://github.com/martinmts/BiblicalHebrew/blob/main/Garrett_BiblicalHebrew/Hebrew%20keyboard/sil_hebrew.kmp) (Latest release date: 02/01/2021, 12:29 PM ET)
    - Note: I have difficulty in installing the keyboard on an iPad. The only workable way I found is to install it via [Telegram messenger](https://telegram.org/).:
-      1. Send the link of this page to my [Telegram messenger](https://telegram.org/).
+      1. Send the link of this page to your [Telegram messenger](https://telegram.org/).
+         - you may send it to "Saved Messages", or you may ask a friend to send the link to you via Telegram.
       2. In Telegram, click the link to view the page in Telegram.
       3. Click the link in Step 2.
       4. Click the "Download" button.
