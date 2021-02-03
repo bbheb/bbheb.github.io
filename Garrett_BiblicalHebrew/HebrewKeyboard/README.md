@@ -1,6 +1,6 @@
 # Instructions
 
-Note: This keyboard is for [Keyman](https://keyman.com/) app on iOS and android. If you need to type on Mac or Win, please follow the video tutorials:
+If you need to type on Mac or Win, please follow the video tutorials:
 - [Install the Hebrew (SIL) keyboard on Windows](https://youtu.be/vCKhVxT0oTY)
 - [Install the Hebrew (SIL) keyboard on MacOS](https://youtu.be/LN7S15-Un7s)
 
@@ -13,6 +13,7 @@ You will need to visit the [SBL official site](https://www.sbl-site.org/educatio
 
 ## Steps to install the keyboard for iOS and android devices
 
+Note: The following instructions are for the installation of Hebrew keyboard for [Keyman](https://keyman.com/) app on iOS and android. If you need to type on Mac or Win, please follow the instructions above.  
 Note: this keyboard has been submitted to Keyman. Once implemented by Keyman, users will be able to install the keyboard within the Keyman app. Before then, you may follow the steps below for installation.
 
 1. You need to install Keyman on a mobile device, such as an [iOS device](https://keyman.com/iphone-and-ipad/) or an [android device](https://keyman.com/android/). Keyman is a free app.
