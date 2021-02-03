@@ -7,13 +7,13 @@
      - Type וּ as ו followed by daghesh, and וֹ as ו followed by holem.
   4. If the word has a furtive pathach, type the furtive pathach AFTER Ayin (although it is always pronounced before Ayin), e.g., שְׁמֹעַ. (If you typed the pathach before Ayin, it will end up like שְׁמַֹע, which is incorrect).‬‬‬
 
-If you do not follow this order, a Canvas exam may read it as incorrect.
+**If you do not follow this order, a Canvas exam may read it as incorrect.**
 
 - You will not need to type accents and metheg for any exams, and you should NOT type them (the automatic grading may count it wrong). For instance, type קָטַלְתָּ, not קָטַ֫לְתָּ.
 
 - If a word has a final letter, type the final letter. For instance, type קְטַלְתֶּם, not קְטַלְתֶּמ. This also applies to three letter roots in parsings. For instance, type מלך‫/‬מלךְ (shewa optional but recommended), not מלכ.‬‬‬
 
-- Qamets Hatuph and Qamets are different. Qamets is **SHIFT** + **A**, but Qamets Hatuph is **Alt** + **CTRL** + **O** OR **right Alt** + **O** (for Windows) or **Option** + **O** (for Mac). Your answer will be marked as incorrect if you use SHIFT + A for Qamets Hatuph.
+- Qamets Hatuph and Qamets are different. Qamets is **SHIFT** + **A**, but Qamets Hatuph is **Alt** + **CTRL** + **O** OR **right Alt** + **O** (for Windows) and **Option** + **O** (for Mac). Your answer will be marked as incorrect if you use SHIFT + A for Qamets Hatuph.
 
 - If you are certain your answer is correct but Canvas counted it as wrong, contact the grader. However, be sure you are using the SIL keyboard and following the above rules. Do not keep contacting the grader if you are not following this procedure. When you contact the grader, provide the following information:
   - The OS system you are using.
