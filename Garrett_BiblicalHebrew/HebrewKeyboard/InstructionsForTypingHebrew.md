@@ -20,6 +20,6 @@
 ## Other Instructions
 - If you are certain your answer is correct but Canvas counted it as wrong, contact the grader. However, be sure you are using the SIL keyboard and following the above rules. Do not keep contacting the grader if you are not following this procedure. When you contact the grader, provide the following information:
   - The OS system you are using, Window, MacOS, or a tablet, etc.?
-  - The browswer you are using, Chrome, Firefox, Safari, or Edge, etc.?
+  - The browser you are using, Chrome, Firefox, Safari, or Edge, etc.?
   - The keyboard you are using. I assume it is the SIL Hebrew keyboard.
   - The typing keystrokes and typing order.
