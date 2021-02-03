@@ -1,8 +1,13 @@
 # Instructions
 
 Note: This keyboard is for [Keyman](https://keyman.com/) app on iOS and android. If you need to type on Mac or Win, please follow the instructions:
-- [install the Hebrew (SIL) keyboard on Win](https://youtu.be/vCKhVxT0oTY)
-- [install the Hebrew (SIL) keyboard on Mac](https://youtu.be/LN7S15-Un7s)
+- [Install the Hebrew (SIL) keyboard on Windows](https://youtu.be/vCKhVxT0oTY)
+- [Install the Hebrew (SIL) keyboard on MacOS](https://youtu.be/LN7S15-Un7s)
+
+### Also, please read the [Instructions for Typing Hebrew](https://github.com/martinmts/BiblicalHebrew/blob/main/Garrett_BiblicalHebrew/HebrewKeyboard/InstructionsForTypingHebrew.md)!
+
+<br/>
+<br/>
 
 ## Steps to install the keyboard for iOS and android devices
 
