@@ -4,7 +4,7 @@
   1. Type the consonant. For **שׂ** and **שׁ**, the SIL keyboard allows you to type each one as a single keystroke (using *f* and *j*, respectively).
   2. Type the daghesh, if there is one. Dagesh Forte and Dagesh Lene use the same key.
   3. Type the vowel. Always type the vowel *after* the consonant!
-    - Type וּ as ו followed by daghesh, and וֹ as ו followed by holem.
+     - Type וּ as ו followed by daghesh, and וֹ as ו followed by holem.
   4‫.‬ If the word has a furtive pathach, type the furtive pathach AFTER Ayin (although it is always pronounced before Ayin), e.g., שְׁמֹעַ. (If you typed the pathach before Ayin, it will end up like שְׁמַֹע, which is incorrect).‬‬‬
 
 If you do not follow this order, a Canvas exam may read it as incorrect.
