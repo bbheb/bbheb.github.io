@@ -8,12 +8,13 @@ You will need to visit the [SBL official site](https://www.sbl-site.org/educatio
 
 ### Also, please read the [Instructions for Typing Hebrew](https://github.com/martinmts/BiblicalHebrew/blob/main/Garrett_BiblicalHebrew/HebrewKeyboard/InstructionsForTypingHebrew.md)!
 
+After installation, you may test your Hebrew typing at [here](https://nituren.com/my/HebrewTypingTest.html).
 <br/>
 <br/>
 
 ## Steps to install the keyboard for iOS and android devices
 
-Note: The following instructions are for the installation of Hebrew keyboard for [Keyman](https://keyman.com/) app on iOS and android. If you need to type on Mac or Win, please follow the instructions above.  
+Note: The following instructions are for the installation of Hebrew keyboard for [Keyman](https://keyman.com/) app on iOS and android. If you need to type on Mac or Win, please follow the instructions above.
 Note: this keyboard has been submitted to Keyman. Once implemented by Keyman, users will be able to install the keyboard within the Keyman app. Before then, you may follow the steps below for installation.
 
 1. You need to install Keyman on a mobile device, such as an [iOS device](https://keyman.com/iphone-and-ipad/) or an [android device](https://keyman.com/android/). Keyman is a free app.
