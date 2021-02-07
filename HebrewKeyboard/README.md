@@ -6,7 +6,7 @@ If you need to type on Mac or Win, please follow the video tutorials:
 
 You will need to visit the [SBL official site](https://www.sbl-site.org/educational/biblicalfonts_sblhebrew.aspx) to download the keyboard installation file.
 
-### Also, please read the [Instructions for Typing Hebrew](https://github.com/martinmts/BiblicalHebrew/blob/main/Garrett_BiblicalHebrew/HebrewKeyboard/InstructionsForTypingHebrew.md)!
+### Also, please read the [Instructions for Typing Hebrew](https://github.com/martinmts/BiblicalHebrew/tree/main/HebrewKeyboard/InstructionsForTypingHebrew.md)!
 
 After installation, you may test your Hebrew typing at [Hebrew Typing Test](https://martinmts.github.io/BiblicalHebrew/HebrewTypingTest/).
 <br/>
@@ -21,7 +21,7 @@ Note: this keyboard has been submitted to Keyman. Once implemented by Keyman, us
 
 2. Then click the following link.
 
-  - [Install the SIL Hebrew Keyboard](https://github.com/martinmts/BiblicalHebrew/blob/main/Garrett_BiblicalHebrew/Hebrew%20keyboard/sil_hebrew.kmp) (Latest release date: 02/01/2021, 12:29 PM ET)
+  - [Install the SIL Hebrew Keyboard](https://github.com/martinmts/BiblicalHebrew/blob/main/Hebrewkeyboard/sil_hebrew.kmp) (Latest release date: 02/01/2021, 12:29 PM ET)
    - Note: I have difficulty in installing the keyboard on an iPad. The only workable way I found is to install it via [Telegram messenger](https://telegram.org/).:
       1. Send the link of this page to your [Telegram messenger](https://telegram.org/).
          - you may send it to "Saved Messages", or you may ask a friend to send the link to you via Telegram.
