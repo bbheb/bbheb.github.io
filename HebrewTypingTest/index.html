@@ -11,14 +11,11 @@
 		}
 
 		body {
-			background-color: silver
-		}
-
-		div {
+			background-color: silver;
 			max-width: 800px;
 			position: absolute;
-			left: 0;
-			right: 0;
+			left: 10px;
+			right: 10px;
 			margin: 0 auto;
 		}
 
@@ -39,76 +36,89 @@
 
 		.heb {
 			background-color: yellow;
-			font-family:"SBL Hebrew"; font-size:24px;
+			font-family: "SBL Hebrew";
+			font-size: 24px;
 		}
+
 		.hebg {
 			background-color: lawngreen;
-			font-family:"SBL Hebrew"; font-size:24px;
+			font-family: "SBL Hebrew";
+			font-size: 24px;
 		}
+
 		.hebf {
 			background-color: red;
-			font-family:"SBL Hebrew"; font-size:24px;
+			font-family: "SBL Hebrew";
+			font-size: 24px;
 		}
+
 		.hebt {
-			font-family:"SBL Hebrew"; font-size:30px; text-align:center;
+			font-family: "SBL Hebrew";
+			font-size: 30px;
+			text-align: center;
 		}
+
+		.bottom {
+			bottom: 0px;
+			left: 0px;
+			font-size: 8px;
+		}
+
 	</style>
 </head>
 
 <body>
-	<div id="wholepage">
-		<h1> Hebrew Typing Test </h1>
-		<p class="hebt" dir="rtl"> שָׁלוֹם</p>
-		<p> Type Hebrew consonants, vowels, or cantillation marks in the box
-			below, it will show you the names of what you typed as well as their
-			Unicode values.</p>
-		<h2> Please Type or Paste Hebrew words in the box below:<br>
-		</h2>
-		<input id="hebrew" oninput="checkHebrew()" dir="rtl" autofocus="" type="text">
-		<p></p>
-		<p style="font-size:30px">You typed:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span id="resultName" style="color:red;"></span>
-		</p>
-		<p id="resultWarning" ;=""> </p>
-		<p style="font-size:30px">Unicode Value:<span id="resultCode" style="color:blue;"></span>
-		</p>
-		<br>
-		Note:
-		<ul id="note">
-			<li> Please use <a href="https://github.com/martinmts/BiblicalHebrew/tree/main/Garrett_BiblicalHebrew/HebrewKeyboard">the
-					Hebrew (SIL) keyboard</a>. </li>
-			<li>It accepts inputs that fall in the Unicode range of <b>\u0591–\u05EA</b>.
-				It does not accept the letters fall in the range of <b>\u05F0–\u05F2</b>
-				and <b>\uFB1D–\uFB4F</b>, except for \uFB2A (Shin with Shin Dot) and
-				\uFB2B (Shin with Sin Dot). </li>
-			<ul>
-				<li> If you type these non-acceptable Hebrew letters (e.g., <span class="hebf">בּ</span> or <span class="hebf">וֹ</span> or <span class="hebf">וּ</span>), it will tell you
-					the name of the letter you typed and also let you know that they are
-					<span style="color:red">not acceptable Hebrew</span> (for the course).
-				</li>
-				<ul>
-					<li>
-					Type Holem Waw <span class="hebg" dir="rtl">וֹ</span> as Waw <span class="heb" dir="rtl">ו</span> followed by Holem <span class="heb" dir="rtl">◌ֹ</span>. Type Shureq <span class="hebg" dir="rtl">וּ</span> as Waw <span class="heb" dir="rtl">ו</span> followed by Dagesh <span class="heb" dir="rtl" >◌ּ</span>.
-					</li>
-					<li>
-					If you use the recommended Hebrew (SIL) keyboard, you will not have this issue. If you use another keyboard, or if you copy Hebrew from elsewhere, you <i>may</i> encounter this issue.
-					</li>
-				</ul>
-				<li> If you typed non-Hebrew letters, it will tell you that what you
-					typed is <span style="color:red">not Hebrew </span>. This includes
-					the punctuation marks that are used in the Hebrew keyboards. </li>
-			</ul>
-			<li> Shin and Sin are presented in two ways. Using the Hebrew (SIL)
-				keyboard, on <span style="color:blue">MacOS</span>, the two letters
-				are <span class="hebg" dir="rtl">שׁ</span> <b>\uFB2A {Shin with Shin Dot}</b> and <span class="hebg" dir="rtl">שׂ</span> <b>\uFB2B {Shin with Sin
-					Dot}</b>. If you are on <span style="color:blue">Windows</span> or
-				<span style="color:blue">mobile devices</span>, they are presented as <span class="heb" dir="rtl">שׁ</span>
-				<b>\u05E9 \u05C1 {Shin}{Shin Dot}</b> and <span class="heb" dir="rtl">שׂ</span> <b>\u05E9 \u05C2 {Shin}{Sin
-					Dot}</b> respectively.
+	<h1> Hebrew Typing Test </h1>
+	<p class="hebt" dir="rtl"> שָׁלוֹם</p>
+	<p> Type Hebrew consonants, vowels, or cantillation marks in the box
+		below, it will show you the names of what you typed as well as their
+		Unicode values.</p>
+	<h2> Please Type or Paste Hebrew words in the box below:<br>
+	</h2>
+	<input id="hebrew" oninput="checkHebrew()" dir="rtl" autofocus="" type="text">
+	<p></p>
+	<p style="font-size:30px">You typed:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span id="resultName" style="color:red;"></span>
+	</p>
+	<p id="resultWarning" ;=""> </p>
+	<p style="font-size:30px">Unicode Value:<span id="resultCode" style="color:blue;"></span>
+	</p>
+	<br>
+	Note:
+	<ul id="note">
+		<li> Please use <a href="https://github.com/martinmts/BiblicalHebrew/tree/main/Garrett_BiblicalHebrew/HebrewKeyboard">the
+				Hebrew (SIL) keyboard</a>. </li>
+		<li>It accepts inputs that fall in the Unicode range of <b>\u0591–\u05EA</b>.
+			It does not accept the letters fall in the range of <b>\u05F0–\u05F2</b>
+			and <b>\uFB1D–\uFB4F</b>, except for \uFB2A (Shin with Shin Dot) and
+			\uFB2B (Shin with Sin Dot). </li>
+		<ul>
+			<li> If you type these non-acceptable Hebrew letters (e.g., <span class="hebf">בּ</span> or <span class="hebf">וֹ</span> or <span class="hebf">וּ</span>), it will tell you
+				the name of the letter you typed and also let you know that they are
+				<span style="color:red">not acceptable Hebrew</span> (for the course).
 			</li>
-
+			<ul>
+				<li>
+					Type Holem Waw <span class="hebg" dir="rtl">וֹ</span> as Waw <span class="heb" dir="rtl">ו</span> followed by Holem <span class="heb" dir="rtl">◌ֹ</span>. Type Shureq <span class="hebg" dir="rtl">וּ</span> as Waw <span class="heb" dir="rtl">ו</span> followed by Dagesh <span class="heb" dir="rtl">◌ּ</span>.
+				</li>
+				<li>
+					If you use the recommended Hebrew (SIL) keyboard, you will not have this issue. If you use another keyboard, or if you copy Hebrew from elsewhere, you <i>may</i> encounter this issue.
+				</li>
+			</ul>
+			<li> If you typed non-Hebrew letters, it will tell you that what you
+				typed is <span style="color:red">not Hebrew </span>. This includes
+				the punctuation marks that are used in the Hebrew keyboards. </li>
 		</ul>
-		<p style="font-size:10px">* The SBL Hebrew font is used with permission. See <a href="https://www.sbl-site.org/assets/pdfs/SBL_Font_End_User_License_Agreement.pdf">SBL Font End User License Agreement</a>.</p>
-	</div>
+		<li> Shin and Sin are presented in two ways. Using the Hebrew (SIL)
+			keyboard, on <span style="color:blue">MacOS</span>, the two letters
+			are <span class="hebg" dir="rtl">שׁ</span> <b>\uFB2A {Shin with Shin Dot}</b> and <span class="hebg" dir="rtl">שׂ</span> <b>\uFB2B {Shin with Sin
+				Dot}</b>. If you are on <span style="color:blue">Windows</span> or
+			<span style="color:blue">mobile devices</span>, they are presented as <span class="heb" dir="rtl">שׁ</span>
+			<b>\u05E9 \u05C1 {Shin}{Shin Dot}</b> and <span class="heb" dir="rtl">שׂ</span> <b>\u05E9 \u05C2 {Shin}{Sin
+				Dot}</b> respectively.
+		</li>
+
+	</ul>
+	<p class="bottom">* The SBL Hebrew font is used with permission. See <a href="https://www.sbl-site.org/assets/pdfs/SBL_Font_End_User_License_Agreement.pdf">SBL Font End User License Agreement</a>.</p>
 	<script>
 		function checkHebrew() {
 			var inputString = document.getElementById("hebrew").value;
