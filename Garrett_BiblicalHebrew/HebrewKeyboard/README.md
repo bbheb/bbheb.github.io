@@ -62,4 +62,5 @@ These layers follow the Hebrew (SIL) keyboard mapping. It is for more complicate
 
 ![Norml, Shift, Opt, Opt-Shift Layers](https://i.imgur.com/1FG2cMm.jpg)
 
-@Martin
+
+The SBL Hebrew font is used with permission. See [SBL Font End User License Agreement](https://www.sbl-site.org/assets/pdfs/SBL_Font_End_User_License_Agreement.pdf).
