@@ -3,13 +3,11 @@
 If you need to type on Mac or Win, please follow the video tutorials:
 - [Install the Hebrew (SIL) keyboard on Windows](https://youtu.be/vCKhVxT0oTY)
 - [Install the Hebrew (SIL) keyboard on MacOS](https://youtu.be/LN7S15-Un7s)
-
-You will need to visit the [SBL official site](https://www.sbl-site.org/educational/biblicalfonts_sblhebrew.aspx) to download the keyboard installation file.
+  - Please visit the [SBL official site](https://www.sbl-site.org/educational/biblicalfonts_sblhebrew.aspx) to download the keyboard installation file as you follow the above tutorials.
 
 ### Also, please read the [Instructions for Typing Hebrew](https://github.com/martinmts/BiblicalHebrew/tree/main/HebrewKeyboard/InstructionsForTypingHebrew.md)!
 
 After installation, you may test your Hebrew typing at [Hebrew Typing Test](https://martinmts.github.io/BiblicalHebrew/HebrewTypingTest/).
-<br/>
 <br/>
 
 ## Steps to install the keyboard for iOS and android devices
