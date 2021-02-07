@@ -8,7 +8,7 @@ You will need to visit the [SBL official site](https://www.sbl-site.org/educatio
 
 ### Also, please read the [Instructions for Typing Hebrew](https://github.com/martinmts/BiblicalHebrew/blob/main/Garrett_BiblicalHebrew/HebrewKeyboard/InstructionsForTypingHebrew.md)!
 
-After installation, you may test your Hebrew typing at [Hebrew Typing Test](https://martinmts.github.io/HebrewTypingTest/).
+After installation, you may test your Hebrew typing at [Hebrew Typing Test](https://martinmts.github.io/BiblicalHebrew/HebrewTypingTest/).
 <br/>
 <br/>
 
