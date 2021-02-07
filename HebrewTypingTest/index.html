@@ -3,11 +3,11 @@
 
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-	<title>Type Hebrew Text</title>
+	<title>Hebrew Typing Test</title>
 	<style>
 		@font-face {
-			font-family: SBL Hebrew;
-			src: url('SBL_Hbrw.ttf');
+			font-family: "SBL Hebrew";
+			src: url('https://github.com/martinmts/HebrewTypingTest/blob/main/SBL_Hbrw.ttf');
 		}
 
 		body {
@@ -49,18 +49,21 @@
 			background-color: red;
 			font-family:"SBL Hebrew"; font-size:24px;
 		}
+		.hebt {
+			font-family:"SBL Hebrew"; font-size:30px; text-align:center;
+		}
 	</style>
 </head>
 
 <body>
 	<div id="wholepage">
 		<h1> Hebrew Typing Test </h1>
-		<p style="font-family:SBL Hebrew; font-size:30px; text-align:center;" ; dir="rtl"> שָׁלוֹם</p>
+		<p class="hebt" dir="rtl"> שָׁלוֹם</p>
 		<p> Type Hebrew consonants, vowels, or cantillation marks in the box
 			below, it will show you the names of what you typed as well as their
 			Unicode values.</p>
-		<h1> Please Type or Paste Hebrew words in the box below:<br>
-		</h1>
+		<h2> Please Type or Paste Hebrew words in the box below:<br>
+		</h2>
 		<input id="hebrew" oninput="checkHebrew()" dir="rtl" autofocus="" type="text">
 		<p></p>
 		<p style="font-size:30px">You typed:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span id="resultName" style="color:red;"></span>
@@ -84,10 +87,10 @@
 				</li>
 				<ul>
 					<li>
-					Type Holem Waw <span class="hebg" dir="rtl">וֹ</span> as Waw <span class="heb" dir="rtl">ו</span> followed by Holem <span class="heb" dir="rtl">◌ֹ</span>. Type Shureq <span class="hebg" dir="rtl">וּ</span> as Waw <span class="heb" dir="rtl">ו</span> followed by Dagesh <span class="heb" dir="rtl" >◌ּ</span>. 
+					Type Holem Waw <span class="hebg" dir="rtl">וֹ</span> as Waw <span class="heb" dir="rtl">ו</span> followed by Holem <span class="heb" dir="rtl">◌ֹ</span>. Type Shureq <span class="hebg" dir="rtl">וּ</span> as Waw <span class="heb" dir="rtl">ו</span> followed by Dagesh <span class="heb" dir="rtl" >◌ּ</span>.
 					</li>
 					<li>
-					If you use the recommended Hebrew (SIL) keyboard, you will not have this issue. If you use another keyboard, or if you copy Hebrew from elsewhere, you <i>may</i> encounter this issue. 
+					If you use the recommended Hebrew (SIL) keyboard, you will not have this issue. If you use another keyboard, or if you copy Hebrew from elsewhere, you <i>may</i> encounter this issue.
 					</li>
 				</ul>
 				<li> If you typed non-Hebrew letters, it will tell you that what you
@@ -102,8 +105,9 @@
 				<b>\u05E9 \u05C1 {Shin}{Shin Dot}</b> and <span class="heb" dir="rtl">שׂ</span> <b>\u05E9 \u05C2 {Shin}{Sin
 					Dot}</b> respectively.
 			</li>
-			
+
 		</ul>
+		<p style="font-size:10px">* The SBL Hebrew font is used with permission. See <a href="https://www.sbl-site.org/assets/pdfs/SBL_Font_End_User_License_Agreement.pdf">SBL Font End User License Agreement</a>.</p>
 	</div>
 	<script>
 		function checkHebrew() {
