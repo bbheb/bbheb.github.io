@@ -28,6 +28,10 @@ ul ol {
   line-height:120%;
 }
 
+.Exam {
+  font-color:red;
+}
+
 .heb {
   font-family: "SBL Hebrew";
   font-size: 24px;
