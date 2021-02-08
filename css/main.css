@@ -2,9 +2,7 @@
   font-family: "SBL Hebrew";
   src: url('SBL_Hbrw.ttf');
 }
-ul {
-  line-height:120%}
-}
+
 body {
   background-color: silver;
   max-width: 800px;
@@ -27,6 +25,7 @@ p {
 
 ul {
   font-size: 18px;
+  line-height:120%;
 }
 
 .heb {
