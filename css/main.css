@@ -28,6 +28,11 @@ ul {
 }
 
 .heb {
+  font-family: "SBL Hebrew";
+  font-size: 24px;
+}
+
+.heby {
   background-color: yellow;
   font-family: "SBL Hebrew";
   font-size: 24px;
