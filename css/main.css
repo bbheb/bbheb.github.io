@@ -2,7 +2,9 @@
   font-family: "SBL Hebrew";
   src: url('SBL_Hbrw.ttf');
 }
-
+* {
+  line-height:120%}
+}
 body {
   background-color: silver;
   max-width: 800px;
