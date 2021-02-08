@@ -6,6 +6,8 @@
   2. Type the daghesh, if there is one. Dagesh Forte and Dagesh Lene use the same key.
   3. Type the vowel. Always type the vowel *after* the consonant!
      - Type וּ as ו followed by daghesh, and וֹ as ו followed by holem.
+     - Use "O" for Holem.
+     - Do not type "Shift + O" for Holem. It is for Holem going with the consonantal Waw. It is not needed in this class.
   4. If the word has a furtive pathach, type the furtive pathach AFTER Ayin (although it is always pronounced before Ayin), e.g., שְׁמֹעַ. (If you typed the pathach before Ayin, it will end up like שְׁמַֹע, which is incorrect).‬‬‬
 
   **If you do not follow this order, a Canvas exam may read it as incorrect.**
