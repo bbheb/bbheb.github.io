@@ -20,7 +20,11 @@ input {
 }
 
 h1 {
-  color:darkorange;
+  color:magenta;
+}
+
+h2 {
+  color: gold;
 }
 p {
   font-size: 18px;
