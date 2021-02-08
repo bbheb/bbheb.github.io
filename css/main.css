@@ -19,6 +19,9 @@ input {
   height: 70px;
 }
 
+h1 {
+  color:darkorange;
+}
 p {
   font-size: 18px;
 }
