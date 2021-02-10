@@ -40,6 +40,9 @@ ul ol li {
   color: red;
 }
 
+.max{width:100%;height:auto;}   /* for img */
+.min{width:100px;height:auto;}  /* for img */
+
 .heb {
   font-family: "SBL Hebrew";
   font-size: 24px;
