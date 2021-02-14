@@ -4,9 +4,11 @@
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 	<title>Hebrew Typing Test</title>
-	<link rel="stylesheet" href="/BiblicalHebrew/css/main.css">
-	<!-- <link rel="stylesheet" href="styles.css"> -->
-	<script src="checkHebrew.js"></script>
+	<script src="/BiblicalHebrew/js/checkHebrew.js"></script>
+	<link href="/BiblicalHebrew/css/bootstrap-4.5.2.min.css" rel="stylesheet">
+	<script src="/BiblicalHebrew/js/jquery-3.5.1.min.js"></script>
+	<script src="/BiblicalHebrew/js/bootstrap-4.5.2.min.js"></script>
+	<link href="/BiblicalHebrew/css/main.css" rel="stylesheet">
 </head>
 
 <body>
@@ -30,6 +32,10 @@
 	<ul id="note">
 		<li> Please use <a href="https://github.com/martinmts/BiblicalHebrew/tree/main/HebrewKeyboard">the
 				Hebrew (SIL) keyboard</a>. </li>
+
+		<li><button type="button" class="btn btn-warning" data-toggle="collapse" data-target="#notacceptheb">Some Hebrew Letters are NOT accepted!</button></li>
+		<div id="notacceptheb" class="collapse alert alert-info">
+		<ul>
 		<li>It accepts inputs that fall in the Unicode range of <b>\u0591–\u05EA</b>.
 			It does not accept the letters fall in the range of <b>\u05F0–\u05F2</b>
 			and <b>\uFB1D–\uFB4F</b>, except for \uFB2A (Shin with Shin Dot) and
@@ -56,6 +62,9 @@
 				typed is <span style="color:red">not Hebrew </span>. This includes
 				the punctuation marks that are used in the Hebrew keyboards. </li>
 		</ul>
+		</ul>
+		</div>
+
 		<li> Shin and Sin are presented in two ways. Using the Hebrew (SIL)
 			keyboard, on <span style="color:blue">MacOS</span>, the two letters
 			are <span class="hebg" dir="rtl">שׁ</span> <b>\uFB2A {Shin with Shin Dot}</b> and <span class="hebg" dir="rtl">שׂ</span> <b>\uFB2B {Shin with Sin
