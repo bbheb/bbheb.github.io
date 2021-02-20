@@ -1,5 +1,5 @@
   function checkHebrew() {
-    var inputString = document.getElementById("hebrew").value;
+    var inputString = document.getElementById("hebrewtypingtest").value;
     var resCode = document.getElementById("resultCode");
     var resName = document.getElementById("resultName");
     var strUnicode = toUnicode(inputString);

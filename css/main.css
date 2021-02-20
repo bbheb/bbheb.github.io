@@ -13,7 +13,14 @@ body {
   margin: 0 auto;
 }
 
-input {
+input.consonants {
+  font-family: "SBL Hebrew";
+  font-size: 40px;
+  width: 50px;
+  height: 40px;
+}
+
+input.hebrewtypingtest {
   font-family: "SBL Hebrew";
   font-size: 60px;
   width: 650px;

@@ -1,0 +1,147 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <!--  metadata goes here   -->
+  <meta charset=UTF-8>
+  <title>Hebrew Consonants</title>
+  <link href="../../css/bootstrap-4.5.2.min.css" rel="stylesheet">
+  <script src="../../js/jquery-3.5.1.min.js"></script>
+  <script src="../../js/bootstrap-4.5.2.min.js"></script>
+  <link rel="stylesheet" href="../../css/main.css">
+  <script src="../../js/checkAns.js"></script>
+
+</head>
+
+<body>
+  <h1>Hebrew Consonants Typing Practice</h1>
+  <br>
+  <h2>Type the Hebrew alphabet in the table below.</h2>
+  <br>
+  <p>Note: Type the Alephabet from right to left.</p>
+  <br>
+  <table class="table table-bordered">
+    <colgroup>
+    </colgroup>
+    <thead>
+      <tr>
+        <!--- row 0 - head row --->
+        <th>10</th>
+        <th>9</th>
+        <th>8</th>
+        <th>7</th>
+        <th>6</th>
+        <th>5</th>
+        <th>4</th>
+        <th>3</th>
+        <th>2</th>
+        <th>1</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <!--- row 1 --->
+        <td><input class="consonants" type="text" id="Yod" oninput="testCon('Yod','YodR')"></td>
+        <td><input class="consonants" type="text" id="Tet" oninput="testCon('Tet','TetR')"></td>
+        <td><input class="consonants" type="text" id="Het" oninput="testCon('Het','HetR')"></td>
+        <td><input class="consonants" type="text" id="Zayin" oninput="testCon('Zayin','ZayinR')"></td>
+        <td><input class="consonants" type="text" id="Waw" oninput="testCon('Waw','WawR')"></td>
+        <td><input class="consonants" type="text" id="Hey" oninput="testCon('Hey','HeyR')"></td>
+        <td><input class="consonants" type="text" id="Daleth" oninput="testCon('Daleth','DalethR')"></td>
+        <td><input class="consonants" type="text" id="Gimel" oninput="testCon('Gimel','GimelR')"></td>
+        <td><input class="consonants" type="text" id="Beth" oninput="testCon('Beth','BethR')"></td>
+        <td><input class="consonants" type="text" id="Aleph" oninput="testCon('Aleph','AlephR')"></td>
+      </tr>
+      <tr>
+        <td id="YodR">Result</td>
+        <td id="TetR">Result</td>
+        <td id="HetR">Result</td>
+        <td id="ZayinR">Result</td>
+        <td id="WawR">Result</td>
+        <td id="HeyR">Result</td>
+        <td id="DalethR">Result</td>
+        <td id="GimelR">Result</td>
+        <td id="BethR">Result</td>
+        <td id="AlephR">Result</td>
+      </tr>
+      <tr>
+        <!--- row 3 - head row --->
+        <th>20</th>
+        <th>19</th>
+        <th>18</th>
+        <th>17</th>
+        <th>16</th>
+        <th>15</th>
+        <th>14</th>
+        <th>13</th>
+        <th>12</th>
+        <th>11</th>
+      </tr>
+      <tr>
+        <!--- row 4 --->
+        <td><input class="consonants" type="text" id="Resh" oninput="testCon('Resh','ReshR')"></td>
+        <td><input class="consonants" type="text" id="Qoph" oninput="testCon('Qoph','QophR')"></td>
+        <td><input class="consonants" type="text" id="Tsade" oninput="testCon('Tsade','TsadeR')"></td>
+        <td><input class="consonants" type="text" id="Peh" oninput="testCon('Peh','PehR')"></td>
+        <td><input class="consonants" type="text" id="Ayin" oninput="testCon('Ayin','AyinR')"></td>
+        <td><input class="consonants" type="text" id="Samek" oninput="testCon('Samek','SamekR')"></td>
+        <td><input class="consonants" type="text" id="Nun" oninput="testCon('Nun','NunR')"></td>
+        <td><input class="consonants" type="text" id="Mem" oninput="testCon('Mem','MemR')"></td>
+        <td><input class="consonants" type="text" id="Lamed" oninput="testCon('Lamed','LamedR')"></td>
+        <td><input class="consonants" type="text" id="Kaph" oninput="testCon('Kaph','KaphR')"></td>
+      </tr>
+      <tr>
+        <td id="ReshR">Result</td>
+        <td id="QophR">Result</td>
+        <td id="TsadeR">Result</td>
+        <td id="PehR">Result</td>
+        <td id="AyinR">Result</td>
+        <td id="SamekR">Result</td>
+        <td id="NunR">Result</td>
+        <td id="MemR">Result</td>
+        <td id="LamedR">Result</td>
+        <td id="KaphR">Result</td>
+      </tr>
+      <tr>
+        <!--- row 3 - head row --->
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th>23</th>
+        <th>22</th>
+        <th>21</th>
+      </tr>
+      <tr>
+        <!--- row 4 --->
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><input class="consonants" type="text" id="Taw" oninput="testCon('Taw','TawR')"></td>
+        <td><input class="consonants" type="text" id="Shin" oninput="testCon('Shin','ShinR')"></td>
+        <td><input class="consonants" type="text" id="Sin" oninput="testCon('Sin','SinR')"></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td id="TawR">Result</td>
+        <td id="ShinR">Result</td>
+        <td id="SinR">Result</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+
+</html>
