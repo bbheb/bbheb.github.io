@@ -1,0 +1,220 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <!--  metadata goes here   -->
+  <meta charset=UTF-8>
+  <title>Hebrew Vowels</title>
+  <link href="../../css/bootstrap-4.5.2.min.css" rel="stylesheet">
+  <script src="../../js/jquery-3.5.1.min.js"></script>
+  <script src="../../js/bootstrap-4.5.2.min.js"></script>
+  <link rel="stylesheet" href="../../css/main.css">
+  <script src="../../js/checkAns.js"></script>
+  <style>
+    .heb {
+      font-size:28px;
+    }
+    input {
+      text-align: center;
+    }
+    table th, td {
+      border-collapse: collapse;
+      border-spacing: 0;
+      border: 1px solid grey;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Hebrew Vowels Practice</h1>
+  <br>
+  <h2>Fill in the blanks</h2>
+  <br>
+  <table style="text-align:center; width:100%">
+    <colgroup>
+      <col style="width: 50px">
+      <col style="width: 60px">
+      <col style="width: 40px">
+      <col style="width: 40px">
+      <col style="width: 40px">
+      <col style="width: 40px">
+      <col style="width: 40px">
+      <col style="width: 80px">
+    </colgroup>
+    <thead>
+      <tr>
+        <!--- row 0 - head row --->
+        <th>Symbol</th>
+        <th colspan="2">Name</th>
+        <th colspan="2">Class</th>
+        <th colspan="2">Length/Quantity</th>
+        <th>Sound</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <!--- row 1 --->
+        <td><span class="heb" dir="rtl">◌ַ</span></td>
+        <td><input type="text" id="v1" oninput="testVow('v1', 'v1r')"></td>
+        <td id='v1r'></td>
+        <td><input type="text" id="v2" oninput="testVow('v2', 'v2r')"></td>
+        <td id='v2r'></td>
+        <td><input type="text" id="v3" oninput="testVow('v3', 'v3r')"></td>
+        <td id='v3r'></td>
+        <td><b>A</b> of cat</td>
+      </tr>
+      <tr>
+        <!--- row 2 --->
+        <td><span class="heb" dir="rtl">◌ָ</span></td>
+        <td><input type="text" id="v4" oninput="testVow('v4', 'v4r')"></td>
+        <td id='v4r'></td>
+        <td><input type="text" id="v5" oninput="testVow('v5', 'v5r')"></td>
+        <td id='v5r'></td>
+        <td>Long</td>
+        <td></td>
+        <td><b>A</b> of father</td>
+      </tr>
+      <tr>
+        <!--- row 3 --->
+        <td><span class="heb" dir="rtl">◌ִ</span></td>
+        <td><input type="text" id="v7" oninput="testVow('v7', 'v7r')"></td>
+        <td id='v7r'></td>
+        <td><input type="text" id="v8" oninput="testVow('v8', 'v8r')"></td>
+        <td id='v8r'></td>
+        <td><input type="text" id="v9" oninput="testVow('v9', 'v9r')"></td>
+        <td id='v9r'></td>
+        <td><b>I</b> of hit</td>
+      </tr>
+      <tr>
+        <!--- row 4 --->
+        <td><span class="heb" dir="rtl">◌ֶ</span></td>
+        <td><input type="text" id="v10" oninput="testVow('v10', 'v10r')"></td>
+        <td id='v10r'></td>
+        <td><input type="text" id="v11" oninput="testVow('v11', 'v11r')"></td>
+        <td id='v11r'></td>
+        <td><input type="text" id="v12" oninput="testVow('v12', 'v12r')"></td>
+        <td id='v12r'></td>
+        <td><b>E</b> of set</td>
+      </tr>
+      <tr>
+        <!--- row 5 --->
+        <td><span class="heb" dir="rtl">◌ֵ</span></td>
+        <td><input type="text" id="v13" oninput="testVow('v13', 'v13r')"></td>
+        <td id='v13r'></td>
+        <td><input type="text" id="v14" oninput="testVow('v14', 'v14r')"></td>
+        <td id='v14r'></td>
+        <td><input type="text" id="v15" oninput="testVow('v15', 'v15r')"></td>
+        <td id='v15r'></td>
+        <td><b>E</b> of hey</td>
+      </tr>
+      <tr>
+        <!--- row 6 --->
+        <td><span class="heb" dir="rtl">◌ֻ</span></td>
+        <td><input type="text" id="v16" oninput="testVow('v16', 'v16r')"></td>
+        <td id='v16r'></td>
+        <td><input type="text" id="v17" oninput="testVow('v17', 'v17r')"></td>
+        <td id='v17r'></td>
+        <td><input type="text" id="v18" oninput="testVow('v18', 'v18r')"></td>
+        <td id='v18r'></td>
+        <td><b>U</b> of cut</td>
+      </tr>
+      <tr>
+        <!--- row 7 --->
+        <td><span class="heb" dir="rtl">◌ֹ</span></td>
+        <td><input type="text" id="v19" oninput="testVow('v19', 'v19r')"></td>
+        <td id='v19r'></td>
+        <td><input type="text" id="v20" oninput="testVow('v20', 'v20r')"></td>
+        <td id='v20r'></td>
+        <td><input type="text" id="v21" oninput="testVow('v21', 'v21r')"></td>
+        <td id='v21r'></td>
+        <td><b>O</b> of whole</td>
+      </tr>
+      <tr>
+        <!--- row 8 --->
+        <td><span class="heb" dir="rtl">◌ׇ</span></td>
+        <td><input type="text" id="v22" oninput="testVow('v22', 'v22r')"></td>
+        <td id='v22r'></td>
+        <td><input type="text" id="v23" oninput="testVow('v23', 'v23r')"></td>
+        <td id='v23r'></td>
+        <td>Short</td>
+        <td></td>
+        <td><b>O</b> of tote</td>
+      </tr>
+    </tbody>
+  </table>
+  <br>
+
+<h2>Fill in the blanks</h2>
+<!-- Reduced Vowels -->
+<table style="text-align:center;">
+  <colgroup>
+    <col style="width: 50px">
+    <col style="width: 60px">
+    <col style="width: 40px">
+    <col style="width: 40px">
+    <col style="width: 40px">
+    <col style="width: 40px">
+    <col style="width: 40px">
+    <col style="width: 80px">
+  </colgroup>
+  <thead>
+    <tr>
+      <!--- row 0 - head row --->
+      <th>Symbol</th>
+      <th colspan="2">Name</th>
+      <th colspan="2">Class</th>
+      <th colspan="2">Length/Quantity</th>
+      <th>Sound</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <!--- row 1 --->
+      <td><span class="heb" dir="rtl">◌ְ</span></td>
+      <td><input type="text" id="v25" oninput="testVow('v25', 'v25r')"></td>
+      <td id='v25r'></td>
+      <td>No class</td>
+      <td></td>
+      <td><input type="text" id="v26" oninput="testVow('v26', 'v26r')"></td>
+      <td id='v26r'></td>
+      <td><b>E</b> of bEcause</td>
+    </tr>
+    <tr>
+      <!--- row 2 --->
+      <td><span class="heb" dir="rtl">◌ֲ</span></td>
+      <td><input type="text" id="v28" oninput="testVow('v28', 'v28r')"></td>
+      <td id='v28r'></td>
+      <td><input type="text" id="v29" oninput="testVow('v29', 'v29r')"></td>
+      <td id='v29r'></td>
+      <td><input type="text" id="v30" oninput="testVow('v30', 'v30r')"></td>
+      <td id='v30r'></td>
+      <td><b>A</b> of aside</td>
+    </tr>
+    <tr>
+      <!--- row 3 --->
+      <td><span class="heb" dir="rtl">◌ֱ</span></td>
+      <td><input type="text" id="v31" oninput="testVow('v31', 'v31r')"></td>
+      <td id='v31r'></td>
+      <td><input type="text" id="v32" oninput="testVow('v32', 'v32r')"></td>
+      <td id='v32r'></td>
+      <td><input type="text" id="v33" oninput="testVow('v33', 'v33r')"></td>
+      <td id='v33r'></td>
+      <td><b>E</b> of mechanic</td>
+    </tr>
+    <tr>
+      <!--- row 4 --->
+      <td><span class="heb" dir="rtl">◌ֳ</span></td>
+      <td><input type="text" id="v34" oninput="testVow('v34', 'v34r')"></td>
+      <td id='v34r'></td>
+      <td><input type="text" id="v35" oninput="testVow('v35', 'v35r')"></td>
+      <td id='v35r'></td>
+      <td><input type="text" id="v36" oninput="testVow('v36', 'v36r')"></td>
+      <td id='v36r'></td>
+      <td><b>O</b> of tomato</td>
+    </tr>
+  </tbody>
+</table>
+
+</body>
+
+</html>
