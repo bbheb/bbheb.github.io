@@ -1,0 +1,168 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <!--  metadata goes here   -->
+  <meta charset=UTF-8>
+  <title>Hebrew Pronouns Pattern</title>
+  <link href="../../css/bootstrap-4.5.2.min.css" rel="stylesheet">
+  <script src="../../js/jquery-3.5.1.min.js"></script>
+  <script src="../../js/bootstrap-4.5.2.min.js"></script>
+  <link rel="stylesheet" href="../../css/main.css">
+  <script src="../../js/checkAns.js"></script>
+  <style>
+    .heb {
+      font-size:28px;
+    }
+    input {
+      font-family: 'SBL Hebrew';
+      font-size: 24px;
+      text-align: center;
+    }
+    table th, td {
+      border-collapse: collapse;
+      border-spacing: 0;
+      border: 1px solid grey;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Hebrew Pronouns Paradigm Practice</h1>
+  <br>
+  <h2>Fill in the blanks</h2>
+  <p>Type the forms of Hebrew Demonstrative Pronouns</p>
+  <ul>
+    <li>Do not type the accent or metheg.</li>
+  </ul>
+  <br>
+  <table style="text-align:center; width:100%">
+    <colgroup>
+      <col style="width: 50px">
+      <col style="width: 60px">
+      <col style="width: 50px">
+      <col style="width: 60px">
+      <col style="width: 50px">
+    </colgroup>
+    <thead>
+      <tr>
+        <!--- row 0 --->
+        <th colspan="5">Near Demonstratives</th>
+      </tr>
+      <tr>
+        <!--- row 0 - head row --->
+        <th></th>
+        <th colspan="2">Singular</th>
+        <th colspan="2">Plural</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <!--- row 1 --->
+        <td><b>Masculine</b></td>
+        <td><input type="text" id="v1" oninput="testPronoun('v1', 'v1r')"></td>
+        <td id='v1r'>❓</td>
+        <td rowspan="2"><input type="text" id="v2" oninput="testPronoun('v2', 'v2r')"></td>
+        <td rowspan="2" id='v2r'>❓</td>
+      </tr>
+      <tr>
+        <!--- row 2 --->
+        <td><b>Feminine</b></td>
+        <td><input type="text" id="v3" oninput="testPronoun('v3', 'v3r')"></td>
+        <td id='v3r'>❓</td>
+      </tr>
+      <tr>
+        <!--- row 0 --->
+        <th colspan="5">Far Demonstratives</th>
+      </tr>
+      <tr>
+        <!--- row 0 - head row --->
+        <th></th>
+        <th colspan="2">Singular</th>
+        <th colspan="2">Plural</th>
+      </tr>
+      <tr>
+        <!--- row 3 --->
+        <td><b>Masculine</b></td>
+        <td><input type="text" id="v5" oninput="testPronoun('v5', 'v5r')"></td>
+        <td id='v5r'>❓</td>
+        <td><input type="text" id="v6" oninput="testPronoun('v6', 'v6r')"></td>
+        <td id='v6r'>❓</td>
+      </tr>
+      <tr>
+        <!--- row 4 --->
+        <td><b>Feminine</b></td>
+        <td><input type="text" id="v7" oninput="testPronoun('v7', 'v7r')"></td>
+        <td id='v7r'>❓</td>
+        <td><input type="text" id="v8" oninput="testPronoun('v8', 'v8r')"></td>
+        <td id='v8r'>❓</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <br>
+  <h2>Fill in the blanks</h2>
+  <p>Type the forms of Hebrew Subject Pronouns</p>
+  <table style="text-align:center; width:100%">
+    <colgroup>
+      <col style="width: 50px">
+      <col style="width: 60px">
+      <col style="width: 50px">
+      <col style="width: 60px">
+      <col style="width: 50px">
+    </colgroup>
+    <thead>
+      <tr>
+        <!--- row 0 - head row --->
+        <th></th>
+        <th colspan="2">Singular</th>
+        <th colspan="2">Plural</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <!--- row 1 --->
+        <td><b>3m</b></td>
+        <td><input type="text" id="v11" oninput="testPronoun('v11', 'v11r')"></td>
+        <td id='v11r'>❓</td>
+        <td><input type="text" id="v12" oninput="testPronoun('v12', 'v12r')"></td>
+        <td id='v12r'>❓</td>
+      </tr>
+      <tr>
+        <!--- row 2 --->
+        <td><b>3f</b></td>
+        <td><input type="text" id="v13" oninput="testPronoun('v13', 'v13r')"></td>
+        <td id='v13r'>❓</td>
+        <td><input type="text" id="v14" oninput="testPronoun('v14', 'v14r')"></td>
+        <td id='v14r'>❓</td>
+      </tr>
+      <tr>
+        <!--- row 3 --->
+        <td><b>2m</b></td>
+        <td><input type="text" id="v15" oninput="testPronoun('v15', 'v15r')"></td>
+        <td id='v15r'>❓</td>
+        <td><input type="text" id="v16" oninput="testPronoun('v16', 'v16r')"></td>
+        <td id='v16r'>❓</td>
+      </tr>
+      <tr>
+        <!--- row 4 --->
+        <td><b>2f</b></td>
+        <td><input type="text" id="v17" oninput="testPronoun('v17', 'v17r')"></td>
+        <td id='v17r'>❓</td>
+        <td><input type="text" id="v18" oninput="testPronoun('v18', 'v18r')"></td>
+        <td id='v18r'>❓</td>
+      </tr>
+      <tr>
+        <!--- row 5 --->
+        <td><b>1c</b></td>
+        <td><input type="text" id="v19" oninput="testPronoun('v19', 'v19r')"></td>
+        <td id='v19r'>❓</td>
+        <td><input type="text" id="v20" oninput="testPronoun('v20', 'v20r')"></td>
+        <td id='v20r'>❓</td>
+      </tr>
+    </tbody>
+  </table>
+  <br>
+</body>
+
+</html>

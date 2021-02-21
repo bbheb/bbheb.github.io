@@ -1,0 +1,160 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <!--  metadata goes here   -->
+  <meta charset=UTF-8>
+  <title>Hebrew Piel Paradigms</title>
+  <link href="../../css/bootstrap-4.5.2.min.css" rel="stylesheet">
+  <script src="../../js/jquery-3.5.1.min.js"></script>
+  <script src="../../js/bootstrap-4.5.2.min.js"></script>
+  <link rel="stylesheet" href="../../css/main.css">
+  <script src="../../js/checkAns.js"></script>
+  <style>
+    .heb {
+      font-size:28px;
+    }
+    input {
+      font-family: 'SBL Hebrew';
+      font-size: 24px;
+      text-align: center;
+    }
+    table th, td {
+      border-collapse: collapse;
+      border-spacing: 0;
+      border: 1px solid grey;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Hebrew Piel Paradigms Practice</h1>
+  <br>
+  <h2>Fill in the blanks</h2>
+  <p>Type the Piel Qatal forms of <span class="heb" dir="rtl">קטל</span></p>
+  <ul>
+    <li>Do not type the accent or metheg.</li>
+  </ul>
+  <table style="text-align:center; width:100%">
+    <colgroup>
+      <col style="width: 50px">
+      <col style="width: 60px">
+      <col style="width: 50px">
+      <col style="width: 60px">
+      <col style="width: 50px">
+    </colgroup>
+    <thead>
+      <tr>
+        <!--- row 0 - head row --->
+        <th></th>
+        <th colspan="2">Singular</th>
+        <th colspan="2">Plural</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <!--- row 1 --->
+        <td><b>3m</b></td>
+        <td><input type="text" id="v1" oninput="testPiel('v1', 'v1r')"></td>
+        <td id='v1r'>❓</td>
+        <td rowspan="2"><input type="text" id="v2" oninput="testPiel('v2', 'v2r')"></td>
+        <td rowspan="2" id='v2r'>❓</td>
+      </tr>
+      <tr>
+        <!--- row 2 --->
+        <td><b>3f</b></td>
+        <td><input type="text" id="v3" oninput="testPiel('v3', 'v3r')"></td>
+        <td id='v3r'>❓</td>
+      </tr>
+      <tr>
+        <!--- row 3 --->
+        <td><b>2m</b></td>
+        <td><input type="text" id="v4" oninput="testPiel('v4', 'v4r')"></td>
+        <td id='v4r'>❓</td>
+        <td><input type="text" id="v5" oninput="testPiel('v5', 'v5r')"></td>
+        <td id='v5r'>❓</td>
+      </tr>
+      <tr>
+        <!--- row 4 --->
+        <td><b>2f</b></td>
+        <td><input type="text" id="v6" oninput="testPiel('v6', 'v6r')"></td>
+        <td id='v6r'>❓</td>
+        <td><input type="text" id="v7" oninput="testPiel('v7', 'v7r')"></td>
+        <td id='v7r'>❓</td>
+      </tr>
+      <tr>
+        <!--- row 5 --->
+        <td><b>1c</b></td>
+        <td><input type="text" id="v8" oninput="testPiel('v8', 'v8r')"></td>
+        <td id='v8r'>❓</td>
+        <td><input type="text" id="v9" oninput="testPiel('v9', 'v9r')"></td>
+        <td id='v9r'>❓</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <br>
+  <h2>Fill in the blanks</h2>
+  <p>Type the Piel Yiqtol forms of <span class="heb" dir="rtl">קטל</span></p>
+  <table style="text-align:center; width:100%">
+    <colgroup>
+      <col style="width: 50px">
+      <col style="width: 60px">
+      <col style="width: 50px">
+      <col style="width: 60px">
+      <col style="width: 50px">
+    </colgroup>
+    <thead>
+      <tr>
+        <!--- row 0 - head row --->
+        <th></th>
+        <th colspan="2">Singular</th>
+        <th colspan="2">Plural</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <!--- row 1 --->
+        <td><b>3m</b></td>
+        <td><input type="text" id="v10" oninput="testPiel('v10', 'v10r')"></td>
+        <td id='v10r'>❓</td>
+        <td><input type="text" id="v11" oninput="testPiel('v11', 'v11r')"></td>
+        <td id='v11r'>❓</td>
+      </tr>
+      <tr>
+        <!--- row 2 --->
+        <td><b>3f</b></td>
+        <td><input type="text" id="v12" oninput="testPiel('v12', 'v12r')"></td>
+        <td id='v12r'>❓</td>
+        <td><input type="text" id="v13" oninput="testPiel('v13', 'v13r')"></td>
+        <td id='v13r'>❓</td>
+      </tr>
+      <tr>
+        <!--- row 3 --->
+        <td><b>2m</b></td>
+        <td><input type="text" id="v14" oninput="testPiel('v14', 'v14r')"></td>
+        <td id='v14r'>❓</td>
+        <td><input type="text" id="v15" oninput="testPiel('v15', 'v15r')"></td>
+        <td id='v15r'>❓</td>
+      </tr>
+      <tr>
+        <!--- row 4 --->
+        <td><b>2f</b></td>
+        <td><input type="text" id="v16" oninput="testPiel('v16', 'v16r')"></td>
+        <td id='v16r'>❓</td>
+        <td><input type="text" id="v17" oninput="testPiel('v17', 'v17r')"></td>
+        <td id='v17r'>❓</td>
+      </tr>
+      <tr>
+        <!--- row 5 --->
+        <td><b>1c</b></td>
+        <td><input type="text" id="v18" oninput="testPiel('v18', 'v18r')"></td>
+        <td id='v18r'>❓</td>
+        <td><input type="text" id="v19" oninput="testPiel('v19', 'v19r')"></td>
+        <td id='v19r'>❓</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+
+</html>
