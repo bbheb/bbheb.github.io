@@ -3,7 +3,9 @@ function testAns(id, idR, ansObj){
   var ans = ansObj[id];
   var input = document.getElementById(id).value.toLowerCase();
   var mark = document.getElementById(idR);
-  if (input == ans) {
+  if (input == '') {
+    mark.innerHTML = '❓';
+  } else if (input == ans) {
     mark.innerHTML = '✅';
   } else {
     mark.innerHTML = '❌';
@@ -13,7 +15,9 @@ function testAns(id, idR, ansObj){
 function testAnsInput(id, idR, ansObj, input){
   var ans = ansObj[id];
   var mark = document.getElementById(idR);
-  if (input == ans) {
+  if (input == '') {
+    mark.innerHTML = '❓';
+  } else if (input == ans) {
     mark.innerHTML = '✅';
   } else {
     mark.innerHTML = '❌';
@@ -45,5 +49,15 @@ function testNoun(id, idR) {
 
 function testQalQatal(id, idR) {
   var ansObj = {v1:'קָטַל',v2:'קָטְלוּ',v3:'קָטְלָה',v4:'קָטַלְתָּ',v5:'קְטַלְתֶּם',v6:'קָטַלְתְּ',v7:'קְטַלְתֶּן',v8:'קָטַלְתִּי',v9:'קָטַלְנוּ',v10:'בָּנָה',v11:'בָּנוּ',v12:'בָּנְתָה',v13:'בָּנִיתָ',v14:'בְּנִיתֶם',v15:'בָּנִית',v16:'בְּנִיתֶן',v17:'בָּנִיתִי',v18:'בָּנִינוּ'};
+  testAns(id, idR, ansObj);
+}
+
+function testQalYiqtol(id, idR) {
+  var ansObj = {v1:'יִקְטֹל',v2:'יִקְטְלוּ',v3:'תִּקְטֹל',v4:'תִּקְטֹלְנָה',v5:'תִּקְטֹל',v6:'תִּקְטְלוּ',v7:'תּקְטְלִי',v8:'תִּקְטֹלְנָה',v9:'אֶקְטֹל',v10:'נִקְטֹל',v11:'יִבְנֶה',v12:'יִבְנוּ',v13:'תִּבְנֶה',v14:'תִּבְנֶינָה',v15:'תִּבְנֶה',v16:'תִּבְנוּ',v17:'תִּבְנִי',v18:'תִּבְנֶינָה',v19:'אֶבְנֶה',v20:'נִבְנֶה'};
+  testAns(id, idR, ansObj);
+}
+
+function testQalWayyiqtol(id, idR) {
+  var ansObj = {v1:'וַיִּקְטֹל',v2:'וַיִּקְטְלוּ',v3:'וַתִּקְטֹל',v4:'וַתִּקְטֹלְנָה',v5:'וַתִּקְטֹל',v6:'וַתִּקְטְלוּ',v7:'וַתִּקְטְלִי',v8:'וַתִּקְטֹלְנָה',v9:'וָאֶקְטֹל',v10:'וַנִּקְטֹל',v11:'וַיִּבֶן',v12:'וַיִּבְנוּ',v13:'וַתִּבֶן',v14:'וַתִּבְנֶינָה',v15:'וַתִּבֶן',v16:'וַתִּבְנוּ',v17:'וַתִּבְנִי',v18:'וַתִּבְנֶינָה',v19:'וָאֶבְנֶה',v20:'וַנִּבְנֶה'};
   testAns(id, idR, ansObj);
 }
