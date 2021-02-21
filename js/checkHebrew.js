@@ -1,21 +1,21 @@
   function checkHebrew() {
-    var inputString = document.getElementById("hebrewtypingtest").value;
-    var resCode = document.getElementById("resultCode");
-    var resName = document.getElementById("resultName");
-    var strUnicode = toUnicode(inputString);
-    var strName = toName(inputString);
+    let inputString = document.getElementById("hebrewtypingtest").value;
+    let resCode = document.getElementById("resultCode");
+    let resName = document.getElementById("resultName");
+    let strUnicode = toUnicode(inputString);
+    let strName = toName(inputString);
     resName.innerHTML = strName;
     resCode.innerHTML = strUnicode;
   }
 
   function toUnicode(theString) {
-    var unicodeString = '';
-    for (var i = 0; i < theString.length; i++) {
-      var theUnicode = theString.charCodeAt(i).toString(16).toUpperCase();
+    let unicodeString = '';
+    for (let i = 0; i < theString.length; i++) {
+      let theUnicode = theString.charCodeAt(i).toString(16).toUpperCase();
       while (theUnicode.length < 4) {
         theUnicode = '0' + theUnicode;
       }
-      theUnicode = ' \\u' + theUnicode;
+      theUnicode = '\\u' + theUnicode;
       unicodeString += theUnicode;
     }
     return unicodeString;
@@ -23,8 +23,8 @@
 
 
   function toName(theString) {
-    var theNameAll = '';
-    var sourceDict = {
+    let theNameAll = '';
+    let sourceDict = {
       uu0591: "Athnach",
       uu0592: "Segolta",
       uu0593: "Shalsheleth",
@@ -113,7 +113,7 @@
       uuFB2B: "Shin with Sin Dot",
       uu25CC: "mark base"
     };
-    var otherDict = {
+    let otherDict = {
       uu05F0: "Yiddish Double Vav",
       uu05F1: "Yiddish Vav Yod",
       uu05F2: "Yiddish Double Yod",
@@ -162,8 +162,8 @@
       uuFB4E: "Pe with Rafe",
       uuFB4F: "Alef Lamed"
     };
-    for (var i = 0; i < theString.length; i++) {
-      var theUnicode = theString.charCodeAt(i).toString(16).toUpperCase();
+    for (let i = 0; i < theString.length; i++) {
+      let theUnicode = theString.charCodeAt(i).toString(16).toUpperCase();
       while (theUnicode.length < 4) {
         theUnicode = '0' + theUnicode;
       }
