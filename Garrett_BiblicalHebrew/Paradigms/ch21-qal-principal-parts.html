@@ -26,6 +26,20 @@
       border: 1px solid grey;
     }
   </style>
+
+<script>
+window.onload = function() {
+  if (navigator.userAgent.indexOf('Mac OS X') != -1) {
+    if (navigator.userAgent.search("Safari") >= 0 && navigator.userAgent.search("Chrome") < 0)
+    {
+      document.getElementById('safari').style.display = "block";
+    }
+} else {
+
+}
+};
+
+</script>
 </head>
 
 <body>
@@ -37,11 +51,14 @@
   <h2>Fill in the blanks</h2>
   <ul>
     <li>Do not type the accent or metheg.</li>
-    <li><span class="btn btn-danger">Do NOT use Safari for this practice!</span></li>
-    <ul>
-      <li>If you use Safari, your answer will be marked as incorrect when the word contains <span class="heb" dir="rtl">שׁ</span>.</li>
-    </ul>
   </ul>
+  <div id="safari" style="display:none;">
+    <p style="font-size: 24px; background-color: #FFFF00;">You are using Safari. Please use another browser!</p>
+    <ul class="alert alert-secondary">
+      <li>If you use Safari, your answer will be marked as incorrect when the word contains <span class="heb" dir="rtl">שׁ ,שׂ</span> or Dagesh.</li>
+      <li>More precisely, when you type the word in the box, it maybe marked as correct. But when you paste the same word that contains Shin or Dagesh, you answer will be marked incorrect.</li>
+    </ul>
+  </div>
 
   <table style="text-align:center; width:100%">
     <colgroup>
