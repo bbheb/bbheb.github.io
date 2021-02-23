@@ -29,7 +29,7 @@
 
 <script>
 window.onload = function() {
-  if (navigator.userAgent.indexOf('Mac OS X') != -1) {
+  if (navigator.platform.includes("Mac")) {
     if (navigator.userAgent.search("Safari") >= 0 && navigator.userAgent.search("Chrome") < 0)
     {
       document.getElementById('safari').style.display = "block";
