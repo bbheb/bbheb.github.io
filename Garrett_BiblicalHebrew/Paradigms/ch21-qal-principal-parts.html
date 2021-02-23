@@ -27,19 +27,6 @@
     }
   </style>
 
-<script>
-window.onload = function() {
-  if (navigator.platform.includes("Mac")) {
-    if (navigator.userAgent.search("Safari") >= 0 && navigator.userAgent.search("Chrome") < 0)
-    {
-      document.getElementById('safari').style.display = "block";
-    }
-} else {
-
-}
-};
-
-</script>
 </head>
 
 <body>
@@ -52,17 +39,8 @@ window.onload = function() {
   <ul>
     <li>Do not type the accent or metheg.</li>
   </ul>
-  <div id="safari" style="display:none;">
-    <p style="font-size: 24px; background-color: #FFFF00;">You are using Safari. Please use another browser!</p>
-    <ul class="alert alert-secondary">
-      <li>If you use Safari, your answer will be marked as incorrect when the word contains <span class="heb" dir="rtl">שׁ ,שׂ</span> or Dagesh.</li>
-      <li>More precisely, when you type the word in the box, it maybe marked as correct. But when you paste the same word that contains Shin or Dagesh, you answer will be marked incorrect.</li>
-      <ul>
-        <li>Try: copy and paste <span class="heb" dir="rtl">שָׁמַע</span> to the Qal Qatal box. The answer will be marked as incorrect.</li>
-        <li>If you type the word to the box, it will be marked as correct.</li>
-      </ul>
-      <li>The iOS version of Safari seems to be fine.</li>
-    </ul>
+  <div id="safari">
+
   </div>
 
   <table style="text-align:center; width:100%">
