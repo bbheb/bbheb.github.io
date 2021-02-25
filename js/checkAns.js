@@ -1,3 +1,5 @@
+
+/*
 window.onload = function() {
   if (navigator.platform.includes("Mac")) {
     if (navigator.userAgent.search("Safari") >= 0 && navigator.userAgent.search("Chrome") < 0) {
@@ -6,6 +8,7 @@ window.onload = function() {
         <li>If you use Safari, your answer will be marked as incorrect when the word contains <span class="heb" dir="rtl">שׁ ,שׂ</span> or Dagesh.</li> \
         <li>More precisely, when you type the word in the box, it maybe marked as correct. But when you paste the same word that contains Sin, Shin or Dagesh, you answer will be marked incorrect.</li> \
         <li>The iOS version of Safari seems to be fine.</li> \
+        <li>The issue with Unicode Normalization. Safari (MacOS) is the only browser that does the Normalization. For more info about Unicode Normalization, see <a href="https://www.sbl-site.org/Fonts/SBLHebrewUserManual1.5x.pdf">SBL Hebrew User Manual</a>, pages 8–17.</li> \
       </ul>'
       document.getElementById('safari').innerHTML = safariWarning;
     }
@@ -13,15 +16,29 @@ window.onload = function() {
     // do nothing
   }
 };
+*/
 
 // this function is intended to be called by other functions below.
 function testAns(id, idR, ansObj){
-  let ans = ansObj[id];
   let input = document.getElementById(id).value.toLowerCase();
-  let mark = document.getElementById(idR);
   if (input == '') {
     mark.innerHTML = '❓';
-  } else if (input == ans) {
+    return;
+  }
+
+  let ans = ansObj[id];
+  let mark = document.getElementById(idR);
+  input = input.normalize('NFC');
+
+  if (typeof ans === 'string') {
+    ans = ans.normalize('NFC');
+  } else if (typeof ans === 'object') {
+      for (i = 0; i < ans.length; i++) {
+        ans[i] = ans[i].normalize('NFC');
+      }
+  }
+
+  if (input == ans || ans.includes(input)) {
     mark.innerHTML = '✅';
   } else {
     mark.innerHTML = '❌';
@@ -30,22 +47,50 @@ function testAns(id, idR, ansObj){
 
 // this function is intended to be called by other functions below.
 function testAnsInput(id, idR, ansObj, input){
-  let ans = ansObj[id];
   let mark = document.getElementById(idR);
   if (input == '') {
     mark.innerHTML = '❓';
-  } else if (input == ans) {
-    mark.innerHTML = '✅';
-  } else {
-    mark.innerHTML = '❌';
+    return;
+  }
+
+  let ans = ansObj[id];
+
+  input = input.normalize('NFC');
+
+  if (typeof ans === 'string') {
+    ans = ans.normalize('NFC');
+    if (input == ans) {
+      mark.innerHTML = '✅';
+    } else {
+      mark.innerHTML = '❌';
+    }
+  } else if (typeof ans === 'object') {
+      for (i = 0; i < ans.length; i++) {
+        ans[i] = ans[i].normalize('NFC');
+      }
+      if (ans.includes(input)) {
+        mark.innerHTML = '✅';
+      } else {
+        mark.innerHTML = '❌';
+      }
   }
 }
 
-function testCon(id,idR) {
+
+function revealAnsCon(){
   let ansObj = {Aleph: 'א',Beth: 'ב',Gimel: 'ג',Daleth: 'ד',Hey: 'ה',Waw: 'ו',Zayin: 'ז',Het: 'ח',Tet: 'ט',Yod: 'י',Kaph: 'כ',Lamed: 'ל',Mem: 'מ',Nun: 'נ',Samek: 'ס',Ayin: 'ע',Peh: 'פ',Tsade: 'צ',Qoph: 'ק',Resh: 'ר',Sin: 'שׂ',Shin: 'שׁ',Taw: 'ת'};
+  for (let k in ansObj) {
+    document.getElementById(k).value = ansObj[k];
+  }
+}
+
+
+function testCon(id,idR) {
+//  let ansObj = {Aleph: 'א',Beth: 'ב',Gimel: 'ג',Daleth: 'ד',Hey: 'ה',Waw: 'ו',Zayin: 'ז',Het: 'ח',Tet: 'ט',Yod: 'י',Kaph: 'כ',Lamed: 'ל',Mem: 'מ',Nun: 'נ',Samek: 'ס',Ayin: 'ע',Peh: 'פ',Tsade: 'צ',Qoph: 'ק',Resh: 'ר',Sin: 'שׂ',Shin: 'שׁ',Taw: 'ת'};
   let input = document.getElementById(id).value;
-  if (input == 'שׂ') { input = 'שׂ'; }
-  if (input == 'שׁ') { input = 'שׁ'; }
+//  if (input == 'שׂ') { input = 'שׂ'; }
+//  if (input == 'שׁ') { input = 'שׁ'; }
+let ansObj = {Aleph: 'א',Beth: 'ב',Gimel: 'ג',Daleth: 'ד',Hey: 'ה',Waw: 'ו',Zayin: 'ז',Het: 'ח',Tet: 'ט',Yod: 'י',Kaph: 'כ',Lamed: 'ל',Mem: 'מ',Nun: 'נ',Samek: 'ס',Ayin: 'ע',Peh: 'פ',Tsade: 'צ',Qoph: 'ק',Resh: 'ר',Sin: ['שׂ','שׂ'],Shin: ['שׁ', 'שׁ'],Taw: 'ת'};
   testAnsInput(id, idR, ansObj, input);
 }
 
@@ -90,12 +135,8 @@ function testNounGem(id, idR) {
 }
 
 function testPronoun(id,idR) {
-  let ansObj = {v1:'זֶה',v2:'אֵלֶּה',v3:'זֹאת',v5:'הוּא',v6:'הֵם',v7:'הִיא',v8:'הֵנָּה',v11:'הוּא',v12:'הֵם',v13:'הִיא',v14:'הֵנָּה',v15:'אַתָּה',v16:'אַתֶּם',v17:'אַתְּ',v18:'אַתֶּן',v19:'אֲנִי',v20:'אֲנַחְנוּ'};
-  let input = document.getElementById(id).value;
-  if (input == 'הֵמָּה') { input = 'הֵם'; };
-  if (input == 'אַתֵּנָה') { input = 'אַתֶּן'; };
-  if (input == 'אָנֹכִי') { input = 'אֲנִי'; };
-  testAnsInput(id, idR, ansObj, input);
+  let ansObj = {v1:'זֶה',v2:'אֵלֶּה',v3:'זֹאת',v5:'הוּא',v6:'הֵם',v7:'הִיא',v8:'הֵנָּה',v11:'הוּא',v12: ['הֵם','הֵמָּה'],v13:'הִיא',v14:'הֵנָּה',v15:'אַתָּה',v16:'אַתֶּם',v17:'אַתְּ',v18:['אַתֶּן','אַתֵּנָה'],v19:['אֲנִי','אָנֹכִי'],v20:'אֲנַחְנוּ'};
+  testAns(id, idR, ansObj);
 }
 
 function testQalImperative(id, idR) {
@@ -104,10 +145,10 @@ function testQalImperative(id, idR) {
 }
 
 function testQalPrincipal(id,idR) {
-  let ansObj = {v1:'קָטַל',v2:'יִקְטֹל',v3:'קְטֹל',v4:'קֹטֵל',v5:'בָּנָה',v6:'יִבְנֶה',v7:'בְּנוֹת',v8:'בּוֹנֶה',v9:'עָמַד',v10:'יַעֲמֹד',v11:'עֲמֹד',v12:'עֹמֵד',v13:'בָּחַר',v14:'יִבְחַר',v15:'בְּחֹר',v16:'בֹּחֵר',v17:'שָׁמַע',v18:'יִשְׁמַע',v19:'שְׁמֹעַ',v20:'שֹׁמֵעַ',v21:'מָצָא',v22:'יִמְצָא',v23:'מְצֹא',v24:'מֹצֵא',v25:'חָטָא',v26:'יֶחֱטָא',v27:'חֲטֹא',v28:'חוֹטֵא',v29:'נָפַל',v30:'יִפֹּל',v31:'נְפֹל',v32:'נֹפֵל',v33:'שָׁב',v34:'יָשׁוּב',v35:'שׁוּב',v36:'שָׁב',v37:'סָבַב',v38:'יָסֹב',v39:'סְבֹב',v40:'סֹבֵב',v41:'יָשַׁב',v42:'יֵשֵׁב',v43:'שֶׁבֶת',v44:'יֹשֵׁב',v45:'יָרַשׁ',v46:'יִירַשׁ',v47:'רֶשֶׁת',v48:'יוֹרֵשׁ',v49:'אָמַר',v50:'יֹאמַר',v51:'לֵאמֹר',v52:'אֹמֵר',v53:'אָהַב',v54:'יֶאֱהַב',v55:'אַהֲבַת',v56:'אֹהֵב'};
+  let ansObj = {v1:'קָטַל',v2:'יִקְטֹל',v3:'קְטֹל',v4:'קֹטֵל',v5:'בָּנָה',v6:'יִבְנֶה',v7:'בְּנוֹת',v8:'בּוֹנֶה',v9:'עָמַד',v10:'יַעֲמֹד',v11:'עֲמֹד',v12:'עֹמֵד',v13:'בָּחַר',v14:'יִבְחַר',v15:'בְּחֹר',v16:'בֹּחֵר',v17:'שָׁמַע',v18:'יִשְׁמַע',v19:'שְׁמֹעַ',v20:'שֹׁמֵעַ',v21:'מָצָא',v22:'יִמְצָא',v23:'מְצֹא',v24:'מֹצֵא',v25:'חָטָא',v26:'יֶחֱטָא',v27:'חֲטֹא',v28:'חוֹטֵא',v29:'נָפַל',v30:'יִפֹּל',v31:'נְפֹל',v32:'נֹפֵל',v33:'שָׁב',v34:'יָשׁוּב',v35:'שׁוּב',v36:'שָׁב',v37:'סָבַב',v38:'יָסֹב',v39:'סְבֹב',v40:'סֹבֵב',v41:'יָשַׁב',v42:['יֵשֵׁב','תֵּשֵׁב'],v43:'שֶׁבֶת',v44:'יֹשֵׁב',v45:'יָרַשׁ',v46:'יִירַשׁ',v47:'רֶשֶׁת',v48:'יוֹרֵשׁ',v49:'אָמַר',v50:'יֹאמַר',v51:'לֵאמֹר',v52:'אֹמֵר',v53:'אָהַב',v54:'יֶאֱהַב',v55:'אַהֲבַת',v56:'אֹהֵב'};
   let input = document.getElementById(id).value;
-  input = input.replace("שׁ", "שׁ");
-  if (input == 'תֵּשֵׁב') { input = 'יֵשֵׁב'; };
+  input = input.replace("שׁ",
+    "שׁ");
   testAnsInput(id, idR, ansObj, input);
 }
 
