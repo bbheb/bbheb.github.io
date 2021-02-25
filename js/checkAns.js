@@ -14,6 +14,7 @@ window.onload = function() {
   }
 };
 
+// this function is intended to be called by other functions below.
 function testAns(id, idR, ansObj){
   let ans = ansObj[id];
   let input = document.getElementById(id).value.toLowerCase();
@@ -27,6 +28,7 @@ function testAns(id, idR, ansObj){
   }
 }
 
+// this function is intended to be called by other functions below.
 function testAnsInput(id, idR, ansObj, input){
   let ans = ansObj[id];
   let mark = document.getElementById(idR);
