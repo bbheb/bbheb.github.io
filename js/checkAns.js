@@ -43,7 +43,7 @@ function testCon(id,idR) {
   let ansObj = {Aleph: 'א',Beth: 'ב',Gimel: 'ג',Daleth: 'ד',Hey: 'ה',Waw: 'ו',Zayin: 'ז',Het: 'ח',Tet: 'ט',Yod: 'י',Kaph: 'כ',Lamed: 'ל',Mem: 'מ',Nun: 'נ',Samek: 'ס',Ayin: 'ע',Peh: 'פ',Tsade: 'צ',Qoph: 'ק',Resh: 'ר',Sin: 'שׂ',Shin: 'שׁ',Taw: 'ת'};
   let input = document.getElementById(id).value;
   if (input == 'שׂ') { input = 'שׂ'; }
-  if (input == 'שׁׁ') { input = 'שׁ'; }
+  if (input == 'שׁ') { input = 'שׁ'; }
   testAnsInput(id, idR, ansObj, input);
 }
 
