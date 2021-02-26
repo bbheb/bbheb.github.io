@@ -1,5 +1,4 @@
 
-/*
 window.onload = function() {
   if (navigator.platform.includes("Mac")) {
     if (navigator.userAgent.search("Safari") >= 0 && navigator.userAgent.search("Chrome") < 0) {
@@ -16,33 +15,74 @@ window.onload = function() {
     // do nothing
   }
 };
+
+/* 可以把所有的正确答案放在一起，通过一个函数来批改。
+let ansObjList = {
+  "ch01c":{Aleph: 'א',Beth: 'ב',Gimel: 'ג',Daleth: 'ד',Hey: 'ה',Waw: 'ו',Zayin: 'ז',Het: 'ח',Tet: 'ט',Yod: 'י',Kaph: 'כ',Lamed: 'ל',Mem: 'מ',Nun: 'נ',Samek: 'ס',Ayin: 'ע',Peh: 'פ',Tsade: 'צ',Qoph: 'ק',Resh: 'ר',Sin: 'שׂ',Shin: 'שׁ',Taw: 'ת'},
+  "ch01v":{v1:'pathach',v2:'a',v3:'short',v4:'qamets',v5:'a',v7:'hireq',v8:'i',v9:'short',v10:'seghol',v11:'i',v12:'short',v13:'tsere',v14:'i',v15:'long',v16:'qibbuts',v17:'u',v18:'short',v19:'holem',v20:'u',v21:'long',v22:'qamets hatuph',v24:'u',v25:'shewa',v26:'reduced',v28:'hateph pathach',v29:'a',v30:'reduced',v31:'hateph seghol',v32:'i',v33:'reduced',v34:'hateph qamets',v35:'u',v36:'reduced'},
+  "ch02":{v1:'hireq yod',v2:'i',v3:'long',v4:'tsere yod',v5:'i',v6:'long',v7:'seghol yod',v8:'i',v9:'short',v10:'holem waw',v11:'u',v12:'long',v13:'shureq',v14:'u',v15:'long',v16:'qamets hey',v17:'a',v18:'long',v19:'tsere hey',v20:'i',v21:'long',v22:'seghol hey',v23:'i',v24:'short',v25:'holem hey',v26:'u',v27:'long'},
+};
+let ch = getMeta('description');
+let ansObj = ansObjList[ch];
+
+//alert(JSON.stringify(ansObj));
 */
+
+function getMeta(metaName) {
+  const metas = document.getElementsByTagName('meta');
+  for (let i = 0; i < metas.length; i++) {
+    if (metas[i].getAttribute('name') === metaName) {
+      return metas[i].getAttribute('content');
+    }
+  }
+  return '';
+}
+
 
 // this function is intended to be called by other functions below.
 function testAns(id, idR, ansObj){
   let input = document.getElementById(id).value.toLowerCase();
+  let mark = document.getElementById(idR);
   if (input == '') {
     mark.innerHTML = '❓';
     return;
   }
+  if (input.includes('שׁ')){
+    input = input.replace("שׁ",
+      "שׁ"); // this has to be put into two lines. Otherwise, there will be problems. It is caused by Hebrew (rtl) words.
+  } else if (input.includes('שׂ')){
+    input = input.replace("שׂ",
+      "שׂ"); // this has to be put into two lines. Otherwise, there will be problems. It is caused by Hebrew (rtl) words.
+  }
 
   let ans = ansObj[id];
-  let mark = document.getElementById(idR);
+
+  if (typeof ans === 'string') {  // one correct answer.
+      if (input == ans) {
+        mark.innerHTML = '✅';
+      } else {
+        mark.innerHTML = '❌';
+      }
+    } else if (typeof ans === 'object') {  // multiple correct answers.
+        if (ans.includes(input)) {
+          mark.innerHTML = '✅';
+        } else {
+          mark.innerHTML = '❌';
+        }
+    }
+
+/* 为了让学生在这里的经历和在 Canvas 上一样，不要对输入和正确答案做 Normalization。
   input = input.normalize('NFC');
 
-  if (typeof ans === 'string') {
+  if (typeof ans === 'string') {  // one correct answer.
     ans = ans.normalize('NFC');
-  } else if (typeof ans === 'object') {
+  } else if (typeof ans === 'object') {  // multiple correct answers.
       for (i = 0; i < ans.length; i++) {
         ans[i] = ans[i].normalize('NFC');
       }
   }
+*/
 
-  if (input == ans || ans.includes(input)) {
-    mark.innerHTML = '✅';
-  } else {
-    mark.innerHTML = '❌';
-  }
 }
 
 // this function is intended to be called by other functions below.
@@ -55,16 +95,32 @@ function testAnsInput(id, idR, ansObj, input){
 
   let ans = ansObj[id];
 
+  if (typeof ans === 'string') {  // one correct answer.
+    if (input == ans) {
+      mark.innerHTML = '✅';
+    } else {
+      mark.innerHTML = '❌';
+    }
+  } else if (typeof ans === 'object') {   // multiple correct answers.
+      if (ans.includes(input)) {
+        mark.innerHTML = '✅';
+      } else {
+        mark.innerHTML = '❌';
+      }
+  }
+
+
+/* 为了让学生在这里的经历和在 Canvas 上一样，不要对输入和正确答案做 Normalization。
   input = input.normalize('NFC');
 
-  if (typeof ans === 'string') {
+  if (typeof ans === 'string') {  // one correct answer.
     ans = ans.normalize('NFC');
     if (input == ans) {
       mark.innerHTML = '✅';
     } else {
       mark.innerHTML = '❌';
     }
-  } else if (typeof ans === 'object') {
+  } else if (typeof ans === 'object') {  // multiple correct answers.
       for (i = 0; i < ans.length; i++) {
         ans[i] = ans[i].normalize('NFC');
       }
@@ -74,10 +130,12 @@ function testAnsInput(id, idR, ansObj, input){
         mark.innerHTML = '❌';
       }
   }
+*/
+
 }
 
 
-function revealAnsCon(){
+function revealAnsCon(){ // 显示正确答案。
   let ansObj = {Aleph: 'א',Beth: 'ב',Gimel: 'ג',Daleth: 'ד',Hey: 'ה',Waw: 'ו',Zayin: 'ז',Het: 'ח',Tet: 'ט',Yod: 'י',Kaph: 'כ',Lamed: 'ל',Mem: 'מ',Nun: 'נ',Samek: 'ס',Ayin: 'ע',Peh: 'פ',Tsade: 'צ',Qoph: 'ק',Resh: 'ר',Sin: 'שׂ',Shin: 'שׁ',Taw: 'ת'};
   for (let k in ansObj) {
     document.getElementById(k).value = ansObj[k];
@@ -86,12 +144,13 @@ function revealAnsCon(){
 
 
 function testCon(id,idR) {
-//  let ansObj = {Aleph: 'א',Beth: 'ב',Gimel: 'ג',Daleth: 'ד',Hey: 'ה',Waw: 'ו',Zayin: 'ז',Het: 'ח',Tet: 'ט',Yod: 'י',Kaph: 'כ',Lamed: 'ל',Mem: 'מ',Nun: 'נ',Samek: 'ס',Ayin: 'ע',Peh: 'פ',Tsade: 'צ',Qoph: 'ק',Resh: 'ר',Sin: 'שׂ',Shin: 'שׁ',Taw: 'ת'};
-  let input = document.getElementById(id).value;
+  let ansObj = {Aleph: 'א',Beth: 'ב',Gimel: 'ג',Daleth: 'ד',Hey: 'ה',Waw: 'ו',Zayin: 'ז',Het: 'ח',Tet: 'ט',Yod: 'י',Kaph: 'כ',Lamed: 'ל',Mem: 'מ',Nun: 'נ',Samek: 'ס',Ayin: 'ע',Peh: 'פ',Tsade: 'צ',Qoph: 'ק',Resh: 'ר',Sin: 'שׂ',Shin: 'שׁ',Taw: 'ת'};
+//  let input = document.getElementById(id).value;
 //  if (input == 'שׂ') { input = 'שׂ'; }
 //  if (input == 'שׁ') { input = 'שׁ'; }
-let ansObj = {Aleph: 'א',Beth: 'ב',Gimel: 'ג',Daleth: 'ד',Hey: 'ה',Waw: 'ו',Zayin: 'ז',Het: 'ח',Tet: 'ט',Yod: 'י',Kaph: 'כ',Lamed: 'ל',Mem: 'מ',Nun: 'נ',Samek: 'ס',Ayin: 'ע',Peh: 'פ',Tsade: 'צ',Qoph: 'ק',Resh: 'ר',Sin: ['שׂ','שׂ'],Shin: ['שׁ', 'שׁ'],Taw: 'ת'};
-  testAnsInput(id, idR, ansObj, input);
+//let ansObj = {Aleph: 'א',Beth: 'ב',Gimel: 'ג',Daleth: 'ד',Hey: 'ה',Waw: 'ו',Zayin: 'ז',Het: 'ח',Tet: 'ט',Yod: 'י',Kaph: 'כ',Lamed: 'ל',Mem: 'מ',Nun: 'נ',Samek: 'ס',Ayin: 'ע',Peh: 'פ',Tsade: 'צ',Qoph: 'ק',Resh: 'ר',Sin: ['שׂ','שׂ'],Shin: ['שׁ', 'שׁ'],Taw: 'ת'};
+//  testAnsInput(id, idR, ansObj, input);
+  testAns(id, idR, ansObj);
 }
 
 function testVow(id, idR){
@@ -148,7 +207,7 @@ function testQalPrincipal(id,idR) {
   let ansObj = {v1:'קָטַל',v2:'יִקְטֹל',v3:'קְטֹל',v4:'קֹטֵל',v5:'בָּנָה',v6:'יִבְנֶה',v7:'בְּנוֹת',v8:'בּוֹנֶה',v9:'עָמַד',v10:'יַעֲמֹד',v11:'עֲמֹד',v12:'עֹמֵד',v13:'בָּחַר',v14:'יִבְחַר',v15:'בְּחֹר',v16:'בֹּחֵר',v17:'שָׁמַע',v18:'יִשְׁמַע',v19:'שְׁמֹעַ',v20:'שֹׁמֵעַ',v21:'מָצָא',v22:'יִמְצָא',v23:'מְצֹא',v24:'מֹצֵא',v25:'חָטָא',v26:'יֶחֱטָא',v27:'חֲטֹא',v28:'חוֹטֵא',v29:'נָפַל',v30:'יִפֹּל',v31:'נְפֹל',v32:'נֹפֵל',v33:'שָׁב',v34:'יָשׁוּב',v35:'שׁוּב',v36:'שָׁב',v37:'סָבַב',v38:'יָסֹב',v39:'סְבֹב',v40:'סֹבֵב',v41:'יָשַׁב',v42:['יֵשֵׁב','תֵּשֵׁב'],v43:'שֶׁבֶת',v44:'יֹשֵׁב',v45:'יָרַשׁ',v46:'יִירַשׁ',v47:'רֶשֶׁת',v48:'יוֹרֵשׁ',v49:'אָמַר',v50:'יֹאמַר',v51:'לֵאמֹר',v52:'אֹמֵר',v53:'אָהַב',v54:'יֶאֱהַב',v55:'אַהֲבַת',v56:'אֹהֵב'};
   let input = document.getElementById(id).value;
   input = input.replace("שׁ",
-    "שׁ");
+    "שׁ"); // this has to be put into two lines. Otherwise, there will be problems. It is caused by Hebrew (rtl) words.
   testAnsInput(id, idR, ansObj, input);
 }
 
