@@ -48,7 +48,7 @@ var ansObj = ansObjList[ch]; // get the correct answer set for the currect page.
 $(function(){
 
   // show correct answer key.
-  $('.mark').mouseover(function() {
+  $('.mark').click(function() {
     let idR = $(this).attr('id'); // get id for the "mark" cell
     let id = idR.substr(0, idR.length - 1); // get id for the "input" cell
     let ans = ansObj[id]; // get the correct answer key.
