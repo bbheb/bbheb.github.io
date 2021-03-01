@@ -44,9 +44,9 @@ var ch = getMeta('description'); // get meta data for the currect page.
 var ansObj = ansObjList[ch]; // get the correct answer set for the currect page.
 
 
-// Mouse over ❓ or ❌ to reveal the answer key.
 $(function(){
 
+  // Mouse over ❓ or ❌ to reveal the answer key. Buttons to reveal/clear all answer keys.
   let revealAnsTipHTML = '<b>* Click ❓ or ❌ to reveal individual answer key.</b></br>\
   <button type="button" class="btn btn-success" onclick="revealAllAnswers()">Click Me</button> to Reveal All Answers;\
   <button type="button" class="btn btn-info" onclick="location.reload()">Click Me</button> to Clear All Answers.\
@@ -72,7 +72,7 @@ $(function(){
 
 });
 
-
+// reveal all answers keys.
 function revealAllAnswers(){
   $('.mark').each(function() {
     let idR = $(this).attr('id'); // get id for the "mark" cell
