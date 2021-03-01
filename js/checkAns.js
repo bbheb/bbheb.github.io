@@ -47,6 +47,12 @@ var ansObj = ansObjList[ch]; // get the correct answer set for the currect page.
 // Mouse over ❓ or ❌ to reveal the answer key.
 $(function(){
 
+  let revealAnsTipHTML = '<b>* Click ❓ or ❌ to reveal individual answer key.</b></br>\
+  <button type="button" class="btn btn-success" onclick="revealAllAnswers()">Click Me</button> to Reveal All Answers;\
+  <button type="button" class="btn btn-info" onclick="location.reload()">Click Me</button> to Clear All Answers.\
+  </br></br>'
+  document.getElementById('revealAnsTip').innerHTML = revealAnsTipHTML;
+
   // show correct answer key.
   $('.mark').click(function() {
     let idR = $(this).attr('id'); // get id for the "mark" cell
@@ -65,6 +71,19 @@ $(function(){
   });
 
 });
+
+
+function revealAllAnswers(){
+  $('.mark').each(function() {
+    let idR = $(this).attr('id'); // get id for the "mark" cell
+    let id = idR.substr(0, idR.length - 1); // get id for the "input" cell
+    let ans = ansObj[id]; // get the correct answer key.
+    $("#" + id).val(ans); // show answer key in the "input" cell.
+    $("#" + idR).text('✅'); // mark as correct.
+  });
+
+
+}
 
 
 // get meta data
