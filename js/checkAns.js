@@ -46,6 +46,12 @@ var ansObj = ansObjList[ch]; // get the correct answer set for the currect page.
 
 $(function(){
 
+  // navigator on paradigm practice pages
+  let paraNavHTML = '  <p style="font-size:14px; text-align:right" ><a href="../../index.html">Return to the Main Resource Page</a></p>\
+  <p style="font-size:14px; text-align:right" ><a href="all-paradigms-list.html">Return to the Paradigms List Page</a></p>'
+  document.getElementById('para-nav').innerHTML = paraNavHTML;
+
+
   // Mouse over ❓ or ❌ to reveal the answer key. Buttons to reveal/clear all answer keys.
   let revealAnsTipHTML = '<b>* Click ❓ or ❌ to reveal individual answer key.</b></br>\
   <button type="button" class="btn btn-success" onclick="revealAllAnswers()">Click Me</button> to Reveal All Answers;\
