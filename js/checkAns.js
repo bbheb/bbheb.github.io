@@ -44,7 +44,7 @@ var ch = getMeta('description'); // get meta data for the currect page.
 var ansObj = ansObjList[ch]; // get the correct answer set for the currect page.
 
 
-$(function(){
+$(() => {
 
   // navigator on paradigm practice pages
   let paraNavHTML = '  <p style="font-size:14px; text-align:right" ><a href="../../index.html">Return to the Main Resource Page</a></p>\
@@ -69,7 +69,7 @@ $(function(){
   });
 
   // check user input to see if it matches.
-  $('input').on("keyup change", function(e) {
+  $('input').on("keyup change", function() {
     let input = $(this).val(); // get user input value.
     let id = $(this).attr('id'); // get id for the "input" cell
     let idR = id + "r"; // get id for the "mark" cell.
