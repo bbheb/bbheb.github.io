@@ -1,2 +1,5 @@
-// 如需引用，在页面上添加如下语句：
-// <script src="/BiblicalHebrew/js/main.js" type="text/javascript"></script>
+$(() => {
+  // navigator on paradigm practice pages
+  let paraNavHTML = '<p style="font-size:14px; text-align:right" ><a href="../../index.html">Return to the Main Resource Page</a></p>'
+  document.getElementById('para-nav').innerHTML = paraNavHTML;
+});
