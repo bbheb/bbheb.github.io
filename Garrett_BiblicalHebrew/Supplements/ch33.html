@@ -10,10 +10,7 @@
   <link href="../../css/main.css" rel="stylesheet">
   <script src="../../js/main.js"></script>
   <script>
-  $.get("ch21.html", function(html){
-    let $section = $(html).find('#ex-nth');
-    document.getElementById("ch21-ex-nth").innerHTML = $section.html();
-  });
+    loadSourceHTML("ch21.html","ex-nth","ch21-ex-nth")
   </script>
 
 </head>

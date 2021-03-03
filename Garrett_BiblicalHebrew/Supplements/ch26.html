@@ -10,12 +10,7 @@
   <link href="../../css/main.css" rel="stylesheet">
   <script src="../../js/main.js"></script>
   <script>
-
-  $.get("ch24.html", function(html){
-    let $section = $(html).filter('#parse-ptcp');
-    document.getElementById("ch24-parse-ptcp").innerHTML = $section.html();
-  });
-
+    loadSourceHTML("ch24.html","parse-ptcp","ch24-parse-ptcp")
   </script>
 
 </head>
