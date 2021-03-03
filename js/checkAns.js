@@ -59,7 +59,7 @@ $(() => {
   // Click ❓ or ❌ to reveal the answer key. Buttons to reveal/clear all answer keys.
   let revealAnsTipHTML = '<b>* Click ❓ or ❌ to reveal individual answer key.</b></br>\
   <button type="button" class="btn btn-success" onclick="revealAllAnswers()">Click Me</button> to Reveal All Answers;\
-  <button type="button" class="btn btn-info" onclick="document.location.reload()">Click Me</button> to Clear All Answers.\
+  <button type="button" class="btn btn-info" onclick="clearAllAnswers()">Click Me</button> to Clear All Answers.\
   </br></br>'
   $('#revealAnsTip').html(revealAnsTipHTML);
 
@@ -91,8 +91,12 @@ function revealAllAnswers(){
     $("#" + id).val(ans); // show answer key in the "input" cell.
     $("#" + idR).text('✅'); // mark as correct.
   });
+}
 
-
+// clear all answers keys.
+function clearAllAnswers(){
+  $('input').val('');
+  $('.mark').text('❓');
 }
 
 
