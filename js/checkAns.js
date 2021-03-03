@@ -1,3 +1,5 @@
+'use strict';
+
 // Show warning message if Safari.
 window.onload = function() {
   if (navigator.platform.includes("Mac")) {

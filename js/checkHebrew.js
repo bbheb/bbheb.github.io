@@ -1,3 +1,5 @@
+'use strict';
+
   function checkHebrew() {
     let inputString = document.getElementById("hebrewtypingtest").value;
     let resCode = document.getElementById("resultCode");
@@ -163,6 +165,7 @@
       uuFB4F: "Alef Lamed"
     };
     for (let i = 0; i < theString.length; i++) {
+      let theName = '';
       let theUnicode = theString.charCodeAt(i).toString(16).toUpperCase();
       while (theUnicode.length < 4) {
         theUnicode = '0' + theUnicode;
