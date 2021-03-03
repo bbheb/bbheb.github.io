@@ -7,7 +7,10 @@ window.onload = function() {
       let safariWarning = '<p style="font-size: 24px; background-color: #FFFF00;">You are using Safari. Please use another browser!</p> \
       <ul class="alert alert-secondary"> \
         <li>If you use Safari, your answer will be marked as incorrect when the word contains <span class="heb" dir="rtl">שׁ ,שׂ</span> or Dagesh.</li> \
-        <li>More precisely, when you type the word in the box, it maybe marked as correct. But when you paste the same word that contains Sin, Shin or Dagesh, you answer will be marked incorrect.</li> \
+        <li>More precisely, when you type the word in the box, it maybe marked as correct. But when you <i>paste</i> the same word that contains Sin, Shin or Dagesh, you answer will be marked incorrect, becuase Safari normalizes the Hebrew word you just pasted.</li> \
+        <ul> \
+          <li>The same thing happened when you do exams on Safari (MacOS). As soon as you hit the "Submit" Key, Safari normalizes the Hebrew words you typed.</li>\
+        </ul>\
         <li>The iOS version of Safari seems to be fine.</li> \
         <li>The issue with Unicode Normalization. Safari (MacOS) is the only browser that does the Normalization. For more info about Unicode Normalization, see <a href="https://www.sbl-site.org/Fonts/SBLHebrewUserManual1.5x.pdf">SBL Hebrew User Manual</a>, pages 8–17.</li> \
       </ul>'
