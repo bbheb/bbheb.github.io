@@ -9,7 +9,7 @@ window.onload = function() {
         <li>The iOS version of Safari seems to be fine.</li> \
         <li>The issue with Unicode Normalization. Safari (MacOS) is the only browser that does the Normalization. For more info about Unicode Normalization, see <a href="https://www.sbl-site.org/Fonts/SBLHebrewUserManual1.5x.pdf">SBL Hebrew User Manual</a>, pages 8–17.</li> \
       </ul>'
-      document.getElementById('safari').innerHTML = safariWarning;
+        $('#safari').html(safariWarning);
     }
   } else {
     // do nothing
@@ -18,7 +18,7 @@ window.onload = function() {
 
 
 // All correct answers
-var ansObjList = {
+const ansObjList = {
   "ch01c":{Aleph: 'א',Beth: 'ב',Gimel: 'ג',Daleth: 'ד',Hey: 'ה',Waw: 'ו',Zayin: 'ז',Het: 'ח',Tet: 'ט',Yod: 'י',Kaph: 'כ',Lamed: 'ל',Mem: 'מ',Nun: 'נ',Samek: 'ס',Ayin: 'ע',Peh: 'פ',Tsade: 'צ',Qoph: 'ק',Resh: 'ר',Sin: 'שׂ',Shin: 'שׁ',Taw: 'ת'},
   "ch01v":{v1:'pathach',v2:'a',v3:'short',v4:'qamets',v5:'a',v7:'hireq',v8:'i',v9:'short',v10:'seghol',v11:'i',v12:'short',v13:'tsere',v14:'i',v15:'long',v16:'qibbuts',v17:'u',v18:'short',v19:'holem',v20:'u',v21:'long',v22:'qamets hatuph',v23:'u',v25:'shewa',v26:'reduced',v28:'hateph pathach',v29:'a',v30:'reduced',v31:'hateph seghol',v32:'i',v33:'reduced',v34:'hateph qamets',v35:'u',v36:'reduced'},
   "ch02":{v1:'hireq yod',v2:'i',v3:'long',v4:'tsere yod',v5:'i',v6:'long',v7:'seghol yod',v8:'i',v9:'short',v10:'holem waw',v11:'u',v12:'long',v13:'shureq',v14:'u',v15:'long',v16:'qamets hey',v17:'a',v18:'long',v19:'tsere hey',v20:'i',v21:'long',v22:'seghol hey',v23:'i',v24:'short',v25:'holem hey',v26:'u',v27:'long'},
@@ -40,8 +40,8 @@ var ansObjList = {
   "ch34":{v1:'הִתְקַטֵּל',v2:'הִתְקַטְּלוּ',v3:'הִתְקַטְּלָה',v4:'הִתְקַטַּלְתָּ',v5:'הִתְקַטַּלְתֶּם',v6:'הִתְקַטַּלְתְּ',v7:'הִתְקַטַּלְתֶּן',v8:'הִתְקַטַּלְתִּי',v9:'הִתְקַטַּלְנוּ',v10:'יִתְקַטֵּל',v11:'יִתְקַטְּלוּ',v12:'תִּתְקַטֵּל',v13:'תִּתְקַטֵּלְנָה',v14:'תִּתְקַטֵּל',v15:'תִּתְקַטְּלוּ',v16:'תִּתְקַטְּלִי',v17:'תִּתְקַטֵּלְנָה',v18:'אֶתְקַטֵּל',v19:'נִתְקַטֵּל'}
 };
 
-var ch = getMeta('description'); // get meta data for the currect page.
-var ansObj = ansObjList[ch]; // get the correct answer set for the currect page.
+const ch = getMeta('description'); // get meta data for the currect page.
+const ansObj = ansObjList[ch]; // get the correct answer set for the currect page.
 
 
 $(() => {
@@ -49,15 +49,14 @@ $(() => {
   // navigator on paradigm practice pages
   let paraNavHTML = '<p style="font-size:14px; text-align:right" ><a href="../../index.html">Return to the Main Resource Page</a></p>\
   <p style="font-size:14px; text-align:right" ><a href="all-paradigms-list.html">Return to the Paradigms List Page</a></p>'
-  document.getElementById('para-nav').innerHTML = paraNavHTML;
-
+  $('#para-nav').html(paraNavHTML);
 
   // Click ❓ or ❌ to reveal the answer key. Buttons to reveal/clear all answer keys.
   let revealAnsTipHTML = '<b>* Click ❓ or ❌ to reveal individual answer key.</b></br>\
   <button type="button" class="btn btn-success" onclick="revealAllAnswers()">Click Me</button> to Reveal All Answers;\
   <button type="button" class="btn btn-info" onclick="location.reload()">Click Me</button> to Clear All Answers.\
   </br></br>'
-  document.getElementById('revealAnsTip').innerHTML = revealAnsTipHTML;
+  $('#revealAnsTip').html(revealAnsTipHTML);
 
   // show correct answer key.
   $('.mark').click(function() {
