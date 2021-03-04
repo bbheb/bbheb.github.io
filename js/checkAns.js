@@ -73,7 +73,7 @@ $(() => {
   });
 
   // check user input to see if it matches.
-  $('input').on("keyup change", function() {
+  $('input').on("keyup change input", function() {
     let input = $(this).val(); // get user input value.
     let id = $(this).attr('id'); // get id for the "input" cell
     let idR = id + "r"; // get id for the "mark" cell.
