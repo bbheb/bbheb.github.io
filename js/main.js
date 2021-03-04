@@ -5,6 +5,7 @@ $(() => {
   $("#para-nav").html(paraNavHTML);
 });
 
+/*
 function loadSourceHTML(sourceURL,sourceID,currentPageID){
   $.get(sourceURL, htmlRaw => {
     var targetHTML = $(htmlRaw).find("#"+sourceID).html();
@@ -14,3 +15,4 @@ function loadSourceHTML(sourceURL,sourceID,currentPageID){
     $("#"+currentPageID).html(targetHTML);
   });
 }
+*/
