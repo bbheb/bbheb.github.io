@@ -4,16 +4,16 @@
 window.onload = function() {
   if (navigator.platform.includes("Mac")) {
     if (navigator.userAgent.search("Safari") >= 0 && navigator.userAgent.search("Chrome") < 0) {
-      let safariWarning = '<p style="font-size: 24px; background-color: #FFFF00;">You are using Safari. Please use another browser!</p> \
-      <ul class="alert alert-secondary"> \
-        <li>If you use Safari, your answer will be marked as incorrect when the word contains <span class="heb" dir="rtl">שׁ ,שׂ</span> or Dagesh.</li> \
-        <li>The issue with Unicode Normalization. More precisely, when you type the word in the box, it maybe marked as correct. But when you <i>paste</i> the same word that contains Sin, Shin or Dagesh, you answer will be marked incorrect, becuase Safari normalizes the Hebrew word you just pasted. The normalized word happened to follow a different typing order.</li> \
-        <ul> \
-          <li>The same thing happened when you do exams on Safari (MacOS). As soon as you hit the "Submit" key, Safari normalizes the Hebrew words you typed before it compares it with the answer key.</li>\
-        </ul>\
-        <li>The iOS version of Safari seems to be fine.</li> \
-        <li>Safari (MacOS) is the only browser that does the Normalization. For more info about Unicode Normalization, see <a href="https://www.sbl-site.org/Fonts/SBLHebrewUserManual1.5x.pdf">SBL Hebrew User Manual</a>, pages 8–17.</li> \
-      </ul>'
+      let safariWarning = `<p style="font-size: 24px; background-color: #FFFF00;">You are using Safari. Please use another browser!</p>
+      <ul class="alert alert-secondary">
+        <li>If you use Safari, your answer will be marked as incorrect when the word contains <span class="heb" dir="rtl">שׁ ,שׂ</span> or Dagesh.</li>
+        <li>The issue with Unicode Normalization. More precisely, when you type the word in the box, it maybe marked as correct. But when you <i>paste</i> the same word that contains Sin, Shin or Dagesh, you answer will be marked incorrect, becuase Safari normalizes the Hebrew word you just pasted. The normalized word happened to follow a different typing order.</li>
+        <ul>
+          <li>The same thing happened when you do exams on Safari (MacOS). As soon as you hit the "Submit" key, Safari normalizes the Hebrew words you typed before it compares it with the answer key.</li>
+        </ul>
+        <li>The iOS version of Safari seems to be fine.</li>
+        <li>Safari (MacOS) is the only browser that does the Normalization. For more info about Unicode Normalization, see <a href="https://www.sbl-site.org/Fonts/SBLHebrewUserManual1.5x.pdf">SBL Hebrew User Manual</a>, pages 8–17.</li>
+      </ul>`
         $('#safari').html(safariWarning);
     }
   } else {
@@ -121,13 +121,16 @@ function testAns(id, idR, ansObj){
     return;
   }
 
+  var sinFB2B = 'שׂ';
+  var shinFB2A = 'שׁ';
+  var sin05E9 = 'שׂ'; // \u05E9\u05C1
+  var shin05E9 = 'שׁ'; // \u05E9\u05C2
+
   // replace \ufb2a and \ufb2b with \u05e9\u05c1 and \u05e9\u05c2
-  if (input.includes('שׁ')){
-    input = input.replace("שׁ",
-      "שׁ"); // this has to be put into two lines. Otherwise, there will be problems. It is caused by Hebrew (rtl) words.
-  } else if (input.includes('שׂ')){
-    input = input.replace("שׂ",
-      "שׂ"); // this has to be put into two lines. Otherwise, there will be problems. It is caused by Hebrew (rtl) words.
+  if (input.includes(shinFB2A)){
+    input = input.replace(shinFB2A,shin05E9);
+  } else if (input.includes(sinFB2B)){
+    input = input.replace(sinFB2B,sin05E9);
   }
 
   let ans = ansObj[id]; // correct answer.
