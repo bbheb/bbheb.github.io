@@ -117,35 +117,35 @@ function testAns(id, idR, ansObj){
   let input = document.getElementById(id).value.toLowerCase();
   let mark = document.getElementById(idR);
   if (input == '') {
-    mark.innerHTML = '❓';
+    mark.innerText = '❓';
     return;
   }
 
-  var sinFB2B = 'שׂ';
-  var shinFB2A = 'שׁ';
+  // replace \ufb2a and \ufb2b with \u05e9\u05c1 and \u05e9\u05c2
+  var sinFB2B = 'שׂ'; // \uFB2B
+  var shinFB2A = 'שׁ'; // \uFB2A
   var sin05E9 = 'שׂ'; // \u05E9\u05C1
   var shin05E9 = 'שׁ'; // \u05E9\u05C2
-
-  // replace \ufb2a and \ufb2b with \u05e9\u05c1 and \u05e9\u05c2
   if (input.includes(shinFB2A)){
     input = input.replace(shinFB2A,shin05E9);
   } else if (input.includes(sinFB2B)){
     input = input.replace(sinFB2B,sin05E9);
   }
 
+  // check answer
   let ans = ansObj[id]; // correct answer.
 
   if (typeof ans === 'string') {  // one correct answer.
       if (input == ans) {
-        mark.innerHTML = '✅';
+        mark.innerText = '✅';
       } else {
-        mark.innerHTML = '❌';
+        mark.innerText = '❌';
       }
     } else if (typeof ans === 'object') {  // multiple correct answers.
         if (ans.includes(input)) {
-          mark.innerHTML = '✅';
+          mark.innerText = '✅';
         } else {
-          mark.innerHTML = '❌';
+          mark.innerText = '❌';
         }
     }
 
