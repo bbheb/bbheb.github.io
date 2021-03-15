@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>532660533.36080903</real>
+		<key>CustomIconData</key>
+		<string>KMEP-ToolbarCustomize</string>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>ActionColor</key>
+						<string>Purple</string>
+						<key>MacroActionType</key>
+						<string>Comment</string>
+						<key>StyledText</key>
+						<data>
+						cnRmZAAAAAADAAAAAgAAAAcAAABU
+						WFQucnRmAQAAAC6vBAAAKwAAAAEA
+						AACnBAAAe1xydGYxXGFuc2lcYW5z
+						aWNwZzEyNTJcY29jb2FydGYyNTc4
+						Clxjb2NvYXRleHRzY2FsaW5nMFxj
+						b2NvYXBsYXRmb3JtMHtcZm9udHRi
+						bFxmMFxmc3dpc3NcZmNoYXJzZXQw
+						IEhlbHZldGljYS1Cb2xkO1xmMVxm
+						c3dpc3NcZmNoYXJzZXQwIEhlbHZl
+						dGljYTt9CntcY29sb3J0Ymw7XHJl
+						ZDI1NVxncmVlbjI1NVxibHVlMjU1
+						O1xyZWQwXGdyZWVuMFxibHVlMDt9
+						CntcKlxleHBhbmRlZGNvbG9ydGJs
+						OztcY3NzcmdiXGMwXGMwXGMwXGM4
+						NDcwNlxjbmFtZSBjb250cm9sVGV4
+						dENvbG9yO30KXHBhcmRcdHg1NjBc
+						dHgxMTIwXHR4MTY4MFx0eDIyNDBc
+						dHgyODAwXHR4MzM2MFx0eDM5MjBc
+						dHg0NDgwXHR4NTA0MFx0eDU2MDBc
+						dHg2MTYwXHR4NjcyMFxwYXJkaXJu
+						YXR1cmFsXHBhcnRpZ2h0ZW5mYWN0
+						b3IwCgpcZjBcYlxmczI2IFxjZjIg
+						QnkKXGYxXGIwIAkJOiBNYXJ0aW4g
+						WmhhbmdcCgpcZjBcYiBDcmVhdGVk
+						ClxmMVxiMCAgCTogMDMvMTQvMjAy
+						MSwgOTozNyBQTSBFVFwKClxmMFxi
+						IE1vZGlmaWVkClxmMVxiMCAJOiAg
+						XAoKXGYwXGIgVmVyc2lvbgpcZjFc
+						YjAgCTogMS4wXApcCgpcZjBcYiBQ
+						dXJwb3NlClxmMVxiMCA6XApUaGlz
+						IG1hY3JvIGNoYW5nZXMgdGhlIEhl
+						YnJldyBmb250IGZvciB0aGUgdm9j
+						YWJ1bGFyeSBtYXRjaGluZyBxdWVz
+						dGlvbnMgb24gQ2FudmFzLlwKXAoK
+						XGYwXGIgSW5zdHJ1Y3Rpb25zIGZv
+						ciB1c2luZyB0aGUgbWFjcm8KXGYx
+						XGIwIDpcCllvdSBuZWVkIHRvIGRv
+						IHRoZXNlIHR3byB0aGluZ3M6XAox
+						LiBFbmFibGUgdGhpcyBtYWNyby5c
+						CjIuIFNldCBhIGhvdGtleSB0cmln
+						Z2VyIGZvciB0aGUgbWFjcm8uXApc
+						CldoZW4geW91IGFyZSBvbiB0aGUg
+						cXVpei9leGFtIHBhZ2UsIGNsaWNr
+						IHRoZSBob3RrZXkgdG8gdHJpZ2dl
+						ciB0aGlzIG1hY3JvLiBUaGF0J3Mg
+						YWxsIHlvdSBuZWVkIHRvIGRvIVwK
+						XAoKXGYwXGIgQ29tbWVudApcZjFc
+						YjAgOlwKTm90ZTogeW91IG5lZWQg
+						dG8gaGF2ZSAiQWxsb3cgSmF2YVNj
+						cmlwdCBmcm9tIEFwcGxlIEV2ZW50
+						cyIgZW5hYmxlZCBvbiB5b3VyIGJy
+						b3dzZXIuXApcClRoaXMgbWFjcm8g
+						d29ya3Mgb24gU2FmYXJpIGFuZCBh
+						bGwgQ2hyb21pdW0tYmFzZWQgYnJv
+						d3NlcnMuIEl0IGRvZXMgTk9UIHdv
+						cmsgZm9yIEZpcmVmb3gsIGJlY2F1
+						c2UgaXQgZG9lcyBub3QgaGF2ZSAi
+						UnVuIEphdmFTY3JpcHQgZnJvbSBB
+						cHBsZSBFdmVudCIgc3VwcG9ydC59
+						AQAAACMAAAABAAAABwAAAFRYVC5y
+						dGYQAAAAertOYLYBAAAAAAAAAAAA
+						AA==
+						</data>
+						<key>Title</key>
+						<string>Note</string>
+					</dict>
+					<dict>
+						<key>DisplayKind</key>
+						<string>None</string>
+						<key>HonourFailureSettings</key>
+						<true/>
+						<key>IncludeStdErr</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>ExecuteJavaScript</string>
+						<key>Path</key>
+						<string></string>
+						<key>Text</key>
+						<string>var x = document.querySelectorAll('.pull-left label');
+var i;
+for (i = 0; i &lt; x.length; i++) {
+  x[i].style.fontFamily = "Times New Roman";
+  x[i].style.fontSize = "36px";
+}</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>TrimResults</key>
+						<true/>
+						<key>TrimResultsNew</key>
+						<true/>
+						<key>UseText</key>
+						<true/>
+						<key>WebBrowser</key>
+						<string>Front Browser</string>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>635549276.74246395</real>
+				<key>IsActive</key>
+				<false/>
+				<key>ModificationDate</key>
+				<real>637465358.35791898</real>
+				<key>Name</key>
+				<string>Change the Hebrew Font for the Vocab Questions on Canvas</string>
+				<key>Triggers</key>
+				<array/>
+				<key>UID</key>
+				<string>4DCD75D0-C0D7-43B4-801E-1DA0A5F542D9</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>Test Group</string>
+		<key>ToggleMacroUID</key>
+		<string>5C0BFA63-66B6-40E9-B4B1-CEAB325D0C73</string>
+		<key>UID</key>
+		<string>3EFDF5A4-7330-43B2-AE68-879A8DEFCCA3</string>
+	</dict>
+</array>
+</plist>
