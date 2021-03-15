@@ -80,3 +80,8 @@ img {
 cite {
   color:Brown;
 }
+
+iframe {
+  display:block;
+  margin: 0 auto;
+}
