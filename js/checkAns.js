@@ -4,7 +4,7 @@
 window.onload = function() {
   if (navigator.platform.includes("Mac")) {
     if (navigator.userAgent.search("Safari") >= 0 && navigator.userAgent.search("Chrome") < 0) {
-      let safariWarning = `<details><summary><p style="font-size: 24px; background-color: #FFFF00;">You are using Safari. Please use another browser!</p></summary>
+      let safariWarning = `<details><summary style="font-size: 24px; background-color: #FFFF00;">You are using Safari. Please use another browser!</summary>
       <ul class="alert alert-secondary">
         <li>If you use Safari, your answer will be marked as incorrect when the word contains <span class="heb" dir="rtl">שׁ ,שׂ</span> or Dagesh.</li>
         <li>The issue with Unicode Normalization. More precisely, when you type the word in the box, it maybe marked as correct. But when you <i>paste</i> the same word that contains Sin, Shin or Dagesh, you answer will be marked incorrect, becuase Safari normalizes the Hebrew word you just pasted. The normalized word happened to follow a different typing order.</li>
