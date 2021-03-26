@@ -8,7 +8,7 @@
 // ==/UserScript==
 
 (function(){
-	'user strict';
+	'use strict';
 	var x = document.querySelectorAll('.pull-left label');
 	var i;
 	for (i = 0; i < x.length; i++) {
