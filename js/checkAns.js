@@ -15,7 +15,7 @@ window.onload = function() {
         <li>Safari (MacOS) is the only browser that does the Normalization. For more info about Unicode Normalization, see <a href="https://www.sbl-site.org/Fonts/SBLHebrewUserManual1.5x.pdf">SBL Hebrew User Manual</a>, pages 8–17.</li>
       </ul>
       </details>`
-      
+
       $('#safari').html(safariWarning);
     }
   } else {
