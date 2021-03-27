@@ -6,18 +6,18 @@ $(() => {
 
 
 let paraNavHTML = `<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-  <a class="navbar-brand" href="/BiblicalHebrew/index.html">Home</a>
+  <a class="navbar-brand py-0" href="/BiblicalHebrew/index.html">Home</a>
 <ul class="navbar-nav">
-  <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="/BiblicalHebrew/HebrewKeyboard/index.html" data-toggle="dropdown">Keyboard</a>
+  <li class="nav-item dropdown"><a class="nav-link py-0 dropdown-toggle" href="/BiblicalHebrew/HebrewKeyboard/index.html" data-toggle="dropdown">Keyboard</a>
     <div class="dropdown-menu">
       <a class="dropdown-item" href="/BiblicalHebrew/HebrewKeyboard/keyman-win.html">Windows</a>
       <a class="dropdown-item" href="/BiblicalHebrew/HebrewKeyboard/keyman-mac.html">MacOS</a>
       <a class="dropdown-item" href="/BiblicalHebrew/HebrewKeyboard/keyman-mobile.html">mobile</a>
     </div>
   </li>
-  <li class="nav-item"><a class="nav-link" href="/BiblicalHebrew/HebrewTypingTest/index.html">Typing Test</a>
+  <li class="nav-item"><a class="nav-link py-0" href="/BiblicalHebrew/HebrewTypingTest/index.html">Typing Test</a>
 
-  <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="https://github.com/martinmts/BiblicalHebrew/tree/main/Garrett_BiblicalHebrew/Downloads" data-toggle="dropdown">Resources</a>
+  <li class="nav-item dropdown"><a class="nav-link py-0 dropdown-toggle" href="https://github.com/martinmts/BiblicalHebrew/tree/main/Garrett_BiblicalHebrew/Downloads" data-toggle="dropdown">Resources</a>
   <div class="dropdown-menu">
     <a class="dropdown-item" href="/BiblicalHebrew/Garrett_BiblicalHebrew/Downloads/01_Hebrew Alphabet Song.mp3">Ch. 01 Hebrew Alphabet Song.mp3</a>
     <a class="dropdown-item" href="/BiblicalHebrew/Garrett_BiblicalHebrew/Downloads/01_Hebrew Consonants Practice Sheet.pdf">Ch. 01 Hebrew Consonants Practice Sheet.pdf</a>
@@ -28,7 +28,7 @@ let paraNavHTML = `<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
     <a class="dropdown-item" href="/BiblicalHebrew/Garrett_BiblicalHebrew/Downloads/23, 21_Principle Parts Practice Sheet (pp. 149&164 Table 21.4, 23.6).pdf">Chs. 23, 21 Principle Parts Practice Sheet (pp. 149&164 Table 21.4, 23.6).pdf</a>
   </div>
 
-  <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="/BiblicalHebrew/Garrett_BiblicalHebrew/Paradigms/all-paradigms-list.html" data-toggle="dropdown">Paradigms</a>
+  <li class="nav-item dropdown"><a class="nav-link py-0 dropdown-toggle" href="/BiblicalHebrew/Garrett_BiblicalHebrew/Paradigms/all-paradigms-list.html" data-toggle="dropdown">Paradigms</a>
     <div class="dropdown-menu">
       <a class="dropdown-item text-muted" href="#">Elementary Hebrew</a>
       <a class="dropdown-item" href="/BiblicalHebrew/Garrett_BiblicalHebrew/Paradigms/ch01-consonants.html">Alphabet Reproduction Practice (Table 1.1)</a>
@@ -54,7 +54,7 @@ let paraNavHTML = `<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
       <a class="dropdown-item" href="/BiblicalHebrew/Garrett_BiblicalHebrew/Paradigms/ch34-hithpael.html">Hithpael Paradigm Reproduction (Tables 34.2, 3)</a>
     </div>
 
-  <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">EH Supp</a>
+  <li class="nav-item dropdown"><a class="nav-link py-0 dropdown-toggle" href="#" data-toggle="dropdown">EH Supp</a>
     <div class="dropdown-menu">
       <a class="dropdown-item" href="/BiblicalHebrew/Garrett_BiblicalHebrew/Supplements/ch01.html">Ch. 01 The Hebrew Alphabet and Vowels</a>
       <a class="dropdown-item" href="/BiblicalHebrew/Garrett_BiblicalHebrew/Supplements/ch02.html">Ch. 02 Pointed Vowel Letters and the Silent Shewa</a>
@@ -86,7 +86,7 @@ let paraNavHTML = `<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
       <a class="dropdown-item text-success" href="/BiblicalHebrew/Garrett_BiblicalHebrew/Supplements/ehex7_19-21.html">Ex. 7, chs. 19-21</a>
     </div>
 
-  <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">HS Supp</a>
+  <li class="nav-item dropdown"><a class="nav-link py-0 dropdown-toggle" href="#" data-toggle="dropdown">HS Supp</a>
     <div class="dropdown-menu">
       <a class="dropdown-item" href="/BiblicalHebrew/Garrett_BiblicalHebrew/Supplements/ch22.html">Ch. 22 Characteristics of the Niphal, Piel, and Hiphil</a>
       <a class="dropdown-item" href="/BiblicalHebrew/Garrett_BiblicalHebrew/Supplements/ch23.html">Ch. 23 Characteristics of the Pual, Hophal, and Hithpael</a>
