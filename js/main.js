@@ -17,7 +17,31 @@ let paraNavHTML = `<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
   </li>
   <li class="nav-item"><a class="nav-link" href="/BiblicalHebrew/HebrewTypingTest/index.html">Typing Test</a>
   <li class="nav-item"><a class="nav-link" href="https://github.com/martinmts/BiblicalHebrew/tree/main/Garrett_BiblicalHebrew/Downloads">Resources</a>
-  <li class="nav-item"><a class="nav-link" href="/BiblicalHebrew/Garrett_BiblicalHebrew/Paradigms/all-paradigms-list.html">Paradigms</a>
+  <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="/BiblicalHebrew/Garrett_BiblicalHebrew/Paradigms/all-paradigms-list.html" data-toggle="dropdown">Paradigms</a>
+    <div class="dropdown-menu">
+      <a class="dropdown-item text-muted" href="#">Elementary Hebrew</a>
+      <a class="dropdown-item" href="/BiblicalHebrew/Garrett_BiblicalHebrew/Paradigms/ch01-consonants.html">Alphabet Reproduction Practice (Table 1.1)</a>
+      <a class="dropdown-item" href="/BiblicalHebrew/Garrett_BiblicalHebrew/Paradigms/ch01-vowels.html">Vowels Reproduction Practice (Tables 1.13, 1.14)</a>
+      <a class="dropdown-item" href="/BiblicalHebrew/Garrett_BiblicalHebrew/Paradigms/ch02-vowel-letters.html">Vowel Letters Reproduction Practice (Table 2.1)</a>
+      <a class="dropdown-item" href="/BiblicalHebrew/Garrett_BiblicalHebrew/Paradigms/ch05-noun-pattern.html">Noun Pattern Reproduction Practice (Table 5.1)</a>
+      <a class="dropdown-item" href="/BiblicalHebrew/Garrett_BiblicalHebrew/Paradigms/ch09-qal-qatal.html">Qal Qatal Paradigms Reproduction (Tables 9.1, 9.3)</a>
+      <a class="dropdown-item" href="/BiblicalHebrew/Garrett_BiblicalHebrew/Paradigms/ch10-qal-yiqtol.html">Qal Yiqtol Paradigms Reproduction (Tables 10.2, 10.6)</a>
+      <a class="dropdown-item" href="/BiblicalHebrew/Garrett_BiblicalHebrew/Paradigms/ch11-qal-wayyiqtol.html"">Qal Wayyiqtol Paradigms Reproduction (Tables 11.3, 11.4)</a>
+      <a class="dropdown-item" href="/BiblicalHebrew/Garrett_BiblicalHebrew/Paradigms/ch14-noun-pronominal.html">Qal Noun + Pronominal Suffix Paradigms Reproduction (Tables 14.2, 14.4)</a>
+      <a class="dropdown-item" href="/BiblicalHebrew/Garrett_BiblicalHebrew/Paradigms/ch16-geminate-nouns.html">Geminate Nouns Paradigm Reproduction (Tables 16.1, 2, 3)</a>
+      <a class="dropdown-item" href="/BiblicalHebrew/Garrett_BiblicalHebrew/Paradigms/ch17-pronouns.html">Pronouns Paradigms Reproduction (Tables 17.1, 6)</a>
+      <a class="dropdown-item" href="/BiblicalHebrew/Garrett_BiblicalHebrew/Paradigms/ch18-qal-imperative.html">Qal Imperative Paradigm Reproduction (Tables 18.1, 3)</a>
+      <a class="dropdown-item" href="/BiblicalHebrew/Garrett_BiblicalHebrew/Paradigms/ch21-qal-principal-parts.html">Qal Principal Parts Reproduction (Table 21.4)</a>
+      <a class="dropdown-item text-muted" href="#">Hebrew Syntax</a>
+      <a class="dropdown-item" href="/BiblicalHebrew/Garrett_BiblicalHebrew/Paradigms/ch21-qal-principal-parts.html">Qal Principal Parts Reproduction (Table 21.4)</a>
+      <a class="dropdown-item" href="/BiblicalHebrew/Garrett_BiblicalHebrew/Paradigms/ch23-derived-stems-principal-parts.html">Derived Stems Principal Parts Reproduction (Table 23.6)</a>
+      <a class="dropdown-item" href="/BiblicalHebrew/Garrett_BiblicalHebrew/Paradigms/ch31-niphal.html">Niphal Paradigm Reproduction (Tables 31.2, 3)</a>
+      <a class="dropdown-item" href="/BiblicalHebrew/Garrett_BiblicalHebrew/Paradigms/ch32-piel.html">Piel Paradigm Reproduction (Tables 32.2, 4)</a>
+      <a class="dropdown-item" href="/BiblicalHebrew/Garrett_BiblicalHebrew/Paradigms/ch32-pual.html">Pual Paradigm Reproduction (Tables 32.9, 10)</a>
+      <a class="dropdown-item" href="/BiblicalHebrew/Garrett_BiblicalHebrew/Paradigms/ch33-hiphil.html">Hiphil Paradigm Reproduction (Tables 33.2, 4)</a>
+      <a class="dropdown-item" href="/BiblicalHebrew/Garrett_BiblicalHebrew/Paradigms/ch33-hophal.html">Hophal Paradigm Reproduction (Tables 33.10, 11)</a>
+      <a class="dropdown-item" href="/BiblicalHebrew/Garrett_BiblicalHebrew/Paradigms/ch34-hithpael.html">Hithpael Paradigm Reproduction (Tables 34.2, 3)</a>
+    </div>
   <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">EH Supp</a>
     <div class="dropdown-menu">
       <a class="dropdown-item" href="/BiblicalHebrew/Garrett_BiblicalHebrew/Supplements/ch01.html">Ch. 01</a>
