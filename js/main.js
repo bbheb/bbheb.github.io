@@ -64,7 +64,7 @@ let paraNavHTML = `<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
       <a class="dropdown-item" href="/BiblicalHebrew/Garrett_BiblicalHebrew/Supplements/ch05.html">Ch. 05 Gender and Number in Nouns</a>
       <a class="dropdown-item" href="/BiblicalHebrew/Garrett_BiblicalHebrew/Supplements/ch06.html">Ch. 06 Hebrew Verbs</a>
       <a class="dropdown-item text-success" href="/BiblicalHebrew/Garrett_BiblicalHebrew/Supplements/ehex2_4–6.html">Ex. 2, chs. 4-6</a>
-      <a class="dropdown-item" href="/BiblicalHebrew/Garrett_BiblicalHebrew/Supplements/ch07.html">Ch. 07 The Directive hey, Negative ʾal and Interrogative hey</a>
+      <a class="dropdown-item" href="/BiblicalHebrew/Garrett_BiblicalHebrew/Supplements/ch07.html">Ch. 07 The Directive <span class="heb" dir="rtl">ה</span>, Negative <span class="heb" dir="rtl">עַל</span> and Interrogative <span class="heb" dir="rtl">ה</span></a>
       <a class="dropdown-item" href="/BiblicalHebrew/Garrett_BiblicalHebrew/Supplements/ch08.html">Ch. 08 The Definite Article</a>
       <a class="dropdown-item" href="/BiblicalHebrew/Garrett_BiblicalHebrew/Supplements/ch09.html">Ch. 09 Roots, Stems, and the Qal Qatal</a>
       <a class="dropdown-item text-success" href="/BiblicalHebrew/Garrett_BiblicalHebrew/Supplements/ehex3_7–9.html">Ex. 3, chs. 7-9</a>
@@ -78,7 +78,7 @@ let paraNavHTML = `<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
       <a class="dropdown-item text-success" href="/BiblicalHebrew/Garrett_BiblicalHebrew/Supplements/ehex5_13–15.html">Ex. 5, chs. 13-15</a>
       <a class="dropdown-item" href="/BiblicalHebrew/Garrett_BiblicalHebrew/Supplements/ch16.html">Ch. 16 Geminate and Segholate Nouns</a>
       <a class="dropdown-item" href="/BiblicalHebrew/Garrett_BiblicalHebrew/Supplements/ch17.html">Ch. 17 Pronouns</a>
-      <a class="dropdown-item" href="/BiblicalHebrew/Garrett_BiblicalHebrew/Supplements/ch18.html">Ch. 18 More About yēsh and ʾēn and the Qal Imperative</a>
+      <a class="dropdown-item" href="/BiblicalHebrew/Garrett_BiblicalHebrew/Supplements/ch18.html">Ch. 18 More About <span class="heb" dir="rtl">יֵשׁ</span> and <span class="heb" dir="rtl">אֵין</span> and the Qal Imperative</a>
       <a class="dropdown-item text-success" href="/BiblicalHebrew/Garrett_BiblicalHebrew/Supplements/ehex6_16–18.html">Ex. 6, chs. 16-18</a>
       <a class="dropdown-item" href="/BiblicalHebrew/Garrett_BiblicalHebrew/Supplements/ch19.html">Ch. 19 Numbers</a>
       <a class="dropdown-item" href="/BiblicalHebrew/Garrett_BiblicalHebrew/Supplements/ch20.html">Ch. 20 Stems, Roots, and Principal Parts</a>
