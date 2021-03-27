@@ -18,10 +18,11 @@ body {
 }
 
 #nav {
+  margin:0px auto;
   position:fixed;
   top:0px;
-  position:absolute;
-  top:expression(documentElement.scrollTop + "px");
+  _position:absolute;
+  _top:expression(documentElement.scrollTop + "px");
   z-index:9999;
 }
 
