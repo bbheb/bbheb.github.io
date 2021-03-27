@@ -3,6 +3,10 @@
   src: url('SBL_Hbrw.ttf');
 }
 
+* {
+  line-height: 180%;
+}
+
 body {
   background-color: whitesmoke;
   max-width: 800px;
@@ -11,6 +15,14 @@ body {
   left: 10px;
   right: 10px;
   margin: 0 auto;
+}
+
+#nav {
+  position:fixed;
+  top:0px;
+  position:absolute;
+  top:expression(documentElement.scrollTop + "px");
+  z-index:9999;
 }
 
 h1 {
