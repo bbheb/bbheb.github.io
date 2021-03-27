@@ -5,7 +5,7 @@ $(() => {
   // navigator on paradigm practice pages
 
 
-let paraNavHTML = `<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+let navHTML = `<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
   <a class="navbar-brand py-0" href="/BiblicalHebrew/index.html">Home</a>
 <ul class="navbar-nav">
   <li class="nav-item dropdown"><a class="nav-link py-0 dropdown-toggle" href="/BiblicalHebrew/HebrewKeyboard/index.html" data-toggle="dropdown">Keyboard</a>
@@ -31,7 +31,7 @@ let paraNavHTML = `<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
 
   <li class="nav-item dropdown"><a class="nav-link py-0 dropdown-toggle" href="/BiblicalHebrew/Garrett_BiblicalHebrew/Paradigms/all-paradigms-list.html" data-toggle="dropdown">Paradigms</a>
     <div class="dropdown-menu">
-      <a class="dropdown-item text-muted" href="#">Elementary Hebrew</a>
+      <a class="dropdown-item disabled" href="#">Elementary Hebrew</a>
       <a class="dropdown-item" href="/BiblicalHebrew/Garrett_BiblicalHebrew/Paradigms/ch01-consonants.html">Alphabet Reproduction Practice (Table 1.1)</a>
       <a class="dropdown-item" href="/BiblicalHebrew/Garrett_BiblicalHebrew/Paradigms/ch01-vowels.html">Vowels Reproduction Practice (Tables 1.13, 1.14)</a>
       <a class="dropdown-item" href="/BiblicalHebrew/Garrett_BiblicalHebrew/Paradigms/ch02-vowel-letters.html">Vowel Letters Reproduction Practice (Table 2.1)</a>
@@ -44,7 +44,8 @@ let paraNavHTML = `<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
       <a class="dropdown-item" href="/BiblicalHebrew/Garrett_BiblicalHebrew/Paradigms/ch17-pronouns.html">Pronouns Paradigms Reproduction (Tables 17.1, 6)</a>
       <a class="dropdown-item" href="/BiblicalHebrew/Garrett_BiblicalHebrew/Paradigms/ch18-qal-imperative.html">Qal Imperative Paradigm Reproduction (Tables 18.1, 3)</a>
       <a class="dropdown-item" href="/BiblicalHebrew/Garrett_BiblicalHebrew/Paradigms/ch21-qal-principal-parts.html">Qal Principal Parts Reproduction (Table 21.4)</a>
-      <a class="dropdown-item text-muted" href="#">Hebrew Syntax</a>
+      <div class="dropdown-divider"></div>
+      <a class="dropdown-item disabled" href="#">Hebrew Syntax</a>
       <a class="dropdown-item" href="/BiblicalHebrew/Garrett_BiblicalHebrew/Paradigms/ch21-qal-principal-parts.html">Qal Principal Parts Reproduction (Table 21.4)</a>
       <a class="dropdown-item" href="/BiblicalHebrew/Garrett_BiblicalHebrew/Paradigms/ch23-derived-stems-principal-parts.html">Derived Stems Principal Parts Reproduction (Table 23.6)</a>
       <a class="dropdown-item" href="/BiblicalHebrew/Garrett_BiblicalHebrew/Paradigms/ch31-niphal.html">Niphal Paradigm Reproduction (Tables 31.2, 3)</a>
@@ -56,7 +57,7 @@ let paraNavHTML = `<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
     </div>
 
   <li class="nav-item dropdown"><a class="nav-link py-0 dropdown-toggle" href="#" data-toggle="dropdown">EH Supp</a>
-    <div class="dropdown-menu">
+    <div class="dropdown-menu dropdown-menu-right">
       <a class="dropdown-item" href="/BiblicalHebrew/Garrett_BiblicalHebrew/Supplements/ch01.html">Ch. 01 The Hebrew Alphabet and Vowels</a>
       <a class="dropdown-item" href="/BiblicalHebrew/Garrett_BiblicalHebrew/Supplements/ch02.html">Ch. 02 Pointed Vowel Letters and the Silent Shewa</a>
       <a class="dropdown-item" href="/BiblicalHebrew/Garrett_BiblicalHebrew/Supplements/ch03.html">Ch. 03 Daghesh Forte, Mappiq, Metheg, and Rules for Gutturals</a>
@@ -88,7 +89,7 @@ let paraNavHTML = `<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
     </div>
 
   <li class="nav-item dropdown"><a class="nav-link py-0 dropdown-toggle" href="#" data-toggle="dropdown">HS Supp</a>
-    <div class="dropdown-menu">
+    <div class="dropdown-menu dropdown-menu-right">
       <a class="dropdown-item" href="/BiblicalHebrew/Garrett_BiblicalHebrew/Supplements/ch22.html">Ch. 22 Characteristics of the Niphal, Piel, and Hiphil</a>
       <a class="dropdown-item" href="/BiblicalHebrew/Garrett_BiblicalHebrew/Supplements/ch23.html">Ch. 23 Characteristics of the Pual, Hophal, and Hithpael</a>
       <a class="dropdown-item text-success" href="/BiblicalHebrew/Garrett_BiblicalHebrew/Supplements/hsex1_principal-parts.html">Ex. 1, Principal Parts</a>
@@ -121,7 +122,7 @@ let paraNavHTML = `<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
 </nav>`;
 
 //  let paraNavHTML = '<p style="font-size:14px; text-align:right" ><a href="../../index.html">Return to the Main Resource Page</a></p>'
-  $("#nav").html(paraNavHTML);
+  $("#nav").html(navHTML);
 
 
 });
