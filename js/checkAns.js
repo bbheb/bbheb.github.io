@@ -57,7 +57,7 @@ $(() => {
 /*
   let paraNavHTML = '<p style="font-size:14px; text-align:right" ><a href="../../index.html">Return to the Main Resource Page</a></p>\
   <p style="font-size:14px; text-align:right" ><a href="all-paradigms-list.html">Return to the Paradigms List Page</a></p>'
-  $('#para-nav').html(paraNavHTML);
+  $('#nav').html(paraNavHTML);
 */
   // Click ❓ or ❌ to reveal the answer key. Buttons to reveal/clear all answer keys.
   let revealAnsTipHTML = '<b>* Click ❓ or ❌ to reveal individual answer key.</b></br>\

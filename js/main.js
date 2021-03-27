@@ -120,7 +120,7 @@ let paraNavHTML = `<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
 </nav>`;
 
 //  let paraNavHTML = '<p style="font-size:14px; text-align:right" ><a href="../../index.html">Return to the Main Resource Page</a></p>'
-  $("#para-nav").html(paraNavHTML);
+  $("#nav").html(paraNavHTML);
 
 
 });
