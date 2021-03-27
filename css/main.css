@@ -20,13 +20,10 @@ body {
 #nav {
   margin:0px auto;
   position:fixed;
+  width: 100%;
   top:0px;
-  _position:absolute;
-  _top:expression(documentElement.scrollTop + "px");
   z-index:9999;
 }
-
-
 
 h1 {
   color: tomato;

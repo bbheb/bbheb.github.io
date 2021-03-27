@@ -15,6 +15,7 @@ let paraNavHTML = `<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
       <a class="dropdown-item" href="/BiblicalHebrew/HebrewKeyboard/keyman-mobile.html">mobile</a>
     </div>
   </li>
+
   <li class="nav-item"><a class="nav-link py-0" href="/BiblicalHebrew/HebrewTypingTest/index.html">Typing Test</a>
 
   <li class="nav-item dropdown"><a class="nav-link py-0 dropdown-toggle" href="https://github.com/martinmts/BiblicalHebrew/tree/main/Garrett_BiblicalHebrew/Downloads" data-toggle="dropdown">Resources</a>
