@@ -6,7 +6,7 @@ $(() => {
 
 //  <a class="navbar-brand py-0" href="/BiblicalHebrew/index.html">Home</a>
 
-let navHTML = `<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+let navHTML = `<nav class="navbar navbar-expand-sm bg-light navbar-light fixed-top">
   <ul class="navbar-nav">
     <li class="nav-item dropdown"><a class="nav-link py-0" href="/BiblicalHebrew/index.html">Home</a></li>
     <li class="nav-item dropdown"><a class="nav-link py-0 dropdown-toggle" href="/BiblicalHebrew/HebrewKeyboard/index.html" data-toggle="dropdown">Keyboard</a>
