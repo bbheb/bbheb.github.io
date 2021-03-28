@@ -6,7 +6,7 @@
 html { }
 
 body {
-  background-color: #3B4348;
+  background-color: whitesmoke;
   margin: 0 auto;
 }
 
@@ -26,17 +26,12 @@ body {
   margin: 0 auto;
 }
 
-.navbar-nav {
+.navbar {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
 }
 
-
-
-.navbar-nav {
-  position: relative;
-}
 .dropdown-menu {
   max-height: 600px;
   overflow-y: auto;
