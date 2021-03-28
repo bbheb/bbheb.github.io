@@ -3,37 +3,24 @@
   src: url('SBL_Hbrw.ttf');
 }
 
-* {
-  line-height: 150%;
-}
-li div a {
-  line-height: 120%;
-}
-html, body {
-  margin: 0px auto;
-  padding: 0px;
-}
+html { }
 
 body {
   background-color: whitesmoke;
-  position: absolute;
-  padding-top: 50px;
-  padding-bottom: 20px;
-  max-width: 800px;
+  margin: 0 auto;
 }
 
 #nav {
-  position:fixed !important;
-  top:0px !important;
-  z-index:9999 !important;
-  width: 100% !important;
-  margin: 0;
-  padding: 0;
+  position:fixed;
+  top:0px;
+  z-index:9999;
+  width: 100%;
 }
 
-nav ul {
-  width:100%;
-  max-width:800px;
+#nav nav {
+  width: 95%;
+  width: 800px;
+  margin: 0 auto;
 }
 
 .navbar-nav {
@@ -44,10 +31,24 @@ nav ul {
   overflow-y: auto;
 }
 
+.container {
+  background-color: whitesmoke;
+  padding: 50px 20px;
+  width: 95%;
+  width: 800px;
+  margin: 0 auto;
+}
+
+
 h1 {
   color: tomato;
 }
-
+* {
+  line-height: 150%;
+}
+li div a {
+  line-height: 120%;
+}
 .exam {
   color: red;
 }
