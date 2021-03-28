@@ -26,11 +26,13 @@ body {
   margin: 0 auto;
 }
 
-#nav nav {
+.navbar-nav {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
 }
+
+
 
 .navbar-nav {
   position: relative;
