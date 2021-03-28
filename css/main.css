@@ -16,24 +16,32 @@ html, body {
 
 body {
   background-color: whitesmoke;
-  max-width: 800px;
   position: absolute;
-  top: 50px;
-  left: 0px;
-  right: 0px;
-  padding: 0px;
-}
-
-.dropdown-menu {
-  max-height: 600px;
-  overflow-y: auto;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  max-width: 800px;
 }
 
 #nav {
-  position:fixed;
-  top:0px;
-  z-index:9999;
-  width: 800px;
+  position:fixed !important;
+  top:0px !important;
+  z-index:9999 !important;
+  width: 100% !important;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul {
+  width:100%;
+  max-width:800px;
+}
+
+.navbar-nav {
+  position: relative;
+}
+.dropdown-menu {
+  max-height: 600px;
+  overflow-y: auto;
 }
 
 h1 {
