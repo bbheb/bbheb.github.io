@@ -13,7 +13,7 @@ let navHTML = `<nav class="navbar navbar-expand-sm bg-light navbar-light fixed-t
       <div class="dropdown-menu">
         <a class="dropdown-item" href="/HebrewKeyboard/keyman-win.html">Windows</a>
         <a class="dropdown-item" href="/HebrewKeyboard/keyman-mac.html">MacOS</a>
-        <a class="dropdown-item" href="/HebrewKeyboard/keyman-mobile.html">mobile</a>
+        <a class="dropdown-item" href="/HebrewKeyboard/keyman-mobile.html">Mobile Devices</a>
       </div>
     </li>
 
