@@ -2,7 +2,7 @@
 // @author		Martin Zhang
 // @version		0.1
 // @name		changeCanvasMatchQuestionFont
-// @namespace	https://martinmts.github.io/BiblicalHebrew
+// @namespace	https://bbheb.github.io
 // @description	Change the font for matching questions on Canvas, designed for Hebrew vocabulary questions.
 // @match		https://*.instructure.com/courses/*/quizzes/*/take*
 // ==/UserScript==
