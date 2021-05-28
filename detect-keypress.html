@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Detect Keypress</title>
+<style>
+	html {
+	  height: 100vh;
+	  display: flex;
+	}
+	#keyCodeLarge {
+		font-size: 24px;
+	}
+	span {
+		color:blue;
+	}
+</style>
+<script>
+	window.onload = function(){
+	  const key = document.getElementById("key"),
+	    code = document.getElementById("code"),
+	    keyCode = document.getElementById("keyCode"),
+	    keyCodeLarge = document.getElementById("keyCodeLarge"),
+	    info = document.getElementById("info"),
+	    hiddenElements = document.querySelectorAll(".hidden");
+
+	  document.onkeydown = function (e) {
+	    [].forEach.call(hiddenElements, function (el) {
+	      el.classList.remove("hidden");
+	    });
+	    info.classList.add("hidden");
+	    key.innerHTML = e.key;
+	    code.innerHTML = e.code;
+	    keyCode.innerHTML = e.keyCode;
+	    keyCodeLarge.innerHTML = e.keyCode;
+	  };
+	};
+
+</script>
+</head>
+
+<body>
+<h1>
+	Detect Keypress
+</h1>
+    <div>
+      <div id="keyCodeLarge" style="color:red"></div>
+    </div>
+      <p id="info">
+        Press any key to see the magic 🪄
+      </p>
+      <p class="hidden">key: <span id="key"></span></p>
+      <p class="hidden">code: <span id="code"></span></p>
+      <p class="hidden">keyCode: <span id="keyCode"></span></p>
+    </div>
+  </div>
+</body>
+
+</html>
