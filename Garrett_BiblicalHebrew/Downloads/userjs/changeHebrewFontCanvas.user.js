@@ -3,7 +3,7 @@
 // @version		0.2
 // @name		changeCanvasMatchQuestionFont
 // @namespace	https://bbheb.github.io
-// @description	Change the font for matching questions and user input boxes on Canvas, designed for Hebrew vocabulary questions.
+// @description	Change the font for matching questions (for Hebrew vocabulary questions) and user input boxes (for Hebrew paradigm questions) on Canvas.
 // @match		https://*.instructure.com/courses/*/quizzes/*/take*
 // ==/UserScript==
 
