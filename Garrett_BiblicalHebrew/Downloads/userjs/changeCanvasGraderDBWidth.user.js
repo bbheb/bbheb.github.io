@@ -13,8 +13,7 @@
 	try {
 		var div = document.querySelector("#content > div");
 		div.style.width = "800px";
-	};
-	catch {
+	} catch {
 
 	}
 	
