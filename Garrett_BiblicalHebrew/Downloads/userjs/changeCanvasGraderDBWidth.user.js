@@ -23,7 +23,7 @@ function addGlobalStyle(css) {
 }
 // how to implement it, dont forget the !important part
 // the site i was looking at had an embedded css style sheet that I didnt like its .tableStyle rule, so this is how you change that - CHANGE HERE
-addGlobalStyle('#content > div { width: 100% !important; }');
+addGlobalStyle('#content > div { width: 850px !important; }');
  
 
 
