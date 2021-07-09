@@ -20,7 +20,7 @@
 		head.appendChild(style);
 	}
 	
-	addGlobalStyle('body.is-inside-submission-frame.no-headers .answer_match_left { font-family: Times New Roman !important; font-size: 30px !important; }');
+	addGlobalStyle('body.is-inside-submission-frame.no-headers .answer_match_left { font-family: "Times New Roman" !important; font-size: 30px !important; }');
 	
 
 	
