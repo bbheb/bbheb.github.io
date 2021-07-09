@@ -4,7 +4,7 @@
 // @name		changeCanvasMatchQuestionFontGrader
 // @namespace	https://bbheb.github.io
 // @description	Change the font for matching questions (for Hebrew vocabulary questions) and user input boxes (for Hebrew paradigm questions) on Canvas.
-// @match		https://*.instructure.com/courses/*/gradebook/speed_grader*
+// @match		https://*.instructure.com/courses/*/assignments/*/submissions/*
 // ==/UserScript==
 
 (function(){
