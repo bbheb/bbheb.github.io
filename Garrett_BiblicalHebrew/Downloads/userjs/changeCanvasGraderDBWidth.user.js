@@ -4,7 +4,7 @@
 // @name		changeCanvasGraderDBWidth
 // @namespace	https://bbheb.github.io
 // @description	Change the font for matching questions (for Hebrew vocabulary questions) and user input boxes (for Hebrew paradigm questions) on Canvas.
-// @match		https://*.instructure.com/courses/*/gradebook/speed_grader*
+// @ match		https://*.instructure.com/courses/*/assignments/*/submissions/*
 // ==/UserScript==
 
 (function(){
@@ -17,13 +17,11 @@ function addGlobalStyle(css) {
     head = document.getElementsByTagName('head')[0];
     if (!head) { return; }
     style = document.createElement('style');
-    style.type = 'text/css';
     style.innerHTML = css;
     head.appendChild(style);
 }
-// how to implement it, dont forget the !important part
-// the site i was looking at had an embedded css style sheet that I didnt like its .tableStyle rule, so this is how you change that - CHANGE HERE
-addGlobalStyle('#content > div { width: 850px !important; }');
+
+addGlobalStyle('body.is-inside-submission-frame.no-headers #content > div { width: 100% !important; }');
  
 
 
