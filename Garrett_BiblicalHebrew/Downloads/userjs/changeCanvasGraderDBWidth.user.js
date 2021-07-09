@@ -1,6 +1,6 @@
 // ==UserScript==
 // @author		Martin Zhang
-// @version		0.3
+// @version		0.4
 // @name		changeCanvasGraderDBWidth
 // @namespace	https://bbheb.github.io
 // @description	Change the font for matching questions (for Hebrew vocabulary questions) and user input boxes (for Hebrew paradigm questions) on Canvas.
