@@ -10,17 +10,20 @@
 (function(){
 	'use strict';
 
-	try {
-		var x = document.querySelectorAll(".answer_match_left");
-		var i;
-		for (i = 0; i < x.length; i++) {
-		  x[i].style.fontFamily = "Times New Roman";
-		  x[i].style.fontSize = "30px";
-		};
-	} catch {
 
+	function addGlobalStyle(css) {
+		var head, style;
+		head = document.getElementsByTagName('head')[0];
+		if (!head) { return; }
+		style = document.createElement('style');
+		style.innerHTML = css;
+		head.appendChild(style);
 	}
+	
+	addGlobalStyle('body.is-inside-submission-frame.no-headers .answer_match_left { font-family: Times New Roman !important; font-size: 30px !important; }');
+	
 
+	
 	try {
 		var y = document.querySelectorAll("input");
 		var j;
