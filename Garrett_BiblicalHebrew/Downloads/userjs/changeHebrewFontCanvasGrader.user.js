@@ -22,6 +22,8 @@
 	
 //	addGlobalStyle('body.is-inside-submission-frame.no-headers .answer_match_left { font-family: "Times New Roman" !important; font-size: 30px !important; }');
 addGlobalStyle('.answer_match_left { font-family: "Times New Roman" !important; font-size: 30px !important; }');	
+addGlobalStyle('.answer { font-family: "Times New Roman" !important; font-size: 30px !important; }');	
+addGlobalStyle('.answer_text { font-family: "Times New Roman" !important; font-size: 30px !important; }');	
 
 /*	
 	try {

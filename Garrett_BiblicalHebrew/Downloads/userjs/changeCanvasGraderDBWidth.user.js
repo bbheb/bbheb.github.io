@@ -4,7 +4,7 @@
 // @name		changeCanvasGraderDBWidth
 // @namespace	https://bbheb.github.io
 // @description	Change the font for matching questions (for Hebrew vocabulary questions) and user input boxes (for Hebrew paradigm questions) on Canvas.
-// @ match		https://*.instructure.com/courses/*/assignments/*/submissions/*
+// @match		https://*.instructure.com/courses/*/assignments/*/submissions/*
 // ==/UserScript==
 
 (function(){
@@ -22,7 +22,7 @@ function addGlobalStyle(css) {
 }
 
 addGlobalStyle('body.is-inside-submission-frame.no-headers #content > div { width: 100% !important; }');
- 
+
 
 
 /*
