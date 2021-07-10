@@ -1,67 +1,37 @@
 // ==UserScript==
-// @author		Martin Zhang
-// @version		0.6
-// @name		changeCanvasMatchQuestionFontGrader
-// @namespace	https://bbheb.github.io
-// @description	Change the font for matching questions (for Hebrew vocabulary questions) and user input boxes (for Hebrew paradigm questions) on Canvas.
-// @match		https://*.instructure.com/courses/*/quizzes/*/submissions/*
+// @name        Canvas CSS Tweaks
+// @namespace   
+// @description Various tweaks to Canvas CSS
+// @match       https://*.instructure.com/courses/*/assignments/*/submissions/*
+// @match       https://*.instructure.com/courses/*/quizzes/*/history?*
+// @version     5
 // ==/UserScript==
-
-(function(){
+(function () {
 	'use strict';
-
-
-	function addGlobalStyle(css) {
-		var head, style;
-		head = document.getElementsByTagName('head')[0];
-		if (!head) { return; }
-		style = document.createElement('style');
-		style.innerHTML = css;
-		head.appendChild(style);
+  
+  /*
+   * this user script is based on the one made by [James Jones]
+   * at https://github.com/jamesjonesmath/canvancement/blob/master/miscellaneous/canvas-css-tweaks.user.js
+   * It is for graders and runs on the speedgrader page.
+   * The @match link pattern with "assignments" is for the Discussion Boards pages.
+   * The @match link pattern with "quizzes" is for the Quizzes pages.
+   * It changes the width of the discussion board.
+   * It also changes the Hebrew words in the vocabulary match questions, answer keys for fill-in-the-blank questions.
+   */
+  
+  
+	const rules = ['body.is-inside-submission-frame.no-headers #content > div { width: 80% !important; }',
+				   'div.answer_match_left, div.answer, div.answer_text, input.question_input { font-family: "Times New Roman"; font-weight: normal !important; font-size: 30px; }'
+				];
+  
+  
+	if (rules.length) {
+	  const style = document.createElement('style');
+	  document.head.appendChild(style);
+	  const sheet = style.sheet;
+	  for (let i = 0; i < rules.length; i++) {
+		sheet.insertRule(rules[i],i);
+	  }
 	}
-
-//	addGlobalStyle('body.is-inside-submission-frame.no-headers .answer_match_left { font-family: "Times New Roman" !important; font-size: 30px !important; }');	
-	addGlobalStyle('body.is-inside-submission-frame.no-headers .answer_match_left { font-family: "Times New Roman" !important; font-size: 30px !important; }');
-//	addGlobalStyle('body.is-inside-submission-frame.no-headers .answer { font-family: "Times New Roman" !important; font-size: 30px !important; }');	
-//	addGlobalStyle('body.is-inside-submission-frame.no-headers .answer_text { font-family: "Times New Roman" !important; font-size: 30px !important; }');	
-
-/*	
-	try {
-		var y = document.querySelectorAll("input");
-		var j;
-		for (j = 0; j < y.length; j++) {
-		  y[j].style.fontFamily = "Times New Roman";
-		  y[j].style.fontSize = "30px";
-		};
-	
-	} catch {
-
-	}
-
-	try {
-		var z = document.querySelectorAll(".answer");
-		var k;
-		for (k = 0; k < z.length; k++) {
-		  z[k].style.fontFamily = "Times New Roman";
-		  z[k].style.fontSize = "30px";
-		};
-	
-	} catch {
-
-	}
-
-	try {
-		var a = document.querySelectorAll(".answer_text");
-		var b;
-		for (b = 0; b < a.length; b++) {
-		  a[b].style.fontFamily = "Times New Roman";
-		  a[b].style.fontSize = "30px";
-		};
-	
-	} catch {
-		
-	}
-	
-*/
-
-})();
+  }) ();
+  
