@@ -1,10 +1,10 @@
 // ==UserScript==
 // @name        Canvas CSS Tweaks
-// @namespace   
+// @namespace   https://bbheb.github.io/Garrett_BiblicalHebrew/Downloads/userjs/changeHebrewFontCanvasGrader.user.js
 // @description Various tweaks to Canvas CSS
 // @match       https://*.instructure.com/courses/*/assignments/*/submissions/*
 // @match       https://*.instructure.com/courses/*/quizzes/*/history?*
-// @version     5
+// @version     0.6
 // ==/UserScript==
 (function () {
 	'use strict';
