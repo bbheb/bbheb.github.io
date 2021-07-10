@@ -12,7 +12,8 @@
 
 
 /*
- * this user script is based on the one made by [James Jones] at https://github.com/jamesjonesmath/canvancement
+ * this user script is based on the one made by [James Jones] 
+ *   at https://github.com/jamesjonesmath/canvancement/blob/master/miscellaneous/canvas-css-tweaks.user.js
  * It changes the font of the Hebrew words in the Vocabulary Match questions.
  * It also changes the font of the input box for the Hebrew paradigm questions.
  */ 
