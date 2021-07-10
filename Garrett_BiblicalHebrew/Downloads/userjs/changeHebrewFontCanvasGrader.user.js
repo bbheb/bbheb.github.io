@@ -1,10 +1,10 @@
 // ==UserScript==
 // @author		Martin Zhang
-// @version		0.5
+// @version		0.6
 // @name		changeCanvasMatchQuestionFontGrader
 // @namespace	https://bbheb.github.io
 // @description	Change the font for matching questions (for Hebrew vocabulary questions) and user input boxes (for Hebrew paradigm questions) on Canvas.
-// @match		https://*.instructure.com/courses/*/assignments/*/submissions/*
+// @match		https://*.instructure.com/courses/*/quizzes/*/submissions/*
 // ==/UserScript==
 
 (function(){
@@ -19,11 +19,11 @@
 		style.innerHTML = css;
 		head.appendChild(style);
 	}
-	
-//	addGlobalStyle('body.is-inside-submission-frame.no-headers .answer_match_left { font-family: "Times New Roman" !important; font-size: 30px !important; }');
-addGlobalStyle('.answer_match_left { font-family: "Times New Roman" !important; font-size: 30px !important; }');	
-addGlobalStyle('.answer { font-family: "Times New Roman" !important; font-size: 30px !important; }');	
-addGlobalStyle('.answer_text { font-family: "Times New Roman" !important; font-size: 30px !important; }');	
+
+//	addGlobalStyle('body.is-inside-submission-frame.no-headers .answer_match_left { font-family: "Times New Roman" !important; font-size: 30px !important; }');	
+	addGlobalStyle('body.is-inside-submission-frame.no-headers .answer_match_left { font-family: "Times New Roman" !important; font-size: 30px !important; }');
+//	addGlobalStyle('body.is-inside-submission-frame.no-headers .answer { font-family: "Times New Roman" !important; font-size: 30px !important; }');	
+//	addGlobalStyle('body.is-inside-submission-frame.no-headers .answer_text { font-family: "Times New Roman" !important; font-size: 30px !important; }');	
 
 /*	
 	try {
