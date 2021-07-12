@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name        AutoExpand Comment Canvas
-// @namespace   
+// @namespace   https://bbheb.github.io/Garrett_BiblicalHebrew/Downloads/userjs/autoexpandcommentboxCanvas.user.js
 // @description Expands the comment boxes when there is content in them.
 // @include     https://*.instructure.com/courses/*/quizzes/*/history?*
 // @version     1
