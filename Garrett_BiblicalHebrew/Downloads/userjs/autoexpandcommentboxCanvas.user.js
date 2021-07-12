@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name        AutoExpand Comments - Rev.
+// @name        AutoExpand Comment Canvas
 // @namespace   
 // @description Expands the comment boxes when there is content in them.
 // @include     https://*.instructure.com/courses/*/quizzes/*/history?*
