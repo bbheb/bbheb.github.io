@@ -28,7 +28,7 @@
 	  // Regrading methods may be 'disabled', 'enabled', or 'autorun'
 	  'methods' : {
 		'unanswered' : 'autorun',
-		'full_points' : 'enabled',
+		'full_points' : 'autorun',
 		'ma_allnone' : 'disabled',
 		'ma_correct' : 'disabled',
 		'ma_difference' : 'disabled',
@@ -55,7 +55,7 @@
 		config = {
 		  'methods' : {
 			'unanswered' : 'autorun',
-			'full_points' : 'autorun',
+			'full_points' : 'disabled',
 			'ma_allnone' : 'disabled',
 			'ma_correct' : 'disabled',
 			'ma_difference' : 'disabled',
@@ -573,7 +573,7 @@
 		  }
 		}
 	  }
-  
+
 	  function setupInterface() {
 		var submission = D.getElementsByClassName('quiz-submission')[0];
 		var ic = D.createElement('div');
@@ -619,6 +619,7 @@
 		  row.classList.add('pull-right');
 		  row.style.display = 'block';
 		  row.style.verticalAlign = 'middle';
+
 		  // Duplicate Final Score Block
 		  var finalScores = D.getElementById('update_scores');
 		  var scoreText = finalScores.querySelector('b').textContent;
@@ -665,14 +666,12 @@
 		  row.appendChild(fudge);
   
 		  // Duplicate Update Scores button
-		  /* remove the Update Scores button.
 		  var updateScore = originalUpdate.cloneNode(true);
 		  updateScore.classList.add('btn-small');
 		  updateScore.type = 'button';
 		  updateScore.addEventListener('click', updateAdvance);
 		  updateScore.style.marginLeft = '4px';
 		  row.appendChild(updateScore);
-		  */
   
 		  if (isSG && typeof config.nextAfterUpdate !== 'undefined' && config.nextAfterUpdate) {
 			updateScore.title = 'Update scores and stay on this user';
