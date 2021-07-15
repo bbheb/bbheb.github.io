@@ -5,7 +5,7 @@
 // @include     https://*.instructure.com/courses/*/gradebook/speed_grader?*
 // @include     https://*.instructure.com/courses/*/quizzes/*/history?*
 // @noframes
-// @version     5.1
+// @version     1.0
 // @grant       none
 // ==/UserScript==
 /*
@@ -55,7 +55,7 @@
 		config = {
 		  'methods' : {
 			'unanswered' : 'autorun',
-			'full_points' : 'disabled',
+			'full_points' : 'autorum',
 			'ma_allnone' : 'disabled',
 			'ma_correct' : 'disabled',
 			'ma_difference' : 'disabled',
@@ -66,10 +66,10 @@
 		  'autoExpandComments' : true,
 		  'duplicateQuestionHeader' : true,
 		  'showButtonCounts' : true,
-		  'nextAfterUpdate' : true,
-		  'nextAfterComment' : true,
-		  'nextAfterRubric' : true,
-		  'nextRubricExpanded' : true
+		  'nextAfterUpdate' : false,
+		  'nextAfterComment' : false,
+		  'nextAfterRubric' : false,
+		  'nextRubricExpanded' : false
 		};
 	  }
   
