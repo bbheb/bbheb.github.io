@@ -55,7 +55,7 @@
 		config = {
 		  'methods' : {
 			'unanswered' : 'autorun',
-			'full_points' : 'autorum',
+			'full_points' : 'autorun',
 			'ma_allnone' : 'disabled',
 			'ma_correct' : 'disabled',
 			'ma_difference' : 'disabled',
