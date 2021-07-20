@@ -1,7 +1,7 @@
 // ==UserScript==
-// @name        resizeCommentBoxCanvasGrader
-// @namespace   https://bbheb.github.io/Garrett_BiblicalHebrew/Downloads/userjs/resizeCommentBoxCanvasGrader.user.js
-// @description It resizes the comment box as you type/paste text into the box.
+// @name        resizeDiscussionBoardWidthCanvasGrader
+// @namespace   https://bbheb.github.io/Garrett_BiblicalHebrew/Downloads/userjs/resizeDiscussionBoardWidthCanvasGrader.user.js
+// @description It resizes the Discussion Board Width on Canvas.
 // @match       https://*.instructure.com/courses/*/assignments/*/submissions/*
 // @version     0.1
 // ==/UserScript==
