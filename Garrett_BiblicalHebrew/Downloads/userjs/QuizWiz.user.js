@@ -453,6 +453,7 @@
 		  var divElement = e.target.parentNode;
 		  divElement.style.display = 'block';
 		  e.target.style.width = '98%';
+		  e.style.height = '200px';
 		}
 	  }
   
