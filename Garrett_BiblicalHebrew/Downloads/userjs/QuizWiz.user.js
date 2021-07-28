@@ -5,7 +5,7 @@
 // @include     https://*.instructure.com/courses/*/gradebook/speed_grader?*
 // @include     https://*.instructure.com/courses/*/quizzes/*/history?*
 // @noframes
-// @version     1.01
+// @version     1.1
 // @grant       none
 // ==/UserScript==
 /*
@@ -21,10 +21,16 @@
  *
  */
 
+/*
+ *
+ * The comment box height now automatically adjust its height to the height of the input text. 
+ * This change is made by Martin Zhang. 07/28/2021, 02:39 PM ET
+ * 
+*/
+
+
 (function() {
 	'use strict';
-  
-	var commentBoxWidth = '500px';
 
 	var config = {
 	  // Regrading methods may be 'disabled', 'enabled', or 'autorun'
@@ -455,13 +461,15 @@
 		  var divElement = e.target.parentNode;
 		  divElement.style.display = 'block';
 		  e.target.style.width = '98%';
-		  e.style.height = commentBoxWidth;
+		  e.style.height = '40px';
 		}
 	  }
   
 	  function watchComment(e) {
-		if (e.target.value.length <= 1) {
+		if (e.target.value.length >= 1) {
 		  resizeComment(e.target);
+		} else {
+		  e.target.style.height = '40px';
 		}
 	  }
   
@@ -470,11 +478,13 @@
 		if (e.value.length > 0) {
 		  divElement.style.display = 'block';
 		  e.style.width = '98%';
-		  e.style.height = commentBoxWidth;
+		  e.style.height = '40px';
+		  e.style.height = (e.scrollHeight)+"px";
 		} else {
 		  divElement.style.display = 'inline-block';
 		  e.style.width = 'auto';
-		  e.style.height = commentBoxWidth;
+		  e.style.height = '40px';
+
 		}
 	  }
   
