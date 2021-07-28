@@ -5,7 +5,7 @@
 // @include     https://*.instructure.com/courses/*/gradebook/speed_grader?*
 // @include     https://*.instructure.com/courses/*/quizzes/*/history?*
 // @noframes
-// @version     1.0
+// @version     1.01
 // @grant       none
 // ==/UserScript==
 /*
@@ -24,6 +24,8 @@
 (function() {
 	'use strict';
   
+	var commentBoxWidth = '500px';
+
 	var config = {
 	  // Regrading methods may be 'disabled', 'enabled', or 'autorun'
 	  'methods' : {
@@ -453,7 +455,7 @@
 		  var divElement = e.target.parentNode;
 		  divElement.style.display = 'block';
 		  e.target.style.width = '98%';
-		  e.style.height = '200px';
+		  e.style.height = commentBoxWidth;
 		}
 	  }
   
@@ -468,11 +470,11 @@
 		if (e.value.length > 0) {
 		  divElement.style.display = 'block';
 		  e.style.width = '98%';
-		  e.style.height = '200px';
+		  e.style.height = commentBoxWidth;
 		} else {
 		  divElement.style.display = 'inline-block';
 		  e.style.width = 'auto';
-		  e.style.height = '200px';
+		  e.style.height = commentBoxWidth;
 		}
 	  }
   
