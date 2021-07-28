@@ -24,7 +24,7 @@
 /*
  *
  * The comment box height now automatically adjust its height to the height of the input text. 
- * This change is made by Martin Zhang. 07/28/2021, 02:39 PM ET
+ * This change is made by Martin Zhang. 07/28/2021, 02:39 PM ET 
  * 
 */
 
