@@ -23,8 +23,8 @@
 
 /*
  *
- * The comment box height now automatically adjust its height to the height of the input text. 
- * This change is made by Martin Zhang. 07/28/2021, 02:39 PM ET 
+ * The comment box height now automatically adjust its height to the height of the input text.
+ * This change is made by Martin Zhang. 07/28/2021, 02:39 PM ET
  * 
 */
 
@@ -478,7 +478,7 @@
 		if (e.value.length > 0) {
 		  divElement.style.display = 'block';
 		  e.style.width = '98%';
-		  e.style.height = '40px';
+		 // e.style.height = '40px';
 		  e.style.height = (e.scrollHeight)+"px";
 		} else {
 		  divElement.style.display = 'inline-block';
