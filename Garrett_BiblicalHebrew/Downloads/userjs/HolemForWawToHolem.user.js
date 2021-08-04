@@ -18,28 +18,28 @@
  * It also changes the font of the input box for the Hebrew paradigm questions.
  */ 
 
-var sinFB2B = 'שׂ'; // \uFB2B
-var shinFB2A = 'שׁ'; // \uFB2A
-var sin05E9 = 'שׂ'; // \u05E9\u05C1
-var shin05E9 = 'שׁ'; // \u05E9\u05C2
-var holemForWaw = 'ֺ'; // \u05BA
-var holem = 'ֹ'; // \u05B9
+  var sinFB2B = 'שׂ'; // \uFB2B
+  var shinFB2A = 'שׁ'; // \uFB2A
+  var sin05E9 = 'שׂ'; // \u05E9\u05C1
+  var shin05E9 = 'שׁ'; // \u05E9\u05C2
+  var holemForWaw = 'ֺ'; // \u05BA
+  var holem = 'ֹ'; // \u05B9
 
-var input = document.querySelectorAll('input');
-input.forEach(function(e){
-  e.addEventListener('keyup', function(){
-    var text = e.value;
-    console.log('New text is "' + text + '"');
-    if (input.includes(shinFB2A)){
-      input = input.replace(shinFB2A,shin05E9);
-    } else if (input.includes(sinFB2B)){
-      input = input.replace(sinFB2B,sin05E9);
-    } else if (input.includes(holeForWaw)){
-      input = input.replace(holemForWaw, holem);
-    }
-    console.log('New text is "' + text + '"');
-   
+  var input = document.querySelectorAll('input');
+  input.forEach(function(e){
+    e.addEventListener('keyup', function(){
+      var text = e.value;
+      console.log('New text is "' + text + '"');
+      if (input.includes(shinFB2A)){
+        input = input.replace(shinFB2A,shin05E9);
+      } else if (input.includes(sinFB2B)){
+        input = input.replace(sinFB2B,sin05E9);
+      } else if (input.includes(holeForWaw)){
+        input = input.replace(holemForWaw, holem);
+      }
+      console.log('New text is "' + text + '"');
 
-})
+    })
+  })
 
 })();
