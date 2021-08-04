@@ -30,12 +30,12 @@
     e.addEventListener('keyup', function(){
       var text = e.value;
       console.log('New text is "' + text + '"');
-      if (input.includes(shinFB2A)){
-        input = input.replace(shinFB2A,shin05E9);
-      } else if (input.includes(sinFB2B)){
-        input = input.replace(sinFB2B,sin05E9);
-      } else if (input.includes(holeForWaw)){
-        input = input.replace(holemForWaw, holem);
+      if (text.includes(shinFB2A)){
+        text = text.replace(shinFB2A,shin05E9);
+      } else if (text.includes(sinFB2B)){
+        text = text.replace(sinFB2B,sin05E9);
+      } else if (text.includes(holemForWaw)){
+        text = text.replace(holemForWaw, holem);
       }
       console.log('New text is "' + text + '"');
 

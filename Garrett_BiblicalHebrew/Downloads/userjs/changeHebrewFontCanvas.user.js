@@ -1,10 +1,12 @@
 // ==UserScript==
 // @author		Martin Zhang
-// @version	0.4
+// @version	1.0
 // @name		changeCanvasFont
 // @namespace	https://bbheb.github.io/Garrett_BiblicalHebrew/Downloads/userjs/changeHebrewFontCanvas.user.js
 // @description	Change the font for matching questions (for Hebrew vocabulary questions) and user input boxes (for Hebrew paradigm questions) on Canvas.
 // @match		https://*.instructure.com/courses/*/quizzes/*/take*
+// @match		https://bbheb.github.io/HebrewTypingTest/index.html
+// @match		https://bbheb.github.io/Garrett_BiblicalHebrew/Paradigms/*.html
 // ==/UserScript==
 
 (function(){
@@ -12,11 +14,11 @@
 
 
 /*
- * this user script is based on the one made by [James Jones] 
+ * this user script is based on the one made by [James Jones]
  *   at https://github.com/jamesjonesmath/canvancement/blob/master/miscellaneous/canvas-css-tweaks.user.js
  * It changes the font of the Hebrew words in the Vocabulary Match questions.
  * It also changes the font of the input box for the Hebrew paradigm questions.
- */ 
+ */
 
 
   const rules = ['input, div.pull-left > label, div.answer_label { font-family: "Times New Roman"; font-size: 30px !important; }'];
@@ -30,5 +32,33 @@
       sheet.insertRule(rules[i],i);
     }
   }
+
+
+/*
+ * The following script changes "Holem for Waw" to "Holem".
+ * It is designed to work with the SIL Hebrew keyboard in Keyman.app (MacOS).
+ * When we type Waw followed by Holem, the keyboard automatically changes Holem into Holem for Waw.
+ * This script changes it back to Holem.
+ * It is designed for Dr. Garrett's Hebrew course on Canvas.
+ * With this script, you will not be able to type Holem for Waw, because every Holem for Waw will be
+ *   changed to Holem instantly.
+ * It is ok with Dr. Garrett's Hebrew courses, because they do not need Holem for Waw.
+ * I make it to work with https://bbheb.github.io as well, because
+ *   students may use this website to test their typing.
+ */
+    var holemForWaw = 'ֺ'; // \u05BA. You may not see/recognize it, but it is there.
+    var holem = 'ֹ'; // \u05B9. You may not see/recognize it, but it is there.
+
+    var input = document.querySelectorAll('input');
+
+    input.forEach(function(e){
+        e.addEventListener('keyup', function(){
+            var text = e.value;
+            if (text.includes(holemForWaw)){
+               text = text.replace(holemForWaw, holem);
+               e.value = text;
+            }
+        })
+    })
 
 })();
