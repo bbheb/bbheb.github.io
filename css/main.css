@@ -112,3 +112,7 @@ display: block;
 /*Without this, clicking will make it sticky*/
 	pointer-events: none;
 }
+
+footer {
+  padding: 50px 50px 15px 50px;
+}
