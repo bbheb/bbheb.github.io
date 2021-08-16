@@ -1,10 +1,10 @@
 // ==UserScript==
 // @author		Martin Zhang
-// @version	1.0
+// @version	1.1
 // @name		changeCanvasFont
 // @namespace	https://bbheb.github.io/Garrett_BiblicalHebrew/Downloads/userjs/changeHebrewFontCanvas.user.js
 // @description	Change the font for matching questions (for Hebrew vocabulary questions) and user input boxes (for Hebrew paradigm questions) on Canvas.
-// @match		https://*.instructure.com/courses/*/quizzes/*/take*
+// @match		https://*.instructure.com/courses/*/quizzes/*
 // @match		https://bbheb.github.io/HebrewTypingTest/index.html
 // @match		https://bbheb.github.io/Garrett_BiblicalHebrew/Paradigms/*.html
 // ==/UserScript==
@@ -20,8 +20,14 @@
  * It also changes the font of the input box for the Hebrew paradigm questions.
  */
 
+/*
+ * v. 1.1 update note (08/16/2021, 05:22 PM ET): 
+ *     1. Removed '/take/*' from the end of the quiz match link so that the user script will also work on the review page after completing the quizzes.
+ *     2. Added additional css selector and style to work with the quiz rewiew page.
+ */
 
-  const rules = ['input, div.pull-left > label, div.answer_label { font-family: "Times New Roman"; font-size: 30px !important; }'];
+
+  const rules = ['input, div.pull-left > label, div.answer_label, div.answer_match_left, div.answer_html > span >p { font-family: "Times New Roman"; font-size: 30px !important; font-weight: normal !important; }'];
 
 
   if (rules.length) {
