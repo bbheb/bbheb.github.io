@@ -5,7 +5,7 @@
 // @include     https://*.instructure.com/courses/*/gradebook/speed_grader?*
 // @include     https://*.instructure.com/courses/*/quizzes/*/history?*
 // @noframes
-// @version     1.1
+// @version     1.2
 // @grant       none
 // ==/UserScript==
 /*
@@ -23,8 +23,11 @@
 
 /*
  *
- * The comment box height now automatically adjust its height to the height of the input text.
- * This change is made by Martin Zhang. 07/28/2021, 02:39 PM ET
+ * v 1.1 update notes (07/28/2021, 02:39 PM ET):
+ * 		The comment box height now automatically adjust its height to the height of the input text.
+ * 
+ * v. 1.2 update notes (08/19/2021, 01:58 PM ET):
+ * 		add css to change students' answer in essay questions into blue color. It makes the answer easier to identify.
  * 
 */
 
@@ -104,6 +107,20 @@
 		console.log(e);
 	  }
   
+	  // change students' answer in essay questions into blue color. It makes the answer easier to identify.
+	  const rules = ['div.user_content.quiz_response_text.enhanced { color: blue;}'];
+
+	  if (rules.length) {
+		const style = document.createElement('style');
+		document.head.appendChild(style);
+		const sheet = style.sheet;
+		for (let i = 0; i < rules.length; i++) {
+		  sheet.insertRule(rules[i],i);
+		}
+	  }
+  
+
+
 	  function quizFeatures() {
 		setupInterface();
 		autoExpandComments();
