@@ -11,6 +11,14 @@
   <link href="../css/main.css" rel="stylesheet">
   <script src="../js/main.js"></script>
 
+  <script>
+    //    loadSourceHTML("ch21.html","ex-nth","ch21-ex-nth")
+    $(() => {
+      $("#support-keyman").load("index.html #donate-keyman");
+    });
+    
+  </script>
+
 </head>
 
 <body>
@@ -76,6 +84,11 @@
       <li>If it is related to typing specific letters, let me know which keys you typed (e.g., Right Option + O).</li>
     </ul>
   </ul>
+
+  <h1>Support Keyman</h1>
+  <div id="support-keyman">
+    <!-- 此处插入 index.html 中的 id = "donate-Keyman" 内容。 -->
+  </div>
 
   <h1>A Small Trick: remap L-Opt to R-Opt</h1>
   <ul>
