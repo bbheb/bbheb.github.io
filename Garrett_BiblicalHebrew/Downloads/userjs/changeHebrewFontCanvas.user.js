@@ -35,7 +35,9 @@
  */
 
 
-  const rules = ['input, div.pull-left > label, div.answer_label, div.answer_html, div.answer_text, div.answer_match_left, div.answer_match_left_html, div.answer_match_left_html >span, div.answer_match_left_html > span > p { font-family: "Times New Roman"; font-size: 30px !important; font-weight: normal !important; }'];
+  const rules = ['input, div.pull-left > label, div.answer_label, div.answer_html, div.answer_text, div.answer_match_left, div.answer_match_left_html, div.answer_match_left_html >span, div.answer_match_left_html > span > p { font-family: "Times New Roman"; font-size: 30px !important; font-weight: normal !important; }',
+                  'div.user_content.quiz_response_text.enhanced > p { color: blue !important;}'
+                ];
 
 
   if (rules.length) {
