@@ -5,7 +5,7 @@
 // @include     https://*.instructure.com/courses/*/gradebook/speed_grader?*
 // @include     https://*.instructure.com/courses/*/quizzes/*/history?*
 // @noframes
-// @version     1.2
+// @version     1.1
 // @grant       none
 // ==/UserScript==
 /*
@@ -25,9 +25,6 @@
  *
  * v 1.1 update notes (07/28/2021, 02:39 PM ET):
  * 		The comment box height now automatically adjust its height to the height of the input text.
- * 
- * v. 1.2 update notes (08/19/2021, 01:58 PM ET):
- * 		add css to change students' answer in essay questions into blue color. It makes the answer easier to identify.
  * 
 */
 
