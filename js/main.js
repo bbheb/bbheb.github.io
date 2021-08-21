@@ -19,6 +19,8 @@ let navHTML = `<nav class="navbar justify-content-center navbar-expand-sm bg-lig
 
     <li class="nav-item"><a class="nav-link py-0" href="/HebrewTypingTest/index.html">Typing Test</a></li>
 
+    <li class="nav-item"><a class="nav-link py-0" href="/tutorials/hebfontcanvas-tempermonkey.html">User Script</a></li>
+
     <li class="nav-item dropdown"><a class="nav-link py-0 dropdown-toggle" href="https://github.com/bbheb/tree/main/Garrett_BiblicalHebrew/Downloads" data-toggle="dropdown">Resources</a>
       <div class="dropdown-menu">
         <a class="dropdown-item" href="/Garrett_BiblicalHebrew/Downloads/01_Hebrew Alphabet Song.mp3">Ch. 01 Hebrew Alphabet Song.mp3</a>
