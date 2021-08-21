@@ -12,6 +12,7 @@
   <link href="../../css/main.css" rel="stylesheet">
   <script src="../../js/checkAns.js"></script>
   <script src="../../js/main.js"></script>
+  <script src="../../js/shuffle-table-rows.js"></script>
   <style>
     .heb {
       font-size:28px;
@@ -47,7 +48,9 @@
 
   <p id="revealAnsTip"></p>
 
-<table style="text-align:center; width:100%">
+  <p><button class="btn btn-secondary" onclick="$('#principle-parts').shuffleRows()">Click Me</button> to Shuffle Table Rows; <button class="btn btn-warning" onclick="window.location.reload(true)">Click Me</button> to Restore.</p>
+
+<table id="principle-parts" style="text-align:center; width:100%">
     <colgroup>
       <col style="width: 80px">
       <col style="width: 100px">
