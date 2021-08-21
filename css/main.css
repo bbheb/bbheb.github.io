@@ -95,6 +95,14 @@ img {
   margin-right: auto;
 }
 
+img.img20 {
+  width: 20%;
+}
+
+img.img30 {
+  width: 30%;
+}
+
 cite {
   color:Brown;
 }
