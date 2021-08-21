@@ -87,15 +87,12 @@ li div a {
 }
 
 img {
-  width: 70%;
+  width: 50%;
   height: auto;
   cursor: pointer;
   display: block;
   margin-left: auto;
   margin-right: auto;
-}
-img.img-thumbnail{
-  width: 20%;
 }
 
 cite {
