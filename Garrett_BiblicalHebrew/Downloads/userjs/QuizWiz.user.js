@@ -5,7 +5,7 @@
 // @include     https://*.instructure.com/courses/*/gradebook/speed_grader?*
 // @include     https://*.instructure.com/courses/*/quizzes/*/history?*
 // @noframes
-// @version     1.1
+// @version     1.2
 // @grant       none
 // ==/UserScript==
 /*
@@ -24,7 +24,9 @@
 /*
  *
  * v 1.1 update notes (07/28/2021, 02:39 PM ET):
- * 		The comment box height now automatically adjust its height to the height of the input text.
+ * 	   The comment box height now automatically adjust its height to the height of the input text.
+ * v 1.2 update notes (08/21/2021, 01:19 PM ET):
+ *     Fix issue with auto expand comment box height.
  * 
 */
 
@@ -492,7 +494,7 @@
 		if (e.value.length > 0) {
 		  divElement.style.display = 'block';
 		  e.style.width = '98%';
-		 // e.style.height = '40px';
+		  e.style.height = '40px'; // this line is necessary; otherwise, the next line will mulfunction.
 		  e.style.height = (e.scrollHeight)+"px";
 		} else {
 		  divElement.style.display = 'inline-block';
