@@ -33,27 +33,58 @@
   <h2>Steps to install the keyboard for MacOS</h2>
   <p>Note: The following instructions are for the installation of Hebrew keyboard for Keyman.app on MacOS. If you need to type on Win or mobile devices, please follow the instructions above.</p>
   <ol type="1">
-    <li>You need to install Keyman on the Mac. Keyman is a free app.</li>
+    <li class="bg-success">You need to install Keyman on the Mac. Keyman is a free app.</li>
     <ul>
       <li>Go to the <a href="https://keyman.com/mac/">Keyman.app Download</a> page.</li>
       <ul>
         <li>Click the "Download" button to download the Keyman installation file (.dmg file).</li>
         <li>Double click to open the file. In the new window, then double click the Keyman icon to start installation.</li>
       </ul>
-      <li>❗ Note: Keyman may not support <a href="https://community.software.sil.org/t/does-keyman-support-m1-mac/5213">the M1 Macbooks</a> yet. If you have am M1 Macbook, an alternative keyboard is the <a href="https://www.sbl-site.org/educational/BiblicalFonts_SBLHebrew.aspx">SBL Hebrew keyboard (SIL layout)</a>.</li>
+      <li>❗ Note: <span class="text-danger">If you have an M1 Macbook</span>, you must have Rosetta installed in order to install Keyman. Otherwise, you will encounter an error like this:</li>
+      <a href="../img/keyman-rosetta-error.jpg"><img src="../img/keyman-rosetta-error.jpg" alt="keyman-rosetta-error.jpg" width="50%" height="50%" /></a>
+      <ul>
+        <li>You need first to install Rosetta before installing Keyman. To install Rosetta, follow these steps:</li>
+        <ol>
+          <li>Open Terminal.app</li>
+          <li>Copy and Paste this command into Terminal.app: <code>softwareupdate --install-rosetta</code></li>
+          <li>Hit the <kbd>Return</kbd> key.</li> 
+          <li>When it says "<cite>Install of Rosetta 2 finished successfully</cite>", you may close Terminal.app and install Keyman.</li>
+          <a href="../img/rosetta-install-m1.png"><img src="../img/rosetta-install-m1.png" alt="rosetta-install-m1.png.jpg" height="100"/></a>
+          <li>After install Keyman, you may need to set the configurations for Keyman. Follow <a href="https://help.keyman.com/products/mac/13.0/help/configure-security">the instructions here</a>.</li>
+        </ol>
+        
+      </ul>
     </ul>
-    <li>Install the Hebrew (SIL) keyboard.</li>
+    <li class="bg-success">Install the Hebrew (SIL) keyboard.</li>
     <ul>
-      <li>Go to the <a href="https://keyman.com/keyboards/sil_hebrew">Hebrew (SIL) keyboard Download</a> page. </li>
-      <li>Click the "macOS download" button to download the keyboard layout file (.kmp file).</li>
-      <li>After download, you may double click to install the keyboard to Keyman.</li>
+      <li>Method 1</li>
+      <ol>
+        <li>Go to the <a href="https://keyman.com/keyboards/sil_hebrew">Hebrew (SIL) keyboard Download</a> page. </li>
+        <li>Click the "macOS download" button to download the keyboard layout file (.kmp file).</li>
+        <li>After download, you may double click to install the keyboard to Keyman.</li>
+      </ol>
+      <li>Method 2</li>
+      <ul>
+        <li>Althernatively, you may install the Hebrew SIL keyboard from the Keyman app.</li>
+        <ol>
+          <li>Click the Keyman icon on the menu bar.</li>
+          <li>Then click "configuration...".</li>
+          <li>In the next window, Click the "Download keyboard..." button at the bottom-left corner.</li>
+          <li>In the next window, type "Hebrew SIL" and hit "Search".</li>
+          <li>You will see the "Hebrew (SIL)" keyboard. Click it and follow the instructions to install it.</li>
+        </ol>
+      </ul>
+      <li>If you can't install the "Heberw SIL" keyboard, you need to set the configurations first. Follow <a href="https://help.keyman.com/products/mac/13.0/help/configure-security">the instructions here</a>.</li>
     </ul>
     <li>Make sure you have switched to "Keyman" as your keyboard input method.</li>
     <ul>
       <li>See screenshot below.</li>
-      <li>If you don't have Keyman, you need to double check step 1.</li>
-      <li>If you don't have "Hebrew SIL", you need to double check step 2.</li>
-    </ul>
+      <ul>
+        <li>If you don't have Keyman, you need to double check step 1.</li>
+        <li>If you don't have "Hebrew SIL", you need to double check step 2.</li>
+        
+      </ul>
+     </ul>
     <a href="../img/keyman-mac-input-method.png"><img src="../img/keyman-mac-input-method.png" alt="keyman-mac-input-method.png" /></a>
     <li>Done! You may start using it now! You may test your Hebrew typing at <a href="../HebrewTypingTest/index.html">Hebrew Typing Test</a>.</li>
     <ul>
@@ -75,8 +106,8 @@
   <ul>
     <li>Typing Qamets Hatuph and Hateph Qamets</li>
     <ul>
-      <li>On Windows, we use <b>Right Alt + O</b> to type Qamets Hatuph, and <b>Right Alt + Shift + A</b> to type Hateph Qamets (Hatuph).</li>
-      <li>On MacOS, similarly, we use <b>Right Opttion + O</b> to type Qamets Hatuph (<span class="heb" dir="rtl">◌ׇ</span>), and <b>Right Option + Shift + A</b> to type Hateph Qamets (Hatuph) (<span class="heb" dir="rtl">◌ֲ</span>). <b>Left Option</b> won't work.</li>
+      <li>On Windows, we use <kbd>Right Alt + O</kbd> to type Qamets Hatuph, and <kbd>Right Alt + Shift + A</kbd> to type Hateph Qamets (Hatuph).</li>
+      <li>On MacOS, similarly, we use <kbd>Right Option + O</kbd> to type Qamets Hatuph (<span class="heb" dir="rtl">◌ׇ</span>), and <kbd>Right Option + Shift + A</kbd> to type Hateph Qamets (Hatuph) (<span class="heb" dir="rtl">◌ֲ</span>). <kbd>Left Option</kbd> won't work.</li>
     </ul>
     <li>If you still have issues typing Qamets Hatuph and Hateph Qamets (Hatuph), please <mark>restart</mark> your Mac to see if it is fixed. If not, please follow <a href="https://help.keyman.com/products/mac/13.0/help/configure-security">the instructions here</a> and see if it can fix the issue.</li>
     <li>If you have any other issues, please <mark>restart</mark> your Mac to see if it is resolved (99% issues can be resolved by a restart).</li>
@@ -95,9 +126,13 @@
 
   <h1>A Small Trick: remap L-Opt to R-Opt</h1>
   <ul>
-    <li>I'm very used to using <b>Left Option</b> instead of <b>Right Option</b>. I use <a href="https://karabiner-elements.pqrs.org/">Karabiner-Elements</a> to remap <b>Left Option</b> to <b>Right Option</b>. Here is the setting:</li>
+    <li>I'm very used to using <kbd>Left Option</kbd> instead of <kbd>Right Option</kbd>. I use <a href="https://karabiner-elements.pqrs.org/">Karabiner-Elements</a> to remap <kbd>Left Option</kbd> to <kbd>Right Option</kbd>. Here is the setting:</li>
     <a href="../img/karabiner-left-opt-to-right-opt.png"><img src="../img/karabiner-left-opt-to-right-opt.png" alt="karabiner-left-opt-to-right-opt.png" /></a>
-    <li>Note: If you use this setting, you won't be able to type <b>Left Option</b> anymore unless you remove this setting or quit Karabiner-Elements. (If you are not sure what it means, you don't need to worry about it. It will not affect you at all.)</li>
+    <li>Note: If you use this setting, you won't be able to type <kbd>Left Option</kbd> anymore unless you remove this setting or quit Karabiner-Elements. (If you are not sure what it means, you don't need to worry about it. It will not affect you at all.)</li>
+  </ul>
+  <h1>Alternative Keyboard</h1>
+  <ul>
+    <li>An alternative keyboard is the <a href="https://www.sbl-site.org/educational/BiblicalFonts_SBLHebrew.aspx">SBL Hebrew keyboard (SIL layout)</a></li>
   </ul>
 
 </div></body>
