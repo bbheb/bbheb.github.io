@@ -1,6 +1,7 @@
 @font-face {
   font-family: "SBL Hebrew";
   src: url('SBL_Hbrw.ttf');
+  unicode-range: U+0591-05F4, U+FB00-FB4F;
 }
 
 body {
