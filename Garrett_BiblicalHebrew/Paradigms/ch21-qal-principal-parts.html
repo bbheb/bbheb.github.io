@@ -7,23 +7,26 @@
   <title>Hebrew Qal Stem Principle Parts</title>
   <meta name="description" content="ch21">
   <link href="../../css/bootstrap.min.css" rel="stylesheet">
-  <script src="../../js/jquery.min.js"></script>
   <script src="../../js/bootstrap.bundle.min.js"></script>
+  <script src="../../js/jquery.min.js"></script>
   <link href="../../css/main.css" rel="stylesheet">
   <script src="../../js/checkAns.js"></script>
   <script src="../../js/main.js"></script>
   <script src="../../js/shuffle-table-rows.js"></script>
   <style>
     .heb {
-      font-size:28px;
+      font-size: 28px;
     }
+
     input {
       font-family: 'SBL Hebrew';
       font-size: 24px;
       text-align: center;
       width: 100%;
     }
-    table th, td {
+
+    table th,
+    td {
       border-collapse: collapse;
       border-spacing: 0;
       border: 1px solid grey;
@@ -34,215 +37,219 @@
 
 <body>
   <div id="nav"></div>
-<div class="container">
+  <div class="container">
 
 
-  <h1>Hebrew Qal Stem Principle Parts Practice</h1>
-  <br>
-  <h2>Fill in the blanks</h2>
-  <ul>
-    <li>Do not type the accent or metheg.</li>
-  </ul>
-  <div id="safari"></div>
+    <h1>Hebrew Qal Stem Principle Parts Practice</h1>
+    <br>
+    <h2>Fill in the blanks</h2>
+    <ul>
+      <li>Do not type the accent or metheg.</li>
+    </ul>
+    <div id="safari"></div>
 
 
-  <p id="revealAnsTip"></p>
+    <p id="revealAnsTip"></p>
 
-  <p><button class="btn btn-secondary" onclick="$('#principle-parts').shuffleRows()">Click Me</button> to Shuffle Table Rows; <button class="btn btn-warning" onclick="window.location.reload(true)">Click Me</button> to Restore.</p>
+    <p><button class="btn btn-secondary" onclick="$('#principle-parts').shuffleRows()">Click Me</button> to Shuffle
+      Table Rows; <button class="btn btn-warning" onclick="window.location.reload(true)">Click Me</button> to Restore.
+    </p>
 
-<table id="principle-parts" style="text-align:center; width:100%">
-    <colgroup>
-      <col style="width: 80px">
-      <col style="width: 100px">
-      <col style="width: 40px">
-      <col style="width: 100px">
-      <col style="width: 40px">
-      <col style="width: 100px">
-      <col style="width: 40px">
-      <col style="width: 100px">
-      <col style="width: 40px">
-    </colgroup>
-    <thead>
-      <tr>
-        <!--- row 0 - head row --->
-        <th></th>
-        <th colspan="2">Qatal</th>
-        <th colspan="2">Yiqtol</th>
-        <th colspan="2">Inf. Con.</th>
-        <th colspan="2">Participle</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <!--- row 1 --->
-        <td><span class="heb" dir="rtl">קטל</span></td>
-        <td><input type="text" id="v1"></td>
-        <td class="mark" id='v1r'>❓</td>
-        <td><input type="text" id="v2"></td>
-        <td class="mark" id='v2r'>❓</td>
-        <td><input type="text" id="v3"></td>
-        <td class="mark" id='v3r'>❓</td>
-        <td><input type="text" id="v4"></td>
-        <td class="mark" id='v4r'>❓</td>
-      </tr>
-      <tr>
-        <!--- row 2 --->
-        <td><span class="heb" dir="rtl">בנה</span></td>
-        <td><input type="text" id="v5"></td>
-        <td class="mark" id='v5r'>❓</td>
-        <td><input type="text" id="v6"></td>
-        <td class="mark" id='v6r'>❓</td>
-        <td><input type="text" id="v7"></td>
-        <td class="mark" id='v7r'>❓</td>
-        <td><input type="text" id="v8"></td>
-        <td class="mark" id='v8r'>❓</td>
-      </tr>
-      <tr>
-        <!--- row 3 --->
-        <td><span class="heb" dir="rtl">עמד</span></td>
-        <td><input type="text" id="v9"></td>
-        <td class="mark" id='v9r'>❓</td>
-        <td><input type="text" id="v10"></td>
-        <td class="mark" id='v10r'>❓</td>
-        <td><input type="text" id="v11"></td>
-        <td class="mark" id='v11r'>❓</td>
-        <td><input type="text" id="v12"></td>
-        <td class="mark" id='v12r'>❓</td>
-      </tr>
-      <tr>
-        <!--- row 4 --->
-        <td><span class="heb" dir="rtl">בחר</span></td>
-        <td><input type="text" id="v13"></td>
-        <td class="mark" id='v13r'>❓</td>
-        <td><input type="text" id="v14"></td>
-        <td class="mark" id='v14r'>❓</td>
-        <td><input type="text" id="v15"></td>
-        <td class="mark" id='v15r'>❓</td>
-        <td><input type="text" id="v16"></td>
-        <td class="mark" id='v16r'>❓</td>
-      </tr>
-      <tr>
-        <!--- row 5 --->
-        <td><span class="heb" dir="rtl">שׁמע</span></td>
-        <td><input type="text" id="v17"></td>
-        <td class="mark" id='v17r'>❓</td>
-        <td><input type="text" id="v18"></td>
-        <td class="mark" id='v18r'>❓</td>
-        <td><input type="text" id="v19"></td>
-        <td class="mark" id='v19r'>❓</td>
-        <td><input type="text" id="v20"></td>
-        <td class="mark" id='v20r'>❓</td>
-      </tr>
-      <tr>
-        <!--- row 6 --->
-        <td><span class="heb" dir="rtl">מצא</span></td>
-        <td><input type="text" id="v21"></td>
-        <td class="mark" id='v21r'>❓</td>
-        <td><input type="text" id="v22"></td>
-        <td class="mark" id='v22r'>❓</td>
-        <td><input type="text" id="v23"></td>
-        <td class="mark" id='v23r'>❓</td>
-        <td><input type="text" id="v24"></td>
-        <td class="mark" id='v24r'>❓</td>
-      </tr>
-      <tr>
-        <!--- row 7 --->
-        <td><span class="heb" dir="rtl">חטא</span></td>
-        <td><input type="text" id="v25"></td>
-        <td class="mark" id='v25r'>❓</td>
-        <td><input type="text" id="v26"></td>
-        <td class="mark" id='v26r'>❓</td>
-        <td><input type="text" id="v27"></td>
-        <td class="mark" id='v27r'>❓</td>
-        <td><input type="text" id="v28"></td>
-        <td class="mark" id='v28r'>❓</td>
-      </tr>
-      <tr>
-        <!--- row 8 --->
-        <td><span class="heb" dir="rtl">נפל</span></td>
-        <td><input type="text" id="v29"></td>
-        <td class="mark" id='v29r'>❓</td>
-        <td><input type="text" id="v30"></td>
-        <td class="mark" id='v30r'>❓</td>
-        <td><input type="text" id="v31"></td>
-        <td class="mark" id='v31r'>❓</td>
-        <td><input type="text" id="v32"></td>
-        <td class="mark" id='v32r'>❓</td>
-      </tr>
-      <tr>
-        <!--- row 9 --->
-        <td><span class="heb" dir="rtl">שׁוּב</span></td>
-        <td><input type="text" id="v33"></td>
-        <td class="mark" id='v33r'>❓</td>
-        <td><input type="text" id="v34"></td>
-        <td class="mark" id='v34r'>❓</td>
-        <td><input type="text" id="v35"></td>
-        <td class="mark" id='v35r'>❓</td>
-        <td><input type="text" id="v36"></td>
-        <td class="mark" id='v36r'>❓</td>
-      </tr>
-      <tr>
-        <!--- row 10 --->
-        <td><span class="heb" dir="rtl">סבב</span></td>
-        <td><input type="text" id="v37"></td>
-        <td class="mark" id='v37r'>❓</td>
-        <td><input type="text" id="v38"></td>
-        <td class="mark" id='v38r'>❓</td>
-        <td><input type="text" id="v39"></td>
-        <td class="mark" id='v39r'>❓</td>
-        <td><input type="text" id="v40"></td>
-        <td class="mark" id='v40r'>❓</td>
-      </tr>
-      <tr>
-        <!--- row 11 --->
-        <td><span class="heb" dir="rtl">ישׁב</span></td>
-        <td><input type="text" id="v41"></td>
-        <td class="mark" id='v41r'>❓</td>
-        <td><input type="text" id="v42"></td>
-        <td class="mark" id='v42r'>❓</td>
-        <td><input type="text" id="v43"></td>
-        <td class="mark" id='v43r'>❓</td>
-        <td><input type="text" id="v44"></td>
-        <td class="mark" id='v44r'>❓</td>
-      </tr>
-      <tr>
-        <!--- row 12 --->
-        <td><span class="heb" dir="rtl">ירשׁ</span></td>
-        <td><input type="text" id="v45"></td>
-        <td class="mark" id='v45r'>❓</td>
-        <td><input type="text" id="v46"></td>
-        <td class="mark" id='v46r'>❓</td>
-        <td><input type="text" id="v47"></td>
-        <td class="mark" id='v47r'>❓</td>
-        <td><input type="text" id="v48"></td>
-        <td class="mark" id='v48r'>❓</td>
-      </tr>
-      <tr>
-        <!--- row 13 --->
-        <td><span class="heb" dir="rtl">אמר</span></td>
-        <td><input type="text" id="v49"></td>
-        <td class="mark" id='v49r'>❓</td>
-        <td><input type="text" id="v50"></td>
-        <td class="mark" id='v50r'>❓</td>
-        <td><input type="text" id="v51"></td>
-        <td class="mark" id='v51r'>❓</td>
-        <td><input type="text" id="v52"></td>
-        <td class="mark" id='v52r'>❓</td>
-      </tr>
-      <tr>
-        <!--- row 14 --->
-        <td><span class="heb" dir="rtl">אהב</span></td>
-        <td><input type="text" id="v53"></td>
-        <td class="mark" id='v53r'>❓</td>
-        <td><input type="text" id="v54"></td>
-        <td class="mark" id='v54r'>❓</td>
-        <td><input type="text" id="v55"></td>
-        <td class="mark" id='v55r'>❓</td>
-        <td><input type="text" id="v56"></td>
-        <td class="mark" id='v56r'>❓</td>
-      </tr>
-    </tbody>
-  </table>
-  <br><br>
-</div></body>
+    <table id="principle-parts" style="text-align:center; width:100%">
+      <colgroup>
+        <col style="width: 80px">
+        <col style="width: 100px">
+        <col style="width: 40px">
+        <col style="width: 100px">
+        <col style="width: 40px">
+        <col style="width: 100px">
+        <col style="width: 40px">
+        <col style="width: 100px">
+        <col style="width: 40px">
+      </colgroup>
+      <thead>
+        <tr>
+          <!--- row 0 - head row --->
+          <th></th>
+          <th colspan="2">Qatal</th>
+          <th colspan="2">Yiqtol</th>
+          <th colspan="2">Inf. Con.</th>
+          <th colspan="2">Participle</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <!--- row 1 --->
+          <td><span class="heb" dir="rtl">קטל</span></td>
+          <td><input type="text" id="v1"></td>
+          <td class="mark" id='v1r'>❓</td>
+          <td><input type="text" id="v2"></td>
+          <td class="mark" id='v2r'>❓</td>
+          <td><input type="text" id="v3"></td>
+          <td class="mark" id='v3r'>❓</td>
+          <td><input type="text" id="v4"></td>
+          <td class="mark" id='v4r'>❓</td>
+        </tr>
+        <tr>
+          <!--- row 2 --->
+          <td><span class="heb" dir="rtl">בנה</span></td>
+          <td><input type="text" id="v5"></td>
+          <td class="mark" id='v5r'>❓</td>
+          <td><input type="text" id="v6"></td>
+          <td class="mark" id='v6r'>❓</td>
+          <td><input type="text" id="v7"></td>
+          <td class="mark" id='v7r'>❓</td>
+          <td><input type="text" id="v8"></td>
+          <td class="mark" id='v8r'>❓</td>
+        </tr>
+        <tr>
+          <!--- row 3 --->
+          <td><span class="heb" dir="rtl">עמד</span></td>
+          <td><input type="text" id="v9"></td>
+          <td class="mark" id='v9r'>❓</td>
+          <td><input type="text" id="v10"></td>
+          <td class="mark" id='v10r'>❓</td>
+          <td><input type="text" id="v11"></td>
+          <td class="mark" id='v11r'>❓</td>
+          <td><input type="text" id="v12"></td>
+          <td class="mark" id='v12r'>❓</td>
+        </tr>
+        <tr>
+          <!--- row 4 --->
+          <td><span class="heb" dir="rtl">בחר</span></td>
+          <td><input type="text" id="v13"></td>
+          <td class="mark" id='v13r'>❓</td>
+          <td><input type="text" id="v14"></td>
+          <td class="mark" id='v14r'>❓</td>
+          <td><input type="text" id="v15"></td>
+          <td class="mark" id='v15r'>❓</td>
+          <td><input type="text" id="v16"></td>
+          <td class="mark" id='v16r'>❓</td>
+        </tr>
+        <tr>
+          <!--- row 5 --->
+          <td><span class="heb" dir="rtl">שׁמע</span></td>
+          <td><input type="text" id="v17"></td>
+          <td class="mark" id='v17r'>❓</td>
+          <td><input type="text" id="v18"></td>
+          <td class="mark" id='v18r'>❓</td>
+          <td><input type="text" id="v19"></td>
+          <td class="mark" id='v19r'>❓</td>
+          <td><input type="text" id="v20"></td>
+          <td class="mark" id='v20r'>❓</td>
+        </tr>
+        <tr>
+          <!--- row 6 --->
+          <td><span class="heb" dir="rtl">מצא</span></td>
+          <td><input type="text" id="v21"></td>
+          <td class="mark" id='v21r'>❓</td>
+          <td><input type="text" id="v22"></td>
+          <td class="mark" id='v22r'>❓</td>
+          <td><input type="text" id="v23"></td>
+          <td class="mark" id='v23r'>❓</td>
+          <td><input type="text" id="v24"></td>
+          <td class="mark" id='v24r'>❓</td>
+        </tr>
+        <tr>
+          <!--- row 7 --->
+          <td><span class="heb" dir="rtl">חטא</span></td>
+          <td><input type="text" id="v25"></td>
+          <td class="mark" id='v25r'>❓</td>
+          <td><input type="text" id="v26"></td>
+          <td class="mark" id='v26r'>❓</td>
+          <td><input type="text" id="v27"></td>
+          <td class="mark" id='v27r'>❓</td>
+          <td><input type="text" id="v28"></td>
+          <td class="mark" id='v28r'>❓</td>
+        </tr>
+        <tr>
+          <!--- row 8 --->
+          <td><span class="heb" dir="rtl">נפל</span></td>
+          <td><input type="text" id="v29"></td>
+          <td class="mark" id='v29r'>❓</td>
+          <td><input type="text" id="v30"></td>
+          <td class="mark" id='v30r'>❓</td>
+          <td><input type="text" id="v31"></td>
+          <td class="mark" id='v31r'>❓</td>
+          <td><input type="text" id="v32"></td>
+          <td class="mark" id='v32r'>❓</td>
+        </tr>
+        <tr>
+          <!--- row 9 --->
+          <td><span class="heb" dir="rtl">שׁוּב</span></td>
+          <td><input type="text" id="v33"></td>
+          <td class="mark" id='v33r'>❓</td>
+          <td><input type="text" id="v34"></td>
+          <td class="mark" id='v34r'>❓</td>
+          <td><input type="text" id="v35"></td>
+          <td class="mark" id='v35r'>❓</td>
+          <td><input type="text" id="v36"></td>
+          <td class="mark" id='v36r'>❓</td>
+        </tr>
+        <tr>
+          <!--- row 10 --->
+          <td><span class="heb" dir="rtl">סבב</span></td>
+          <td><input type="text" id="v37"></td>
+          <td class="mark" id='v37r'>❓</td>
+          <td><input type="text" id="v38"></td>
+          <td class="mark" id='v38r'>❓</td>
+          <td><input type="text" id="v39"></td>
+          <td class="mark" id='v39r'>❓</td>
+          <td><input type="text" id="v40"></td>
+          <td class="mark" id='v40r'>❓</td>
+        </tr>
+        <tr>
+          <!--- row 11 --->
+          <td><span class="heb" dir="rtl">ישׁב</span></td>
+          <td><input type="text" id="v41"></td>
+          <td class="mark" id='v41r'>❓</td>
+          <td><input type="text" id="v42"></td>
+          <td class="mark" id='v42r'>❓</td>
+          <td><input type="text" id="v43"></td>
+          <td class="mark" id='v43r'>❓</td>
+          <td><input type="text" id="v44"></td>
+          <td class="mark" id='v44r'>❓</td>
+        </tr>
+        <tr>
+          <!--- row 12 --->
+          <td><span class="heb" dir="rtl">ירשׁ</span></td>
+          <td><input type="text" id="v45"></td>
+          <td class="mark" id='v45r'>❓</td>
+          <td><input type="text" id="v46"></td>
+          <td class="mark" id='v46r'>❓</td>
+          <td><input type="text" id="v47"></td>
+          <td class="mark" id='v47r'>❓</td>
+          <td><input type="text" id="v48"></td>
+          <td class="mark" id='v48r'>❓</td>
+        </tr>
+        <tr>
+          <!--- row 13 --->
+          <td><span class="heb" dir="rtl">אמר</span></td>
+          <td><input type="text" id="v49"></td>
+          <td class="mark" id='v49r'>❓</td>
+          <td><input type="text" id="v50"></td>
+          <td class="mark" id='v50r'>❓</td>
+          <td><input type="text" id="v51"></td>
+          <td class="mark" id='v51r'>❓</td>
+          <td><input type="text" id="v52"></td>
+          <td class="mark" id='v52r'>❓</td>
+        </tr>
+        <tr>
+          <!--- row 14 --->
+          <td><span class="heb" dir="rtl">אהב</span></td>
+          <td><input type="text" id="v53"></td>
+          <td class="mark" id='v53r'>❓</td>
+          <td><input type="text" id="v54"></td>
+          <td class="mark" id='v54r'>❓</td>
+          <td><input type="text" id="v55"></td>
+          <td class="mark" id='v55r'>❓</td>
+          <td><input type="text" id="v56"></td>
+          <td class="mark" id='v56r'>❓</td>
+        </tr>
+      </tbody>
+    </table>
+    <br><br>
+  </div>
+</body>
+
 </html>
