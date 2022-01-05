@@ -107,7 +107,7 @@
 	  }
   
 	  // change students' answer in essay questions into blue color. It makes the answer easier to identify.
-	  const rules = ['div.user_content.quiz_response_text.enhanced { color: blue;}'];
+	  const rules = ['div.user_content.quiz_response_text.enhanced { color: blue !important;}'];
 
 	  if (rules.length) {
 		const style = document.createElement('style');
